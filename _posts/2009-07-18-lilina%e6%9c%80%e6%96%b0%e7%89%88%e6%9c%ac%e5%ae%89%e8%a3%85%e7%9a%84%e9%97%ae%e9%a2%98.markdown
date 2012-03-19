@@ -1,0 +1,63 @@
+--- 
+wordpress_id: 326
+layout: post
+title: !binary |
+  bGlsaW5h5pyA5paw54mI5pys5a6J6KOF55qE6Zeu6aKY
+
+excerpt: !binary |
+  bGlsaW5h5Lmf5b6I5LmF5rKh5pu05paw5LqG77yM5pyA5paw55qE56iz5a6a
+  54mI5pys5piv5Yeg5bm05YmN55qEMC4377yMMS4w6YGl6YGl5peg5pyf77yM
+  5LiN6L+H5oiR6L+Y5piv5LiL5LqG5Liq5q+P5pel5p6E5bu654mI77yM5pyJ
+  6Zeu6aKY5aSn5LiN5LqG6Ieq5bex5pS544CC6KOF5LiK5LmL5ZCO5p6c54S2
+  5LiN6IO955So77yM5re75YqgZmVlZHPkuYvlkI7vvIzpppbpobXkuIDnm7Tm
+  sqHmnInku7vkvZXmmL7npLrvvIzkuIDmraXkuIDmraXmib7pl67popjvvIzm
+  nIDlkI7lj5HnjrDmmK9saWxpbmHkvb/nlKjnmoQ8YSBocmVmPSJodHRwOi8v
+  c2ltcGxlcGllLm9yZy8iPnNpbXBsZXBpZTwvYT7ov5nkuKrlvIDmupDnmoRS
+  U1Pop6PmnpDlmajnmoTpl67popjjgIINCjwhLS1tb3JlLS0+DQrmiZPlvIDm
+  lofku7bvvJogbGlsaW5hL2luYy9jb250cmliL3NpbXBsZXBpZS9zaW1wbGVw
+  aWUuaW5j77yM5ZyoMTUwOOihjO+8jOS9v+eUqOS6huS4gOS4quWtl+espuS4
+  suKAnDxmb28+JmFtcDs8L2Zvbz7igJ3mnaXmtYvor5VwaHDoh6rluKbnmoR4
+  bWzop6PmnpDlmajmmK/lkKbog73mraPluLjlt6XkvZzvvJvlj6/mg5zmiJHn
+  moRwaHAgNS4yLjnniYjmnKzlsLHmmK/kuI3og73mraPluLjlt6XkvZzvvIzk
+  uo7mmK/lsLHkuIDot6/ov5Tlm57lvpfkuI3liLDku7vkvZXnu5PmnpzjgILo
+  p6PlhrPmlrnms5XlvojnroDljZXvvIzlnKjlhoXlrrnkuK3pmo/kvr/mt7vl
+  iqDku4DkuYjkuKrlrZfmr43mlbDlrZflsLHooYzkuobjgII=
+
+date: 2009-07-18 08:03:42 +08:00
+wordpress_url: http://blog.59trip.com/?p=326
+---
+一个多月前买59trip.com这个域名的时候，没想太多要做个什么样的网站，只是觉得这个域名还值得花10美刀买下来。后来就做了这个博客，天天写一些工作中碰到的技术问题，总结一下学习到的东西，顺便尝试一些新东西。但是<a href="http://www.59trip.com">www.59trip.com</a>这个子域一直空着，毕竟域名和旅游相关，那么还是应该做个旅游相关的网站。没那么多精力，<a href="http://getlilina.org/">lilina</a>是个不错的选择，只需要我去找找好玩的博客，然后聚合到一起。
+
+lilina也很久没更新了，最新的稳定版本是几年前的0.7，1.0遥遥无期，不过我还是下了个每日构建版，有问题大不了自己改。装上之后果然不能用，添加feeds之后，首页一直没有任何显示，一步一步找问题，最后发现是lilina使用的<a href="http://simplepie.org/">simplepie</a>这个开源的RSS解析器的问题。
+<!--more-->
+打开文件： lilina/inc/contrib/simplepie/simplepie.inc，在1508行，使用了一个字符串“<foo>&amp;</foo>”来测试php自带的xml解析器是否能正常工作；可惜我的php 5.2.9版本就是不能正常工作，于是就一路返回得不到任何结果。解决方法很简单，在内容中随便添加什么个字母数字就行了。
+<!--more-->
+<pre class=php name=code>1505    if ($xml_is_sane === null)
+1506    {
+1507            $parser_check = xml_parser_create();
+1508            xml_parse_into_struct($parser_check, 
+                        '<foo>123&amp;</foo>', $values);
+1509            xml_parser_free($parser_check);
+1510            $xml_is_sane = isset($values[0]['value']);
+1511    }
+1512    if (!$xml_is_sane)
+1513    {
+1514            return false;
+1515    }</pre>
+
+查php的手册，<a href="http://cn2.php.net/manual/en/function.xml-parse-into-struct.php">xml_parse_into_struct</a>这个函数应该是支持解析“&amp;”这样的字符串的，
+
+<em>This is a great little function for a lot of XML work, but note that this function does not handle XML entities properly.
+
+<strong>The basic XML entities &lt; &gt; &amp; &quot; are fine</strong>, just anything else will not work:
+
+If the entity is defined in the XML header, the parser will drop it completely from the struct it creates.
+
+If the entity is not defined in the XML then the parser will crash out with an undefined entity error.
+
+You should be able to work around this limitation by using a preg_replace on your XML string before passing it to the parser.
+
+(Further details in Bug #35271; this is just a warning to those thinking of using this function for parsing real XML documents not just trivial XML examples)</em>
+
+这里有个<a href="http://bugs.php.net/bug.php?id=31139&edit=1">bug report</a>反馈了类似的问题，但是为什么现在还有呢？无论如何，可以用了，留个存照。
+[caption id="attachment_339" align="alignnone" width="300" caption="lilina"]<a href="http://pipablog.tk/wp-content/uploads/2009/07/lilina.jpg"><img src="http://pipablog.tk/wp-content/uploads/2009/07/lilina-300x175.jpg" alt="lilina" title="lilina" width="300" height="175" class="size-medium wp-image-339" /></a>[/caption]
