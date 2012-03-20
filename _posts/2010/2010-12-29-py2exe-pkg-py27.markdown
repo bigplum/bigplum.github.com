@@ -1,0 +1,47 @@
+--- 
+wordpress_id: 944
+layout: post
+title: !binary |
+  cHkyZXhl5omT5YyFcHl0aG9uMi436ISa5pys
+
+date: 2010-12-29 15:16:43 +08:00
+wordpress_url: http://pipa.tk/?p=944
+---
+在一个机器上打包的程序，放到另一个机器上运行就会报错：“由于应用程序配置不正确,程序未能启动.重新安装应用程序可能会纠正这个错误”。
+
+参考这个文章：<a href="http://www.py2exe.org/index.cgi/Tutorial#Step52">http://www.py2exe.org/index.cgi/Tutorial#Step52</a>，鼓捣了半天发现不行，还以为是windows server 2003的问题，又上网搜了半天，dependencewalk都用上了；最后又仔细阅读了一下，原来需要把Microsoft.VC90.CRT.manifest也一起放到CRT目录下，郁闷。
+
+最后如果是wxPython程序，报下面错误：
+[python]
+Traceback (most recent call last):
+  File &quot;test_wx.py&quot;, line 1, in &lt;module&gt;
+  File &quot;wxPython\__init__.pyc&quot;, line 15, in &lt;module&gt;
+  File &quot;wxPython\_wx.pyc&quot;, line 3, in &lt;module&gt;
+  File &quot;wxPython\_core.pyc&quot;, line 15, in &lt;module&gt;
+  File &quot;wx\__init__.pyc&quot;, line 45, in &lt;module&gt;
+  File &quot;wx\_core.pyc&quot;, line 4, in &lt;module&gt;
+  File &quot;wx\_core_.pyc&quot;, line 12, in &lt;module&gt;
+  File &quot;wx\_core_.pyc&quot;, line 10, in __load
+ImportError: DLL load failed: 找不到指定的模块。
+[/python]
+
+可以把msvcp90.dll放到exe同级目录。我的setup.py脚本如下。
+
+[python]
+from distutils.core import setup
+import py2exe
+from glob import glob
+
+data_files = [(&quot;Microsoft.VC90.CRT&quot;, glob(r'..\msvcrt\*.*')), \
+                ('', glob(r'..\msvcrt\MSVCP90.dll')), \
+                ('', glob(r'load.exe')) ]
+setup(
+    #options = {
+    #    &quot;py2exe&quot;: {
+    #        &quot;dll_excludes&quot;: [&quot;MSVCP90.dll&quot;]
+    #    }
+    #},
+    windows=[&quot;ui.py&quot;],
+    data_files=data_files,
+)
+[/python]

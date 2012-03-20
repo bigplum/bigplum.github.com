@@ -1,0 +1,53 @@
+--- 
+wordpress_id: 209
+layout: post
+title: !binary |
+  5aaC5L2VbW91bnTlj6/lkK/liqjnmoTnoaznm5jmmKDlg4/mlofku7Y=
+
+excerpt: !binary |
+  eGVu6Jma5ouf5py65L2/55So56Gs55uY5pig5YOP5paH5Lu25L2c5ZCv5Yqo
+  55uY77yM5q+P5qyh55Sf5oiQ5LiA5Liq6Jma5ouf5py65LmL6ZyA6KaB5ou3
+  6LSd5LiA5Lu95paH5Lu244CC6YKj5LmI5aaC5L2VbW91bnTov5nkuKrmmKDl
+  g4/mlofku7bvvIzkv67mlLnlhbbkuK3nmoTlhoXlrrnlkaLvvJ8NCg0K55u0
+  5o6l55SobW91bnQgaXNv5paH5Lu255qE5pa55rOVbW91bnTmmK/kuI3ooYzn
+  moTvvJoNClhFTi0xNDovICMgbW91bnQgLW8gbG9vcCB2bS5pbWcgL21udA0K
+  bW91bnQ6IHlvdSBtdXN0IHNwZWNpZnkgdGhlIGZpbGVzeXN0ZW0gdHlwZQ0K
+  WEVOLTE0Oi8gIyBmaWxlIHZtLmltZw0Kdm0uaW1nOiB4ODYgYm9vdCBzZWN0
+  b3IgIA==
+
+date: 2009-06-29 11:49:17 +08:00
+wordpress_url: http://blog.59trip.com/?p=209
+---
+xen虚拟机使用硬盘映像文件作启动盘，每次生成一个虚拟机之需要拷贝一份文件。那么如何mount这个映像文件，修改其中的内容呢？
+
+直接用mount iso文件的方法mount是不行的：
+XEN-14:/ # mount -o loop vm.img /mnt
+mount: you must specify the filesystem type
+XEN-14:/ # file vm.img
+vm.img: x86 boot sector  
+<!--more-->
+要跳过引导分区，从文件系统所在的地方开始mount：
+XEN-14:/ # fdisk -ul vm.img
+You must set cylinders.
+You can do this from the extra functions menu.
+
+Disk vm.img: 0 MB, 0 bytes
+255 heads, 63 sectors/track, 0 cylinders, total 0 sectors
+Units = sectors of 1 * 512 = 512 bytes
+
+     Device Boot      Start         End      Blocks   Id  System
+vm.img1              63     8385929     4192933+  83  Linux
+XEN-14:/ # mount -o loop,offset=32256 vm.img /mnt  <strong>//32256 = 63*512</strong>
+
+==============参考以下资料===================
+<a href="http://www.debian.org/doc/manuals/reference/ch-tips.zh-cn.html">http://www.debian.org/doc/manuals/reference/ch-tips.zh-cn.html</a>
+8.6.37 mount 硬盘上的镜像文件
+
+如果 file.img 文件是硬盘内容的镜像文件，而且原始硬盘的配置参数为 xxxx = (bytes/sector) * (sectors/cylinder)，那么，下面的命令将其挂载到 /mnt：
+
+     # mount -o loop,offset=xxxx file.img /mnt
+
+注意绝大部分的硬盘都是 512 bytes/sector。 
+
+============后来才看到这个===============
+<a href="http://blog.chinaunix.net/u3/93926/showart_1872743.html">http://blog.chinaunix.net/u3/93926/showart_1872743.html</a>

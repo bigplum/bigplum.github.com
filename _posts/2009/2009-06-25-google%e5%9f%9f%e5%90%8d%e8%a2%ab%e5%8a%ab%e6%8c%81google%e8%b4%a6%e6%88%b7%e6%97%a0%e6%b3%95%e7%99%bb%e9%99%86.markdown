@@ -1,0 +1,33 @@
+--- 
+wordpress_id: 174
+layout: post
+title: !binary |
+  Z29vZ2xl5Z+f5ZCN6KKr5Yqr5oyBZ29vZ2xl6LSm5oi35peg5rOV55m76ZmG
+
+excerpt: !binary |
+  5pio5pmaMTHngrnlpJrvvIxnb29nbGXlsLHml6Dms5Xorr/pl67vvIzlvZPm
+  l7blsLHmg7PmnInlj6/og73ooqvlopnkuobjgILku4rlpKnkuIrljYjlsYXn
+  hLbov5jkuI3og73orr/pl67vvIzlj6rlpb3lj6blpJbmg7Plip7ms5XjgILl
+  kIzkuovor7Tlj6bkuIDkuKrlnLDmlrnlj6/ku6Xorr/pl67vvIxwaW5nIGdv
+  b2dsZS5jb23nmoRpcOWcsOWdgOaYrzY2LjI0OS44OS4xNDfvvIzogIzmiJHo
+  v5nph4xwaW5n55qE5pivNC4zNi42Ni4xNzjvvIzml6LnhLbog73orr/pl67v
+  vIzpgqPkuYjlsLHmmK9kbnPnmoTpl67popjvvIzmnInkuKTkuKrop6PlhrPl
+  ip7ms5XvvJoNCg0KMS4g5L+u5pS5Yzpcd2luZG93c1xzeXN0ZW0zMlxkcml2
+  ZXJzXGV0Y1xob3N0c+aWh+S7tiwg5re75YqgDQo2Ni4yNDkuODkuMTQ3IGdv
+  b2dsZS5jb20gd3d3Lmdvb2dsZS5jb20=
+
+date: 2009-06-25 13:12:08 +08:00
+wordpress_url: http://blog.59trip.com/?p=174
+---
+昨晚11点多，google就无法访问，当时就想有可能被墙了。今天上午居然还不能访问，只好另外想办法。同事说另一个地方可以访问，ping google.com的ip地址是66.249.89.147，而我这里ping的是4.36.66.178，既然能访问，那么就是dns的问题，有两个解决办法：
+
+1. 修改c:\windows\system32\drivers\etc\hosts文件, 添加
+66.249.89.147 google.com www.google.com
+<!--more-->
+2. 把本机的dns修改为<a href="http://www.opendns.com">opendns</a>:
+208.67.222.222
+208.67.220.220
+
+<img src="http://pipablog.tk/wp-content/uploads/2009/06/dns1.png" alt="dns2" title="dns2" width="364" height="416" class="aligncenter size-full wp-image-177" />
+<img src="http://pipablog.tk/wp-content/uploads/2009/06/dns2.gif" alt="dns2" title="dns2" width="364" height="416" class="aligncenter size-full wp-image-177" />
+<img src="http://pipablog.tk/wp-content/uploads/2009/06/dns3.gif" alt="dns2" title="dns2" width="364" height="416" class="aligncenter size-full wp-image-177" />

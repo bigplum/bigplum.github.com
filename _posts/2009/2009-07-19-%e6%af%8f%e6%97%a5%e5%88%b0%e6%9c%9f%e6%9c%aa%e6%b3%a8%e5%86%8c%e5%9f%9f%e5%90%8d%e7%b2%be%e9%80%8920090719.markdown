@@ -1,0 +1,42 @@
+--- 
+wordpress_id: 353
+layout: post
+title: !binary |
+  5q+P5pel5Yiw5pyf5pyq5rOo5YaM5Z+f5ZCN57K+6YCJKDIwMDkwNzE5KSAg
+  ICAgICAg
+
+excerpt: !binary |
+  5YGa5LqG5LiA5Liq5bCP56iL5bqP77yM5q+P5aSp5pep5LiK5a6a5pe25p+l
+  6K+i5YmN5LiA5aSp5pma5LiK5Yiw5pyf55qE5Z+f5ZCN77yb5LiA6Iis5Yiw
+  5pyf5rKh57ut6LS555qE5Z+f5ZCN5Zyo6L+H5LqGcGVuZGluZyBkZWxldGXm
+  nJ/pmZDlkI7vvIzlnKjkuJzlhavljLrnmoTlh4zmmagy772eNOeCueW3puWP
+  s+iiq+WIoOmZpO+8jOi/meaXtuWAmeWwseacieW+iOWkmuS4k+S4mueahOWF
+  rOWPuOWcqOW4ruS6uuaKouazqOWfn+WQje+8jOS+i+Wmgu+8mjxhIGhyZWY9
+  InBvb2wuY29tIj5wb29sPC9hPuOAgTxhIGhyZWY9Imh0dHBzOi8vd3d3LnNu
+  YXBuYW1lcy5jb20vIj5zbmFwbmFtZXM8L2E+562J77yb5Lu36ZKx5LiA6Iis
+  5ZyoNjDnvo7liIDlt6blj7PjgIINCg0K5pys552A5bCR6Iqx6ZKx5aSa5Y2K
+  5LqL55qE5Y6f5YiZ77yM5oiR5Lus6L+Y5piv5om+5om+5Lq65a625oqi5a6M
+  5LmL5ZCO55qE5Z+f5ZCN77yM6K+05LiN5a6a5bCx6IO95Y+R546w5LiA5Lqb
+  5pyJ5Lu35YC855qE5Z+f5ZCN5ZOm44CC5YmN5Lik5ZGo5bCx57uZa3Bybmlu
+  Z+aJvuS6huS4gOS4qmJvb2sxMDAuY29t55qE5Z+f5ZCN77yMaG9ob+OAgg0K
+  DQrov5nkuKrnqIvluo/mr4/lpKk454K55bem5Y+z6L+Q6KGM77yM6Ieq5Yqo
+  cG9zdOWIsOacrOWNmuWuouOAguafpeaJvuinhOWImeaYr++8mjPkuKrlrZfm
+  r43ku6XlhoXnmoQuY29tLy5uZXTln5/lkI3vvIzljIXlkKvkuIDkupvlhbPp
+  lK7lrZfnmoTlubbkuJTplb/luqbkuLrlhbPplK7lrZfplb/luqYrMueahC5j
+  b23ln5/lkI3jgILlpKflrrblpoLmnpzmnInmg7PopoHmn6Xmib7nmoTlhbPp
+  lK7lrZfvvIzlj6/ku6XnlZnoqIDmiJbogIXlj5Hpgq7ku7bnu5nmiJHjgIIN
+  Cg0K5LiL6Z2i6YO95piv5b2T5aSp5Yiw5pyf5LiU5pyq6KKr5Lq65oqi5rOo
+  55qE5Z+f5ZCNOg==
+
+date: 2009-07-19 18:20:55 +08:00
+wordpress_url: http://blog.59trip.com/archives/353
+---
+做了一个小程序，每天早上定时查询前一天晚上到期的域名；一般到期没续费的域名在过了pending delete期限后，在东八区的凌晨2～4点左右被删除，这时候就有很多专业的公司在帮人抢注域名，例如：<a href="pool.com">pool</a>、<a href="https://www.snapnames.com/">snapnames</a>等；价钱一般在60美刀左右。
+
+本着少花钱多半事的原则，我们还是找找人家抢完之后的域名，说不定就能发现一些有价值的域名哦。前两周就给kprning找了一个book100.com的域名，hoho。
+
+这个程序每天8点左右运行，自动post到本博客。查找规则是：3个字母以内的.com/.net域名，包含一些关键字的并且长度为关键字长度+2的.com域名。大家如果有想要查找的关键字，可以留言或者发邮件给我。
+
+下面都是当天到期且未被人抢注的域名:
+<!--more-->
+<br xmlns="http://www.w3.org/2005/Atom"/><a href="http://www.domaintools.com/moviect.com" target="_blank">moviect.com</a><br/><a href="http://www.domaintools.com/trip2u.com" target="_blank">trip2u.com</a><br/><a href="http://www.domaintools.com/zkbar.com" target="_blank">zkbar.com</a><br/><a href="http://www.domaintools.com/1qq0.com" target="_blank">1qq0.com</a><br/><a href="http://www.domaintools.com/qq-4.com" target="_blank">qq-4.com</a><br/><a href="http://www.domaintools.com/qq-5.com" target="_blank">qq-5.com</a><br/><a href="http://www.domaintools.com/qq-6.com" target="_blank">qq-6.com</a><br/><a href="http://www.domaintools.com/qq-7.com" target="_blank">qq-7.com</a><br/><a href="http://www.domaintools.com/77www.com" target="_blank">77www.com</a><br/><a href="http://www.domaintools.com/g2www.com" target="_blank">g2www.com</a><br/><a href="http://www.domaintools.com/e8game.com" target="_blank">e8game.com</a><br/><a href="http://www.domaintools.com/hsmobile.com" target="_blank">hsmobile.com</a><br/><a href="http://www.domaintools.com/mobilekj.com" target="_blank">mobilekj.com</a><br/><a href="http://www.domaintools.com/yjmobile.com" target="_blank">yjmobile.com</a><br/><a href="http://www.domaintools.com/htfilm.com" target="_blank">htfilm.com</a><br/><a href="http://www.domaintools.com/stockpx.com" target="_blank">stockpx.com</a><br/><a href="http://www.domaintools.com/t0stock.com" target="_blank">t0stock.com</a><br/><a href="http://www.domaintools.com/ltd5.com" target="_blank">ltd5.com</a><br/><a href="http://www.domaintools.com/8goods.com" target="_blank">8goods.com</a><br/><a href="http://www.domaintools.com/2ehi.com" target="_blank">2ehi.com</a><br/><a href="http://www.domaintools.com/hzfund.com" target="_blank">hzfund.com</a><br/><a href="http://www.domaintools.com/rofund.com" target="_blank">rofund.com</a><br/><a href="http://www.domaintools.com/tudou11.com" target="_blank">tudou11.com</a><br/><a href="http://www.domaintools.com/163rx.com" target="_blank">163rx.com</a><br/><a href="http://www.domaintools.com/163u0.com" target="_blank">163u0.com</a><br/><a href="http://www.domaintools.com/to163.com" target="_blank">to163.com</a><br/><a href="http://www.domaintools.com/wv163.com" target="_blank">wv163.com</a><br/><a href="http://www.domaintools.com/li188.com" target="_blank">li188.com</a><br/><a href="http://www.domaintools.com/zq188.com" target="_blank">zq188.com</a><br/><a href="http://www.domaintools.com/pa189.com" target="_blank">pa189.com</a><br/>        
