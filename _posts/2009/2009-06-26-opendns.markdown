@@ -31,11 +31,11 @@ wordpress_url: http://blog.59trip.com/?p=187
 
 opendns不光是一个dns解析服务器，更是一个很好的安全工具，安全策略支持对各类黄色网站，非法网站，钓鱼网站等等超过50个类别的不安全网站的过滤；用户可以自定义网络的安全级别，如图所示：
 
-<a href="http://pipablog.tk/wp-content/uploads/2009/06/features_content_filtering.gif"><img class="alignnone size-medium wp-image-188" title="features_content_filtering" src="http://pipablog.tk/wp-content/uploads/2009/06/features_content_filtering-300x141.gif" alt="features_content_filtering" width="300" height="141" /></a>
+<a href="/assets/uploads/2009/06/features_content_filtering.gif"><img class="alignnone size-medium wp-image-188" title="features_content_filtering" src="/assets/uploads/2009/06/features_content_filtering-300x141.gif" alt="features_content_filtering" width="300" height="141" /></a>
 <!--more-->
 使用这些安全措施，你只需要花几分钟在电脑上配置一下dns服务器，在opendns上注册一个账号，就可以自定义安全级别，相比之下所谓的花季护航软件的臃肿、愚蠢一览无遗。
 
-<a href="http://pipablog.tk/wp-content/uploads/2009/06/create_opendns.GIF"><img class="aligncenter size-medium wp-image-191" title="create_opendns" src="http://pipablog.tk/wp-content/uploads/2009/06/create_opendns-300x166.GIF" alt="create_opendns" width="300" height="166" /></a>
+<a href="/assets/uploads/2009/06/create_opendns.GIF"><img class="aligncenter size-medium wp-image-191" title="create_opendns" src="/assets/uploads/2009/06/create_opendns-300x166.GIF" alt="create_opendns" width="300" height="166" /></a>
 
 opendns的主页上显示超过20000的学校在使用他们的服务，以保证学生的网络安全。“Find out why over 20,000 schools like yours are using OpenDNS to keep their kids safe online.”
 

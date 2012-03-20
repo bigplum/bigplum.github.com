@@ -27,4 +27,4 @@ Google的chrome浏览器比较低调，不像IE和firefox的升级新闻铺天�
 不想看的话可以直接点击这个链接升级：<a href="http://www.google.com/chrome/eula.html?extra=betachannel">http://www.google.com/chrome/eula.html?extra=betachannel</a>，这个是beta版相对比dev版稳定点。
 <!--more-->
 安装完最新版之后，来这里可以更换chrome的主题：<a href="http://tools.google.com/chrome/intl/zh_CN/themes/index.html">http://tools.google.com/chrome/intl/zh_CN/themes/index.html</a>。
-<a href="http://pipablog.tk/wp-content/uploads/2009/08/chrome.jpg"><img src="http://pipablog.tk/wp-content/uploads/2009/08/chrome-300x189.jpg" alt="chrome" title="chrome" width="300" height="189" class="alignnone size-medium wp-image-493" /></a>
+<a href="/assets/uploads/2009/08/chrome.jpg"><img src="/assets/uploads/2009/08/chrome-300x189.jpg" alt="chrome" title="chrome" width="300" height="189" class="alignnone size-medium wp-image-493" /></a>

@@ -39,13 +39,13 @@ wordpress_url: http://blog.59trip.com/?p=469
 1. 下载安装
 <a href="http://www.cygwin.cn/setup.exe">点击此处下载setup.exe</a>
 运行之后，一路回车，在选择安装源时可以输入:http://www.cygwin.cn/pub/，然后点击add添加国内的镜像。
-<a href="http://pipablog.tk/wp-content/uploads/2009/08/source2.png"><img src="http://pipablog.tk/wp-content/uploads/2009/08/source2-300x231.png" alt="安装源" title="source2" width="300" height="231" class="size-medium wp-image-471" /></a>
+<a href="/assets/uploads/2009/08/source2.png"><img src="/assets/uploads/2009/08/source2-300x231.png" alt="安装源" title="source2" width="300" height="231" class="size-medium wp-image-471" /></a>
 
 要做开发，需要安装编译器gcc和调试器gdb，在接下来的Select package窗口里选择这两个包；（cygwin的安装程序可以随时运行，安装需要的软件包）
 打开devel类别的安装包列表：
-<a href="http://pipablog.tk/wp-content/uploads/2009/08/cygwin_devel.jpg"><img src="http://pipablog.tk/wp-content/uploads/2009/08/cygwin_devel-300x120.jpg" alt="cygwin_devel" title="cygwin_devel" width="300" height="120" class="alignnone size-medium wp-image-472" /></a>
+<a href="/assets/uploads/2009/08/cygwin_devel.jpg"><img src="/assets/uploads/2009/08/cygwin_devel-300x120.jpg" alt="cygwin_devel" title="cygwin_devel" width="300" height="120" class="alignnone size-medium wp-image-472" /></a>
 选择点击gcc-core包名前的skip(未安装显示为skip，点击后会显示将安装的版本号)，同时安装程序会自动选择其所依赖的软件包：
-<a href="http://pipablog.tk/wp-content/uploads/2009/08/cygwin_gcc.JPG"><img src="http://pipablog.tk/wp-content/uploads/2009/08/cygwin_gcc-300x91.jpg" alt="cygwin_gcc" title="cygwin_gcc" width="300" height="91" class="alignnone size-medium wp-image-479" /></a>
+<a href="/assets/uploads/2009/08/cygwin_gcc.JPG"><img src="/assets/uploads/2009/08/cygwin_gcc-300x91.jpg" alt="cygwin_gcc" title="cygwin_gcc" width="300" height="91" class="alignnone size-medium wp-image-479" /></a>
 同样再选上gdb
 
 2. 运行，并使用gcc
@@ -59,12 +59,12 @@ main()
     exit(0);
 }</pre>
 然后在cygwin中，就能看到，并且编译该文件：
-<a href="http://pipablog.tk/wp-content/uploads/2009/08/cygwin_run..jpg"><img src="http://pipablog.tk/wp-content/uploads/2009/08/cygwin_run.-300x193.jpg" alt="cygwin_run." title="cygwin_run." width="300" height="193" class="alignnone size-medium wp-image-476" /></a>
+<a href="/assets/uploads/2009/08/cygwin_run..jpg"><img src="/assets/uploads/2009/08/cygwin_run.-300x193.jpg" alt="cygwin_run." title="cygwin_run." width="300" height="193" class="alignnone size-medium wp-image-476" /></a>
 注：linux下gcc默认生成a.out的可执行文件，windows平台下该文件为a.exe，可通过gcc -o选项制定输出文件的文件名。
 
 3. 使用gdb
 gdb是款很优秀的调试工具，linux下开发基本就靠它了。使用gdb，需要在gcc编译时增加编译选项-g。
-<a href="http://pipablog.tk/wp-content/uploads/2009/08/cygwin_gdb.jpg"><img src="http://pipablog.tk/wp-content/uploads/2009/08/cygwin_gdb-233x300.jpg" alt="cygwin_gdb" title="cygwin_gdb" width="233" height="300" class="alignnone size-medium wp-image-481" /></a>
+<a href="/assets/uploads/2009/08/cygwin_gdb.jpg"><img src="/assets/uploads/2009/08/cygwin_gdb-233x300.jpg" alt="cygwin_gdb" title="cygwin_gdb" width="233" height="300" class="alignnone size-medium wp-image-481" /></a>
 命令解释：
 gdb a.exe 打开一个目标文件
 l  列出当前的代码段

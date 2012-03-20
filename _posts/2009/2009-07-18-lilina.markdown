@@ -60,4 +60,4 @@ You should be able to work around this limitation by using a preg_replace on you
 (Further details in Bug #35271; this is just a warning to those thinking of using this function for parsing real XML documents not just trivial XML examples)</em>
 
 这里有个<a href="http://bugs.php.net/bug.php?id=31139&edit=1">bug report</a>反馈了类似的问题，但是为什么现在还有呢？无论如何，可以用了，留个存照。
-[caption id="attachment_339" align="alignnone" width="300" caption="lilina"]<a href="http://pipablog.tk/wp-content/uploads/2009/07/lilina.jpg"><img src="http://pipablog.tk/wp-content/uploads/2009/07/lilina-300x175.jpg" alt="lilina" title="lilina" width="300" height="175" class="size-medium wp-image-339" /></a>[/caption]
+[caption id="attachment_339" align="alignnone" width="300" caption="lilina"]<a href="/assets/uploads/2009/07/lilina.jpg"><img src="/assets/uploads/2009/07/lilina-300x175.jpg" alt="lilina" title="lilina" width="300" height="175" class="size-medium wp-image-339" /></a>[/caption]

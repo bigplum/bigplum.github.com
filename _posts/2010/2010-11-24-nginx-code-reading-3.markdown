@@ -53,4 +53,4 @@ struct ngx_listening_s {
 [/c]
 
 整个流程见下图：
-<a href="http://pipablog.tk/wp-content/uploads/2010/11/nginx_http_init.jpg"><img src="http://pipablog.tk/wp-content/uploads/2010/11/nginx_http_init.jpg" alt="nginx_http_init" title="nginx_http_init" width="1021" height="354" class="alignnone size-full wp-image-901" /></a>
+<a href="/assets/uploads/2010/11/nginx_http_init.jpg"><img src="/assets/uploads/2010/11/nginx_http_init.jpg" alt="nginx_http_init" title="nginx_http_init" width="1021" height="354" class="alignnone size-full wp-image-901" /></a>

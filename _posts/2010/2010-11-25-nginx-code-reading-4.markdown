@@ -15,7 +15,7 @@ date: 2010-11-25 08:46:31 +08:00
 wordpress_url: http://pipa.tk/?p=905
 ---
 从ngx_http_init_request() 入手，可以很容易分析http模块的处理流程。从http请求头开始解析，根据http版本走不同流程，处理请求头各个字段，直到ngx_http_core_run_phases()。 
-<a href="http://pipablog.tk/wp-content/uploads/2010/11/nginx_http.jpg"><img src="http://pipablog.tk/wp-content/uploads/2010/11/nginx_http.jpg" alt="nginx_http" title="nginx_http" width="570" height="521" class="alignnone size-full wp-image-907" /></a>
+<a href="/assets/uploads/2010/11/nginx_http.jpg"><img src="/assets/uploads/2010/11/nginx_http.jpg" alt="nginx_http" title="nginx_http" width="570" height="521" class="alignnone size-full wp-image-907" /></a>
 
 <strong>1. http输入</strong>
 ngx_http_core_run_phases()函数开始执行http各个phase的函数指针，http其他模块的处理函数全都挂到ph数组中，在这里挨个调用之。

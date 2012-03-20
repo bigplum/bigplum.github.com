@@ -28,10 +28,10 @@ wordpress_url: http://pipa.tk/?p=854
 dbank是一个网盘，作为一个有理想的网盘，他开放了部分接口，可以供第三方开发应用。dbank有发布文件外链的功能，利用这个功能我们可以把下载流量分流给网盘，节省虚拟主机或VPS的流量。。。可以搞一个下载站了。
 
 安装这个插件之后，wordpress的编辑文章界面中，会出现一个dbank的图标：
-<a href="http://pipablog.tk/wp-content/uploads/2010/10/dbank-uploader-button.png"><img class="alignnone size-full wp-image-860" title="dbank-uploader-button" src="http://pipablog.tk/wp-content/uploads/2010/10/dbank-uploader-button.png" alt="dbank-uploader-button" width="691" height="381" /></a>
+<a href="/assets/uploads/2010/10/dbank-uploader-button.png"><img class="alignnone size-full wp-image-860" title="dbank-uploader-button" src="/assets/uploads/2010/10/dbank-uploader-button.png" alt="dbank-uploader-button" width="691" height="381" /></a>
 
 点击图标之后，会弹出dbank登录界面，登录dbank之后，就会显示网盘中的目录和文件，选取需要的文件，点击完成，就会自动把外链url贴到编辑页面：
-<a href="http://pipablog.tk/wp-content/uploads/2010/10/dbank-uploader-explorer.png"><img class="alignnone size-full wp-image-861" title="dbank-uploader-explorer" src="http://pipablog.tk/wp-content/uploads/2010/10/dbank-uploader-explorer.png" alt="dbank-uploader-explorer" width="691" height="543" /></a>
+<a href="/assets/uploads/2010/10/dbank-uploader-explorer.png"><img class="alignnone size-full wp-image-861" title="dbank-uploader-explorer" src="/assets/uploads/2010/10/dbank-uploader-explorer.png" alt="dbank-uploader-explorer" width="691" height="543" /></a>
 
 <strong> 安装方法：</strong>
 1。 从这里下载：<a href="http://wordpress.org/extend/plugins/dbank-uploader/">http://wordpress.org/extend/plugins/dbank-uploader/</a>

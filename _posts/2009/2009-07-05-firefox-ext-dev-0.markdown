@@ -31,7 +31,7 @@ wordpress_url: http://blog.59trip.com/?p=236
 去年8、9月份时研究了一阵rich application client，浏览了很多ajax、flash、xul、widget等技术的分析文章，公司内部有份技术选型文档的分析颇为到位，列出了几种技术的侧重点，虽然仅仅是选来做测试自动化，但对互联网的这几种技术却剖析的丝丝入扣。当时还想做一些widget的探索，就搭建了一个firefox开发环境，用xul做了一个小例子。
 
 mozilla firefox发展了这么多年，已经形成了一套自成体系的开发环境，Google浏览器chrome这个名字就来自mozilla开发、运行框架的名字chrome；你可以在firefox的地址栏中输入：<a href="chrome://browser/content/browser.xul">chrome://browser/content/browser.xul</a>, 就会发现firefox的标签页中又嵌套了一个firefox。<!--more-->
-[caption id="attachment_239" align="alignnone" width="300" caption="firefox嵌套firefox"]<a href="http://pipablog.tk/wp-content/uploads/2009/07/firefox_chrome.PNG"><img src="http://pipablog.tk/wp-content/uploads/2009/07/firefox_chrome-300x221.PNG" alt="firefox嵌套firefox" title="firefox_chrome" width="300" height="221" class="size-medium wp-image-239" /></a>[/caption]
+[caption id="attachment_239" align="alignnone" width="300" caption="firefox嵌套firefox"]<a href="/assets/uploads/2009/07/firefox_chrome.PNG"><img src="/assets/uploads/2009/07/firefox_chrome-300x221.PNG" alt="firefox嵌套firefox" title="firefox_chrome" width="300" height="221" class="size-medium wp-image-239" /></a>[/caption]
 
 firefox就是mozilla开发框架的一个优秀作品，并且其自身还是一个运行、开发环境，所以在其平台之上衍生出了很多优秀的插件工具，共同构件了一个良好的web应用的生态环境。firefox开发环境用到的主要开发语言为html, javascript, xul；如果你是一个ajax高手，那么开发一个firefox插件将得心应手。
 

@@ -14,9 +14,9 @@ wordpress_url: http://blog.59trip.com/?p=268
 
 “php curl用法” 这个关键词的排名在6月份是7，还能在第一页显示：
 <!--more-->
-[caption id="attachment_269" align="alignnone" width="300" caption="php curl"]<a href="http://pipablog.tk/wp-content/uploads/2009/07/php_curl.jpg"><img src="http://pipablog.tk/wp-content/uploads/2009/07/php_curl-300x137.jpg" alt="php curl" title="php_curl" width="300" height="137" class="size-medium wp-image-269" /></a>[/caption]
+[caption id="attachment_269" align="alignnone" width="300" caption="php curl"]<a href="/assets/uploads/2009/07/php_curl.jpg"><img src="/assets/uploads/2009/07/php_curl-300x137.jpg" alt="php curl" title="php_curl" width="300" height="137" class="size-medium wp-image-269" /></a>[/caption]
 
 结果今天再进行搜索的时候，发现本站已经在<a href="http://google.com/search?q=php+curl%E7%94%A8%E6%B3%95">搜索结果的第一页</a>消失了，而javaeye的文章跑到了第三位：
-[caption id="attachment_270" align="alignnone" width="300" caption="php curl"]<a href="http://pipablog.tk/wp-content/uploads/2009/07/javaeye_php_curl.jpg"><img src="http://pipablog.tk/wp-content/uploads/2009/07/javaeye_php_curl-300x286.jpg" alt="php curl" title="javaeye_php_curl" width="300" height="286" class="size-medium wp-image-270" /></a>[/caption]
+[caption id="attachment_270" align="alignnone" width="300" caption="php curl"]<a href="/assets/uploads/2009/07/javaeye_php_curl.jpg"><img src="/assets/uploads/2009/07/javaeye_php_curl-300x286.jpg" alt="php curl" title="javaeye_php_curl" width="300" height="286" class="size-medium wp-image-270" /></a>[/caption]
 
 由此可见，搜索引擎对重复内容的惩罚是多么严重，权重大的网站上的内容会覆盖小网站的重复内容。

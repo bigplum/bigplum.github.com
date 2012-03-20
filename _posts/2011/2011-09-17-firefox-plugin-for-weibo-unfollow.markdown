@@ -12,7 +12,7 @@ wordpress_url: http://pipa.tk/?p=1042
 
 下载：<a href="http://userscripts.org/scripts/show/113215">http://userscripts.org/scripts/show/113215</a>
 
-<a href="http://pipablog.tk/wp-content/uploads/2011/09/weibohelper.jpg"><img src="http://pipablog.tk/wp-content/uploads/2011/09/weibohelper-299x165.jpg" alt="weibohelper" title="weibohelper" width="299" height="165" class="alignnone size-medium wp-image-1043" /></a>
+<a href="/assets/uploads/2011/09/weibohelper.jpg"><img src="/assets/uploads/2011/09/weibohelper-299x165.jpg" alt="weibohelper" title="weibohelper" width="299" height="165" class="alignnone size-medium wp-image-1043" /></a>
 
 <strong>注：</strong>
 1. 还不支持微博刚出的beta版;

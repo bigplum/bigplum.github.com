@@ -47,7 +47,7 @@ wordpress_url: http://blog.59trip.com/?p=272
 4. 将这个文件的内容改为  C:\work\kaixin\  (<strong>注意，必须要有最后一个"\"</strong>)
 5. 重启firefox，就能从 "工具-&gt;附加组件" 中看到新增加的插件了;
 <!--more-->
-我们来体验一下这个插件，单击该附件的选项按钮，<a href="http://pipablog.tk/wp-content/uploads/2009/07/kaixin_prefer.jpg"><img class="size-medium wp-image-278" title="kaixin_prefer" src="http://pipablog.tk/wp-content/uploads/2009/07/kaixin_prefer-300x289.jpg" alt="kaixin_prefer" width="300" height="289" /></a>单击菜单 “工具-&gt;You localized menuitem”, 会弹出“hello world” 对话框。<a href="http://pipablog.tk/wp-content/uploads/2009/07/kaixin_menu.jpg"><img class="size-medium wp-image-279" title="kaixin_menu" src="http://pipablog.tk/wp-content/uploads/2009/07/kaixin_menu-213x300.jpg" alt="kaixin_menu" width="213" height="300" /></a>
+我们来体验一下这个插件，单击该附件的选项按钮，<a href="/assets/uploads/2009/07/kaixin_prefer.jpg"><img class="size-medium wp-image-278" title="kaixin_prefer" src="/assets/uploads/2009/07/kaixin_prefer-300x289.jpg" alt="kaixin_prefer" width="300" height="289" /></a>单击菜单 “工具-&gt;You localized menuitem”, 会弹出“hello world” 对话框。<a href="/assets/uploads/2009/07/kaixin_menu.jpg"><img class="size-medium wp-image-279" title="kaixin_menu" src="/assets/uploads/2009/07/kaixin_menu-213x300.jpg" alt="kaixin_menu" width="213" height="300" /></a>
 
 接着继续改造这个插件，做一个一键登录开心网的功能。从“选项”对话框中填入开心网的账号和密码，然后点击login登录到开心网。
 
@@ -82,7 +82,7 @@ oncommand="kaixin_options.DisableAutoSignIn()"/&gt;
 &lt;/prefpane&gt;
 &lt;/prefwindow&gt;
 </pre>
-效果如图：<a href="http://pipablog.tk/wp-content/uploads/2009/07/kaixin_pref.jpg"><img class="size-full wp-image-285" title="kaixin_pref" src="http://pipablog.tk/wp-content/uploads/2009/07/kaixin_pref.jpg" alt="kaixin_pref" width="205" height="208" /></a>
+效果如图：<a href="/assets/uploads/2009/07/kaixin_pref.jpg"><img class="size-full wp-image-285" title="kaixin_pref" src="/assets/uploads/2009/07/kaixin_pref.jpg" alt="kaixin_pref" width="205" height="208" /></a>
 
 2. 自动生成的菜单按钮不方便使用，把它修改成工具栏上的按钮
 <pre class=xml name=code>
@@ -117,7 +117,7 @@ image="chrome://kaixin/skin/options.png" fixed="yes" hidden="false" oncommand="k
 &lt;/menubar&gt;
 &lt;/overlay&gt;
 </pre>
-效果如图：<a href="http://pipablog.tk/wp-content/uploads/2009/07/toolbar.jpg"><img class="size-full wp-image-289" title="toolbar" src="http://pipablog.tk/wp-content/uploads/2009/07/toolbar.jpg" alt="toolbar" width="161" height="88" /></a>
+效果如图：<a href="/assets/uploads/2009/07/toolbar.jpg"><img class="size-full wp-image-289" title="toolbar" src="/assets/uploads/2009/07/toolbar.jpg" alt="toolbar" width="161" height="88" /></a>
 
 3. 实现事件处理的javascript函数，这里只捡几个重要的说明一下
 保存用户名密码：

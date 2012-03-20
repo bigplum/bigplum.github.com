@@ -42,19 +42,19 @@ date: 2009-07-06 23:56:38 +08:00
 wordpress_url: http://blog.59trip.com/?p=246
 ---
 首先安装一个扩展开发工具（<a href="http://ted.mielczarek.org/code/mozilla/extensiondev/extensiondev.xpi">先右击另存</a>），如果直接安装会提示“"Extension Developer" 将不会被安装，因为它未提供安全更新”，需要修改一下。
-[caption id="attachment_247" align="alignnone" width="300" caption="extention dev"]<a href="http://pipablog.tk/wp-content/uploads/2009/07/extdev.PNG"><img src="http://pipablog.tk/wp-content/uploads/2009/07/extdev-300x97.PNG" alt="extention dev" title="extdev" width="300" height="97" class="size-medium wp-image-247" /></a>[/caption]
+[caption id="attachment_247" align="alignnone" width="300" caption="extention dev"]<a href="/assets/uploads/2009/07/extdev.PNG"><img src="/assets/uploads/2009/07/extdev-300x97.PNG" alt="extention dev" title="extdev" width="300" height="97" class="size-medium wp-image-247" /></a>[/caption]
 
 firefox扩展打包文件的扩展名为xpi，其实是个zip包，将扩展名改为zip，解压。修改install.rdf，删除下面这行：
     <em:updateURL>http://ted.mielczarek.org/code/mozilla/extensiondev/extensiondev.rdf</em:updateURL>
 保存，重新压缩成extensiondev.zip，改为extensiondev.xpi，将文件拖到firefox的窗口中，就可以安装上了。
-<a href="http://pipablog.tk/wp-content/uploads/2009/07/intextdev.PNG"><img src="http://pipablog.tk/wp-content/uploads/2009/07/intextdev-300x128.PNG" alt="intextdev" title="intextdev" width="300" height="128" class="alignnone size-medium wp-image-250" /></a>
+<a href="/assets/uploads/2009/07/intextdev.PNG"><img src="/assets/uploads/2009/07/intextdev-300x128.PNG" alt="intextdev" title="intextdev" width="300" height="128" class="alignnone size-medium wp-image-250" /></a>
 如果提示“安装脚本未找到 -204”，有可能是zip包的压缩格式不对，可以直接修改zip包，而不是解压后再压缩。
 <!--more-->
 extentiondev提供了很多个实用的工具，其中xul编辑器将使调试firefox扩展变得很容易。
-<a href="http://pipablog.tk/wp-content/uploads/2009/07/extdevtool.PNG"><img src="http://pipablog.tk/wp-content/uploads/2009/07/extdevtool.PNG" alt="extdevtool" title="extdevtool" width="234" height="215" class="alignnone size-full wp-image-254" /></a>
+<a href="/assets/uploads/2009/07/extdevtool.PNG"><img src="/assets/uploads/2009/07/extdevtool.PNG" alt="extdevtool" title="extdevtool" width="234" height="215" class="alignnone size-full wp-image-254" /></a>
 
 下面进入正题，Extension Developer's Extension的作者还开发了一个<a href="http://ted.mielczarek.org/code/mozilla/extensionwiz/">Firefox/Thunderbird Extension Wizard</a>，通过这个向导，可以迅速生成firefo/thunderbird扩展，
-<a href="http://pipablog.tk/wp-content/uploads/2009/07/extwiz.PNG"><img src="http://pipablog.tk/wp-content/uploads/2009/07/extwiz-300x256.PNG" alt="extwiz" title="extwiz" width="300" height="256" class="alignnone size-medium wp-image-255" /></a>
+<a href="/assets/uploads/2009/07/extwiz.PNG"><img src="/assets/uploads/2009/07/extwiz-300x256.PNG" alt="extwiz" title="extwiz" width="300" height="256" class="alignnone size-medium wp-image-255" /></a>
 
 在下面几个必填项中填写扩展的基本信息：
 Your Name:	

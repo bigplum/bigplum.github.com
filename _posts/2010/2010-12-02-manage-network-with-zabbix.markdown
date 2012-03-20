@@ -14,11 +14,11 @@ wordpress_url: http://pipa.tk/?p=921
 Configuration ->  Templates 选择 Template_Linux ，点击下方的 Full clone （注：1.8.2之前的版本这个功能有问题，需要升级）。现在重新生成了一个模板，点击该模板的 Items 删掉几乎所有的检测项，留下 CPU/MEM/Out/Incoming 等重要检测项。
 
 zabbix的默认检测方式采用agent，我们的服务器都开了snmpd，所以就不用这个，改用snmp。以网卡out流量统计为例，配置如下：
-<a href="http://pipablog.tk/wp-content/uploads/2010/12/items-add.jpg"><img src="http://pipablog.tk/wp-content/uploads/2010/12/items-add.jpg" alt="items-add" title="items-add" width="596" height="625" class="alignnone size-full wp-image-923" /></a>
+<a href="/assets/uploads/2010/12/items-add.jpg"><img src="/assets/uploads/2010/12/items-add.jpg" alt="items-add" title="items-add" width="596" height="625" class="alignnone size-full wp-image-923" /></a>
 其中 SNMP OID 和 SNMP community 需要配置正确，Description 的 $1 为下面 key 中的第一个参数。
 
 配置完所有的检测项：
-<a href="http://pipablog.tk/wp-content/uploads/2010/12/items-conf.jpg"><img src="http://pipablog.tk/wp-content/uploads/2010/12/items-conf-1024x104.jpg" alt="items-conf" title="items-conf" width="1024" height="104" class="alignnone size-large wp-image-924" /></a>
+<a href="/assets/uploads/2010/12/items-conf.jpg"><img src="/assets/uploads/2010/12/items-conf-1024x104.jpg" alt="items-conf" title="items-conf" width="1024" height="104" class="alignnone size-large wp-image-924" /></a>
 
 <strong>2. 添加 Host</strong>
 Configuration ->  Templates -> Create Host
@@ -27,9 +27,9 @@ Configuration ->  Templates -> Create Host
 <strong>3. 编辑 Screen</strong>
 Configuration ->  Screens -> Create Screen
 填写页面的行列数：
-<a href="http://pipablog.tk/wp-content/uploads/2010/12/screen-init.png"><img src="http://pipablog.tk/wp-content/uploads/2010/12/screen-init.png" alt="screen-init" title="screen-init" width="652" height="137" class="alignnone size-full wp-image-926" /></a>
+<a href="/assets/uploads/2010/12/screen-init.png"><img src="/assets/uploads/2010/12/screen-init.png" alt="screen-init" title="screen-init" width="652" height="137" class="alignnone size-full wp-image-926" /></a>
 
 点击”change“ 就能将需要显示的 graph 添加到这个页面中。
-<a href="http://pipablog.tk/wp-content/uploads/2010/12/screen-add.png"><img src="http://pipablog.tk/wp-content/uploads/2010/12/screen-add.png" alt="screen-add" title="screen-add" width="781" height="464" class="alignnone size-full wp-image-927" /></a>
+<a href="/assets/uploads/2010/12/screen-add.png"><img src="/assets/uploads/2010/12/screen-add.png" alt="screen-add" title="screen-add" width="781" height="464" class="alignnone size-full wp-image-927" /></a>
 
 大功告成，回到 Monitoring -> Screens 页面，就能看到所需要的图表集中到一个页面显示了。

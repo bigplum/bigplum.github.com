@@ -8,7 +8,7 @@ date: 2011-04-20 20:46:06 +08:00
 wordpress_url: http://pipa.tk/?p=999
 ---
 折腾了一下ubuntu的主题，发现这个挺不错的。
-<a href="http://pipablog.tk/wp-content/uploads/2011/04/Screenshot.png"><img src="http://pipablog.tk/wp-content/uploads/2011/04/Screenshot-300x187.png" alt="Mac snow" title="Mac snow" width="300" height="187" class="alignnone size-medium wp-image-998" /></a>
+<a href="/assets/uploads/2011/04/Screenshot.png"><img src="/assets/uploads/2011/04/Screenshot-300x187.png" alt="Mac snow" title="Mac snow" width="300" height="187" class="alignnone size-medium wp-image-998" /></a>
 
 下载地址：<a href="http://dl.dbank.com/c07qsfzupk">http://dl.dbank.com/c07qsfzupk</a>
 

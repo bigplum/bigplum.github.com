@@ -28,6 +28,6 @@ wordpress_url: http://blog.59trip.com/?p=174
 208.67.222.222
 208.67.220.220
 
-<img src="http://pipablog.tk/wp-content/uploads/2009/06/dns1.png" alt="dns2" title="dns2" width="364" height="416" class="aligncenter size-full wp-image-177" />
-<img src="http://pipablog.tk/wp-content/uploads/2009/06/dns2.gif" alt="dns2" title="dns2" width="364" height="416" class="aligncenter size-full wp-image-177" />
-<img src="http://pipablog.tk/wp-content/uploads/2009/06/dns3.gif" alt="dns2" title="dns2" width="364" height="416" class="aligncenter size-full wp-image-177" />
+<img src="/assets/uploads/2009/06/dns1.png" alt="dns2" title="dns2" width="364" height="416" class="aligncenter size-full wp-image-177" />
+<img src="/assets/uploads/2009/06/dns2.gif" alt="dns2" title="dns2" width="364" height="416" class="aligncenter size-full wp-image-177" />
+<img src="/assets/uploads/2009/06/dns3.gif" alt="dns2" title="dns2" width="364" height="416" class="aligncenter size-full wp-image-177" />

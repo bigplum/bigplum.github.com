@@ -32,18 +32,22 @@ excerpt: !binary |
 date: 2009-09-10 15:47:24 +08:00
 wordpress_url: http://blog.59trip.com/?p=602
 ---
+
+好吧，这个游戏早已下线了。(2012-3-20)
+
 昨天，孩之宝发布了这款游戏：<a href="http://www.monopolycitystreets.com/">Monopoly City Streets</a>。前两天国内网站报道的是google和孩之宝合作推出的网络游戏，还以为google准备进军游戏业了，今天登陆上去体验了一下，更像是基于google map做的一个游戏而已，应该和google本身没什么关系。
 
 不过这款游戏挺吸引眼球的，北京二环内，香港中环，深圳中心区的大多数街道已经被瓜分完毕，想要下手的同学们要抓紧了。刚上线，服务器还很不稳定，速度极慢，体验的时候要有点耐心。
 
 show一下我抢到的107国道，^_^，紫色表示目前无主可以直接购买：
-<a href="http://pipablog.tk/wp-content/uploads/2009/09/mono_buy_list.jpg"><img src="http://pipablog.tk/wp-content/uploads/2009/09/mono_buy_list.jpg" alt="mono_buy_list" title="mono_buy_list" width="408" height="196" class="alignnone size-full wp-image-607" /></a>
+<a href="/assets/uploads/2009/09/mono_buy_list.jpg"><img src="/assets/uploads/2009/09/mono_buy_list.jpg" alt="mono_buy_list" title="mono_buy_list" width="408" height="196" class="alignnone size-full wp-image-607" /></a>
 <!--more-->
 购买界面：
-<a href="http://pipablog.tk/wp-content/uploads/2009/09/mono_buy.jpg"><img src="http://pipablog.tk/wp-content/uploads/2009/09/mono_buy.jpg" alt="mono_buy" title="mono_buy" width="242" height="380" class="alignnone size-full wp-image-606" /></a>
+<a href="/assets/uploads/2009/09/mono_buy.jpg"><img src="/assets/uploads/2009/09/mono_buy.jpg" alt="mono_buy" title="mono_buy" width="242" height="380" class="alignnone size-full wp-image-606" /></a>
 
 目前所有资产：
-<a href="http://pipablog.tk/wp-content/uploads/2009/09/mono_my_list.jpg"><img src="http://pipablog.tk/wp-content/uploads/2009/09/mono_my_list.jpg" alt="mono_my_list" title="mono_my_list" width="262" height="306" class="alignnone size-full wp-image-605" /></a>
+<a href="/assets/uploads/2009/09/mono_my_list.jpg"><img src="/assets/uploads/2009/09/mono_my_list.jpg" alt="mono_my_list" title="mono_my_list" width="262" height="306" class="alignnone size-full wp-image-605" /></a>
 
 这个攻略还不错需要翻墙阅读，请大家自备梯子：
 http://playpcesor.blogspot.com/2009/09/monopoly-city-streets-google.html
+
