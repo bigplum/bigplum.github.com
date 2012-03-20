@@ -41,8 +41,6 @@ AOF是否开启rewrite对数据插入基本没有影响，1M记录花了97s。
 rdb和aof都有明显的优缺点，如果能两种综合使用效果应该很好。例如，使用aof，并且每小时做一次snapshot，记录snapshot的时间点；在启动时先使用snapshot恢复数据，再根据aof进行重做；这样应该能大大缩短启动时间，并避免snapshot大数据库的开销。
 
 参考资料：
-<a href="http://blog.nosqlfan.com/html/199.html?ref=rediszt">Redis进阶教程-aof(append only file)日志文件</a>
-
-<a href="http://www.yiihsia.com/2011/04/%E5%AF%B9redis%E6%95%B0%E6%8D%AE%E6%8C%81%E4%B9%85%E5%8C%96%E7%9A%84%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95/">对redis数据持久化的一些想法</a>
-
-<a href="http://blog.nosqlfan.com/html/3430.html">Redis内存容量的预估和优化</a>
+- [Redis进阶教程-aof(append only file)日志文件](http://blog.nosqlfan.com/html/199.html?ref=rediszt)
+- [对redis数据持久化的一些想法](href="http://www.yiihsia.com/2011/04/%E5%AF%B9redis%E6%95%B0%E6%8D%AE%E6%8C%81%E4%B9%85%E5%8C%96%E7%9A%84%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95/")
+- [Redis内存容量的预估和优化](http://blog.nosqlfan.com/html/3430.html")
