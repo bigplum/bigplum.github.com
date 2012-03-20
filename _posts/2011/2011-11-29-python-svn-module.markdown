@@ -10,7 +10,8 @@ wordpress_url: http://pipa.tk/?p=1058
 在suse10下安装svn需要编译，挺麻烦的。安装trac和svn时，发现需要python的svn模块，找了半天找到一个pysvn，装上之后发现不是这个模块。原来应该通过swig编译svn代码。
 
 步骤如下：
-[bash]
+
+{% highlight bash%}
 cd ~/install_files
 tar zxf subversion-1.4.3.tar.gz
 cd subversion-1.4.3
@@ -27,6 +28,6 @@ ln -s /usr/local/lib/svn-python/libsvn
 ln -s /usr/local/lib/svn-python/svn
 ln -s /usr/local/lib/libsvn_swig_py-1.so.0
 Test it with python -c &quot;from svn import client&quot; (No errors should result.)
-[/bash]
+{% endhighlight %}
 
 在suse这样的系统上安装python相关的东西很痛苦，装一个trac要下好几个包，又是编译，又是用yast安装。unix的这种哲学有时候也挺不便的。
