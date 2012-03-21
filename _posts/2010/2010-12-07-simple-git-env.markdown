@@ -10,20 +10,20 @@ wordpress_url: http://pipa.tk/?p=934
 准备两个linux机器，其中一个是git服务器，主要用于备份代码；另一个是工作机。这样搞死一个也不会导致代码丢失。
 
 在git服务器上
-[bash]
+{% highlight bash%}
 #mkdir test.git
 #cd test.git
 #git --bare init
-[/bash]
+{% endhighlight %}
 在工作机上，进入代码目录：
-[bash]
+{% highlight bash%}
 #git init
 #git add .
-#git commit -am &quot;init&quot;
+#git commit -am "init"
 #git branch
 * master
 #git push root@git_server_ip:/root/nginx/test.git/ master
-[/bash]
+{% endhighlight %}
 然后就可以在工作机上建立分支，进行merge等操作了。
 
 参考资料：

@@ -23,11 +23,11 @@ make install
 make swig-py
 make install-swig-py
 cd /usr/local/lib/python2.3/site-packages
-echo /usr/local/lib/svn-python &gt; subversion.pth
+echo /usr/local/lib/svn-python > subversion.pth
 ln -s /usr/local/lib/svn-python/libsvn
 ln -s /usr/local/lib/svn-python/svn
 ln -s /usr/local/lib/libsvn_swig_py-1.so.0
-Test it with python -c &quot;from svn import client&quot; (No errors should result.)
+Test it with python -c "from svn import client" (No errors should result.)
 {% endhighlight %}
 
 在suse这样的系统上安装python相关的东西很痛苦，装一个trac要下好几个包，又是编译，又是用yast安装。unix的这种哲学有时候也挺不便的。

@@ -28,7 +28,7 @@ wordpress_url: http://blog.59trip.com/?p=315
 <pre class="javascript" name=code>function   sleep(n){
     var start=new Date().getTime();
     while(true)
-        if(new Date().getTime()-start&gt;n)
+        if(new Date().getTime()-start>n)
             break;
 }</pre>
 由于循环判断很占用CPU，甚至会导致浏览器崩溃，所以<a href="http://topic.csdn.net/t/20060303/22/4591744.html">这里</a>又有人提出了用xmlhttprequest的同步调用，来实现sleep的功能，我试了一下CPU占用率还是挺高，效果不太理想。

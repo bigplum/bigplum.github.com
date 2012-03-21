@@ -13,8 +13,8 @@ wordpress_url: http://www.xenhome.co.cc/blog/?p=36
 
 3. 解压hg，在suse下编译hg，需要修改一下代码：
 linux-myhm:~/mercurial-1.2 # vi ./hgext/inotify/linux/_inotify.c
-将#include &lt;sys/inotify.h&gt;
-改为: #include &lt;linux/inotify.h&gt;<!--more-->
+将#include <sys/inotify.h>
+改为: #include <linux/inotify.h><!--more-->
 2010-10注：新版本的hg可以直接编译，不需要修改。
 
 4. 编译hg，还需要python-devl包，从suse光盘安装，如果是其他发行版可以从网上下载安装。

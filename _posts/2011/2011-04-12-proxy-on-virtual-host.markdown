@@ -12,13 +12,13 @@ wordpress_url: http://pipa.tk/?p=991
 研究了一下，方法很简单，只要空间支持.htaccess文件(支持URL Rewrite)就可以。
 1. 如果你的GAE应用绑定的域名为 a.b.com，准备一个 a1.b.com域名指向 ght.google.com，将a.b.com指向你的虚拟主机。
 2. 在虚拟主机上完成b.com的配置，在a.b.com子域名的根目录下放下面这样的.htaccess文件；
-[bash]
-&lt;IfModule mod_rewrite.c&gt;
+{% highlight bash%}
+<IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
 RewriteRule ^(.*)$ http://a1.b.com/$1 [P]
-&lt;/IfModule&gt;
-[/bash]
+</IfModule>
+{% endhighlight %}
 3. 等dns生效之后，访问a.b.com，apache就会往a1.b.com去请求你的数据了。
 
 但是！！！虚拟主机的条款有写：

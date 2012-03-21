@@ -18,8 +18,8 @@ json_encode的输入参数数组中，如果含有非utf8的值，则该值的�
 2. 上传表单使用accept-charset设置编码格式
 post上传内容用utf8编码，可以使用accept-charset，参考下面代码
 <pre class=html name=code>
-&lt;form action="testForm.do" enctype="multipart/form-data" method="post" accept-charset="UTF-8"&gt;
-&lt;input type="text" name="test" /&gt;
-&lt;input type="submit" /&gt;
-&lt;/form&gt;
+<form action="testForm.do" enctype="multipart/form-data" method="post" accept-charset="UTF-8">
+<input type="text" name="test" />
+<input type="submit" />
+</form>
 </pre>

@@ -45,77 +45,77 @@ wordpress_url: http://blog.59trip.com/?p=272
 2. 找到firefox的插件安装目录，一般为C:\Documents and Settings\Administrator\Application Data\Mozilla\Firefox\Profiles\i32uquuo.default\extensions
 3. 在该目录下建立一个文件，命名为插件开发者的email地址，例如: kaixin@163.com(<strong>这个名字要与在向导中填写的email相同</strong>)
 4. 将这个文件的内容改为  C:\work\kaixin\  (<strong>注意，必须要有最后一个"\"</strong>)
-5. 重启firefox，就能从 "工具-&gt;附加组件" 中看到新增加的插件了;
+5. 重启firefox，就能从 "工具->附加组件" 中看到新增加的插件了;
 <!--more-->
-我们来体验一下这个插件，单击该附件的选项按钮，<a href="/assets/uploads/2009/07/kaixin_prefer.jpg"><img class="size-medium wp-image-278" title="kaixin_prefer" src="/assets/uploads/2009/07/kaixin_prefer-300x289.jpg" alt="kaixin_prefer" width="300" height="289" /></a>单击菜单 “工具-&gt;You localized menuitem”, 会弹出“hello world” 对话框。<a href="/assets/uploads/2009/07/kaixin_menu.jpg"><img class="size-medium wp-image-279" title="kaixin_menu" src="/assets/uploads/2009/07/kaixin_menu-213x300.jpg" alt="kaixin_menu" width="213" height="300" /></a>
+我们来体验一下这个插件，单击该附件的选项按钮，<a href="/assets/uploads/2009/07/kaixin_prefer.jpg"><img class="size-medium wp-image-278" title="kaixin_prefer" src="/assets/uploads/2009/07/kaixin_prefer-300x289.jpg" alt="kaixin_prefer" width="300" height="289" /></a>单击菜单 “工具->You localized menuitem”, 会弹出“hello world” 对话框。<a href="/assets/uploads/2009/07/kaixin_menu.jpg"><img class="size-medium wp-image-279" title="kaixin_menu" src="/assets/uploads/2009/07/kaixin_menu-213x300.jpg" alt="kaixin_menu" width="213" height="300" /></a>
 
 接着继续改造这个插件，做一个一键登录开心网的功能。从“选项”对话框中填入开心网的账号和密码，然后点击login登录到开心网。
 
 1. 修改option对话框
 使用<a href="http://blog.59trip.com/archives/246">前面</a>介绍过的extention dev插件里带的xul编辑器来编辑xul文件，很方便测试。 将C:\work\kaixin\content\options.xul，替换为下面的代码：
 <pre class=xml name=code>
-&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;?xml-stylesheet href="chrome://global/skin/" type="text/css"?&gt;
-&lt;!DOCTYPE prefwindow SYSTEM "chrome://kaixin/locale/prefwindow.dtd"&gt;
-&lt;!--定义按钮事件处理--&gt;
-&lt;prefwindow id="kaixinPreferences"
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<!DOCTYPE prefwindow SYSTEM "chrome://kaixin/locale/prefwindow.dtd">
+<!--定义按钮事件处理-->
+<prefwindow id="kaixinPreferences"
 xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
 ondialogaccept="return kaixin_options.doOK();"
 ondialogcancel="return kaixin_options.doCancel();"
 onload="sizeToContent();kaixin_options.LoadOptions();"
-title="kaixin Preferences"&gt;
-&lt;!--载入javascript文件--&gt;
-&lt;script type="application/x-javascript"
-src="chrome://kaixin/content/options.js" /&gt;
-&lt;script type="application/x-javascript"
-src="chrome://kaixin/content/utils.js" /&gt;
-&lt;prefpane id="pane1" label="&amp;pane1.title;"&gt;
-&lt;!--定义用户名输入框--&gt;
-&lt;label accesskey="U" control="textstringpref"&gt;Username&lt;/label&gt;
-&lt;textbox id="gUserName" preference="stringpref1"/&gt;
-&lt;!--定义密码输入框--&gt;
-&lt;label accesskey="p" control="textstringpref"&gt;Password&lt;/label&gt;
-&lt;textbox id="gPwd" type="password" preference="stringpref2"/&gt;
-&lt;!--是否记住密码--&gt;
-&lt;checkbox id="gRemember" label="Remember Password"
-oncommand="kaixin_options.DisableAutoSignIn()"/&gt;
-&lt;/prefpane&gt;
-&lt;/prefwindow&gt;
+title="kaixin Preferences">
+<!--载入javascript文件-->
+<script type="application/x-javascript"
+src="chrome://kaixin/content/options.js" />
+<script type="application/x-javascript"
+src="chrome://kaixin/content/utils.js" />
+<prefpane id="pane1" label="&pane1.title;">
+<!--定义用户名输入框-->
+<label accesskey="U" control="textstringpref">Username</label>
+<textbox id="gUserName" preference="stringpref1"/>
+<!--定义密码输入框-->
+<label accesskey="p" control="textstringpref">Password</label>
+<textbox id="gPwd" type="password" preference="stringpref2"/>
+<!--是否记住密码-->
+<checkbox id="gRemember" label="Remember Password"
+oncommand="kaixin_options.DisableAutoSignIn()"/>
+</prefpane>
+</prefwindow>
 </pre>
 效果如图：<a href="/assets/uploads/2009/07/kaixin_pref.jpg"><img class="size-full wp-image-285" title="kaixin_pref" src="/assets/uploads/2009/07/kaixin_pref.jpg" alt="kaixin_pref" width="205" height="208" /></a>
 
 2. 自动生成的菜单按钮不方便使用，把它修改成工具栏上的按钮
 <pre class=xml name=code>
-&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;?xml-stylesheet href="chrome://kaixin/skin/overlay.css" type="text/css"?&gt;
-&lt;!DOCTYPE overlay SYSTEM "chrome://kaixin/locale/kaixin.dtd"&gt;
-&lt;overlay id="kaixin-overlay"
-xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"&gt;
-&lt;script type="application/x-javascript"
-src="chrome://kaixin/content/options.js" /&gt;
-&lt;script type="application/x-javascript"
-src="chrome://kaixin/content/utils.js" /&gt;
-&lt;script type="application/x-javascript"
-src="chrome://kaixin/content/overlay.js" /&gt;
-&lt;script type="application/x-javascript"
-src="chrome://kaixin/content/xmlhttpNew.js" /&gt;
-&lt;stringbundleset id="stringbundleset"&gt;
-&lt;stringbundle id="kaixin-strings"
-src="chrome://kaixin/locale/kaixin.properties"/&gt;
-&lt;/stringbundleset&gt;
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://kaixin/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://kaixin/locale/kaixin.dtd">
+<overlay id="kaixin-overlay"
+xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<script type="application/x-javascript"
+src="chrome://kaixin/content/options.js" />
+<script type="application/x-javascript"
+src="chrome://kaixin/content/utils.js" />
+<script type="application/x-javascript"
+src="chrome://kaixin/content/overlay.js" />
+<script type="application/x-javascript"
+src="chrome://kaixin/content/xmlhttpNew.js" />
+<stringbundleset id="stringbundleset">
+<stringbundle id="kaixin-strings"
+src="chrome://kaixin/locale/kaixin.properties"/>
+</stringbundleset>
 
-&lt;menubar id="main-menubar"&gt;
-&lt;menu id="kaixin-menu" label="Kaixin"
-insertafter="helpMenu" accesskey="a"&gt;
-&lt;menupopup id="kaixin-menupopup"&gt;
-&lt;menuitem id="kaixin-login"
-image="chrome://kaixin/skin/login.png" fixed="yes" hidden="false" oncommand="kaixin.doLogin(true);" label="Login" accesskey="L" /&gt;
-&lt;menuitem id="kaixin-options"
-image="chrome://kaixin/skin/options.png" fixed="yes" hidden="false" oncommand="kaixin.showOptions();" label="Options" accesskey="O" /&gt;
-&lt;/menupopup&gt;
-&lt;/menu&gt;
-&lt;/menubar&gt;
-&lt;/overlay&gt;
+<menubar id="main-menubar">
+<menu id="kaixin-menu" label="Kaixin"
+insertafter="helpMenu" accesskey="a">
+<menupopup id="kaixin-menupopup">
+<menuitem id="kaixin-login"
+image="chrome://kaixin/skin/login.png" fixed="yes" hidden="false" oncommand="kaixin.doLogin(true);" label="Login" accesskey="L" />
+<menuitem id="kaixin-options"
+image="chrome://kaixin/skin/options.png" fixed="yes" hidden="false" oncommand="kaixin.showOptions();" label="Options" accesskey="O" />
+</menupopup>
+</menu>
+</menubar>
+</overlay>
 </pre>
 效果如图：<a href="/assets/uploads/2009/07/toolbar.jpg"><img class="size-full wp-image-289" title="toolbar" src="/assets/uploads/2009/07/toolbar.jpg" alt="toolbar" width="161" height="88" /></a>
 
@@ -155,7 +155,7 @@ image="chrome://kaixin/skin/options.png" fixed="yes" hidden="false" oncommand="k
         var _64="chrome://kaixin/";
         var _65=kaixin_jsUtils.getPwd(_64,_63);    //从密码管理器获取密码
         ...
-        var _6a="email="+escape(_63)+"&amp;password="+escape(_65)+"";   //构造post参数
+        var _6a="email="+escape(_63)+"&password="+escape(_65)+"";   //构造post参数
         _60=xhttp.doSyncPost(_6a,"",uri);           //提交ajax请求
         _5f=kaixin.checkLogin();   //根据cookie检查是否登录成功
         if(!_5f){

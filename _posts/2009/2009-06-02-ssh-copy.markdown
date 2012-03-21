@@ -27,7 +27,7 @@ wordpress_url: http://www.xenhome.co.cc/blog/?p=28
 ============参考资料的分割线===========<!--more-->
 使用 ssh tunnel 輕鬆穿越 firewall 限制 zz
 
-&gt; 在某些公司內，會限制只有port 80可以連線，那如果你要上 bbs or msn 不就沒則了...
+> 在某些公司內，會限制只有port 80可以連線，那如果你要上 bbs or msn 不就沒則了...
 透過ssh tunnel可以把封包重新加密打包，並透過指定的 port 連出去
 
 在 Windows 上建立通道

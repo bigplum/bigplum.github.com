@@ -21,30 +21,30 @@ wordpress支持两种远程发布功能，通过邮件发布和通过atom接口�
 
 atom接口相对简单一点，只需要在后台开启选项后，通过REST接口就能提交文章了。
 
-不过wordpress的atom接口需要url rewrite支持，据说apache用自动生成的.htaccess就能搞定，但是lighttpd下的rewrite规则就比较麻烦，需要配置一条："^/wp-app.php/(.*)" =&gt; "/wp-app.php?$1"。
+不过wordpress的atom接口需要url rewrite支持，据说apache用自动生成的.htaccess就能搞定，但是lighttpd下的rewrite规则就比较麻烦，需要配置一条："^/wp-app.php/(.*)" => "/wp-app.php?$1"。
 <!--more-->
 然后生成一个xml文件，格式可以从http://blog.59trip.com/wp-app.php/post/236获取，236为文章id。如下：
-<pre class=xml name=code>&lt;?xml version="1.0" encoding="utf-8"?&gt;
-&lt;entry xmlns="http://www.w3.org/2005/Atom"
-xmlns:app="http://www.w3.org/2007/app" xml:lang="en"&gt;
-&lt;title type="text"&gt;
+<pre class=xml name=code><?xml version="1.0" encoding="utf-8"?>
+<entry xmlns="http://www.w3.org/2005/Atom"
+xmlns:app="http://www.w3.org/2007/app" xml:lang="en">
+<title type="text">
 测试
-&lt;/title&gt;
-&lt;content type="xhtml"&gt;
+</title>
+<content type="xhtml">
 测试
-&lt;/content&gt;
-&lt;/entry&gt;</pre>
+</content>
+</entry></pre>
 提交发布命令：
 curl -v -X POST --data @a.xml -H "Content-Type:application/atom+xml" -u name:pwd http://blog.59trip.com/wp-app.php/posts
 
 本站完整的rewrite规则如下：
 $HTTP["host"] == "blog.59trip.com" {
 url.rewrite-once = (
-"^/wp-app.php/(.*)" =&gt; "/wp-app.php?$1",
-"^/(wp-.+).*/?" =&gt; "$0",
-"^/(xmlrpc.php)" =&gt; "$0",
-"^/keyword/([A-Za-z_0-9\-]+)/?$" =&gt; "/index.php?keyword=$1",
-"^/.*?(\?.*)?$" =&gt; "/index.php$1"
+"^/wp-app.php/(.*)" => "/wp-app.php?$1",
+"^/(wp-.+).*/?" => "$0",
+"^/(xmlrpc.php)" => "$0",
+"^/keyword/([A-Za-z_0-9\-]+)/?$" => "/index.php?keyword=$1",
+"^/.*?(\?.*)?$" => "/index.php$1"
 )
 }
 

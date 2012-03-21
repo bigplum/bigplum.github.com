@@ -15,8 +15,8 @@ wordpress_url: http://pipa.tk/?p=999
 1. 解压
 2. 进入Snow Leopard/
 3. 执行
-[bash]
+{% highlight bash%}
 # tar cvf mac_osx_snow_leopard_theme.tar Arbeit\ Macbuntu\ 1.1/ arbeit-macbuntu-icons-new/ T-ish-Brushed-Overlaid/ Shere_Khan_X/
 # gzip mac_osx_snow_leopard_theme.tar 
-[/bash]
+{% endhighlight %}
 4. 系统-》首选项-》外观，安装新的主题

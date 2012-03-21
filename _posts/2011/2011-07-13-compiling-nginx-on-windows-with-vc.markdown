@@ -15,15 +15,15 @@ Windows下使用mingw比较简单，下载安装之后，<a href="http://ingar.s
 
 2. 编译
 启动rxvt终端，进入trunk目录，执行：
-[bash]
-./configure --prefix=. --sbin-path=nginx --with-cc-opt=&quot;-D FD_SETSIZE=4096 -D __NO_MINGW_LFS -D __WATCOMC__&quot; --without-http_rewrite_module --without-http_gzip_module
+{% highlight bash%}
+./configure --prefix=. --sbin-path=nginx --with-cc-opt="-D FD_SETSIZE=4096 -D __NO_MINGW_LFS -D __WATCOMC__" --without-http_rewrite_module --without-http_gzip_module
 vi objs/Makefile   #删除 -Werror
 make
-[/bash]
+{% endhighlight %}
 
 3. 备注
 __NO_MINGW_LFS选项用于规避下列错误：
-[bash]
+{% highlight bash%}
 In file included from src/core/ngx_config.h:37:0,
                  from src/core/nginx.c:7:
 src/os/win32/ngx_win32_config.h:129:29: error: conflicting types for 'ssize_t'
@@ -33,4 +33,4 @@ c:\mingw\bin\../lib/gcc/mingw32/4.5.2/../../../../include/sys/types.h:55:16: not
 make[1]: *** [objs/src/core/nginx.o] Error 1
 make[1]: Leaving directory `/e/src/c/nginx-svn/nginx/trunk'
 make: *** [build] Error 2
-[/bash]
+{% endhighlight %}

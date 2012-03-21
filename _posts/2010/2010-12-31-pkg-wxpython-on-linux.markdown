@@ -15,7 +15,7 @@ Linux下面有好多工具可以选择: <a href="http://wiki.python.org/moin/Dis
 ImportError: libwx_gtk2u_richtext-2.8.so.0: cannot open shared object file: No such file or directory
 
 最后用pyinstaller才搞定。
-[bash]
+{% highlight bash%}
 # cd pyinstaller-1.4/source/linux
 # python Make.py #[-n|-e]
 ...
@@ -49,4 +49,4 @@ checking EXE
 rebuilding outEXE2.toc because uploadUI missing
 building EXE from outEXE2.toc
 Appending archive to EXE /home/simon/client/uploadUI/dist/uploadUI
-[/bash]
+{% endhighlight %}

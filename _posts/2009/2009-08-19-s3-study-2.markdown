@@ -6,8 +6,8 @@ title: !binary |
   5Y2V5LiK5Lyg5paH5Lu25YiwUzM=
 
 excerpt: "<strong>1. \xE8\xA1\xA8\xE5\x8D\x95\xE5\x86\x85\xE5\xAE\xB9</strong>\r\n\
-  <pre style=\"font-size: 12px; font-family: 'Courier New', Courier, mono; background-color: #eff7ff; overflow-x: auto; overflow-y: auto; width: 600px; padding-top: 15px; padding-right: 10px; padding-bottom: 15px; padding-left: 10px; margin: 0px; border: 1px dashed #333333;\"><code style=\"font-family: 'Courier New', Courier, mono; font-size: 12px;\">    &lt;form action=\"https://s3-bucket.s3.amazonaws.com/\" method=\"post\" enctype=\"multipart/form-data\"&gt;\r\n      &lt;input type=\"hidden\" name=\"key\" value=\"uploads/${filename}\"&gt;\r\n      &lt;input type=\"hidden\" name=\"AWSAccessKeyId\" value=\"YOUR_AWS_ACCESS_KEY\"&gt;\r\n      &lt;input type=\"hidden\" name=\"acl\" value=\"private\"&gt;\r\n      &lt;input type=\"hidden\" name=\"success_action_redirect\" value=\"http://localhost/\"&gt;\r\n      &lt;input type=\"hidden\" name=\"policy\" value=\"YOUR_POLICY_DOCUMENT_BASE64_ENCODED\"&gt;\r\n      &lt;input type=\"hidden\" name=\"signature\" value=\"YOUR_CALCULATED_SIGNATURE\"&gt;\r\n      &lt;input type=\"hidden\" name=\"Content-Type\" value=\"image/jpeg\"&gt;\r\n\
-  \r\n      File to upload to S3:\r\n      &lt;input name=\"file\" type=\"file\"&gt;\r\n      &lt;br&gt;\r\n      &lt;input type=\"submit\" value=\"Upload File to S3\"&gt;\r\n    &lt;/form&gt; </code></pre>\r\n\
+  <pre style=\"font-size: 12px; font-family: 'Courier New', Courier, mono; background-color: #eff7ff; overflow-x: auto; overflow-y: auto; width: 600px; padding-top: 15px; padding-right: 10px; padding-bottom: 15px; padding-left: 10px; margin: 0px; border: 1px dashed #333333;\"><code style=\"font-family: 'Courier New', Courier, mono; font-size: 12px;\">    <form action=\"https://s3-bucket.s3.amazonaws.com/\" method=\"post\" enctype=\"multipart/form-data\">\r\n      <input type=\"hidden\" name=\"key\" value=\"uploads/${filename}\">\r\n      <input type=\"hidden\" name=\"AWSAccessKeyId\" value=\"YOUR_AWS_ACCESS_KEY\">\r\n      <input type=\"hidden\" name=\"acl\" value=\"private\">\r\n      <input type=\"hidden\" name=\"success_action_redirect\" value=\"http://localhost/\">\r\n      <input type=\"hidden\" name=\"policy\" value=\"YOUR_POLICY_DOCUMENT_BASE64_ENCODED\">\r\n      <input type=\"hidden\" name=\"signature\" value=\"YOUR_CALCULATED_SIGNATURE\">\r\n      <input type=\"hidden\" name=\"Content-Type\" value=\"image/jpeg\">\r\n\
+  \r\n      File to upload to S3:\r\n      <input name=\"file\" type=\"file\">\r\n      <br>\r\n      <input type=\"submit\" value=\"Upload File to S3\">\r\n    </form> </code></pre>\r\n\
   \xE4\xB8\x8A\xE4\xBC\xA0\xE5\x9C\xB0\xE5\x9D\x80\xE7\x9A\x84s3-bucket.s3.amazonaws.com\xE4\xB8\xADs3-bucket\xE4\xB8\xBA\xE4\xBD\xBF\xE7\x94\xA8\xE8\x80\x85\xE6\x89\x80\xE6\x8B\xA5\xE6\x9C\x89\xE7\x9A\x84bucket\xE3\x80\x82\xE4\xB8\x8A\xE8\xBF\xB0\xE8\xA1\xA8\xE5\x8D\x95\xE4\xBD\xBF\xE7\x94\xA8\xE4\xBA\x86\xE4\xB8\x80\xE4\xBA\x9B\xE5\xB8\xB8\xE7\x94\xA8\xE7\x9A\x84\xE5\xAD\x97\xE6\xAE\xB5\xEF\xBC\x9A\r\n\
   1. key  \xE4\xB8\x8A\xE4\xBC\xA0\xE7\x9A\x84\xE6\x96\x87\xE4\xBB\xB6\xE5\x90\x8D\xEF\xBC\x9B\r\n\
   2. AWSAccessKeyId   \xE4\xBB\x8EAmazon\xE8\x8E\xB7\xE5\xBE\x97\xE7\x9A\x84access key\xEF\xBC\x9B\r\n\
@@ -22,20 +22,20 @@ wordpress_url: http://blog.59trip.com/?p=533
 ---
 本文涉及到的所有内容都是以utf-8编码的。
 <strong>1. 表单内容</strong>
-<pre style="font-size: 12px; font-family: 'Courier New', Courier, mono; background-color: #eff7ff; overflow-x: auto; overflow-y: auto; padding-top: 15px; padding-right: 10px; padding-bottom: 15px; padding-left: 10px; margin: 0px; border: 1px dashed #333333;"><code style="font-family: 'Courier New', Courier, mono; font-size: 12px;">    &lt;form action="https://s3-bucket.s3.amazonaws.com/" method="post" enctype="multipart/form-data"&gt;
-      &lt;input type="hidden" name="key" value="uploads/${filename}"&gt;
-      &lt;input type="hidden" name="AWSAccessKeyId" value="YOUR_AWS_ACCESS_KEY"&gt;
-      &lt;input type="hidden" name="acl" value="private"&gt;
-      &lt;input type="hidden" name="success_action_redirect" value="http://localhost/"&gt;
-      &lt;input type="hidden" name="policy" value="YOUR_POLICY_DOCUMENT_BASE64_ENCODED"&gt;
-      &lt;input type="hidden" name="signature" value="YOUR_CALCULATED_SIGNATURE"&gt;
-      &lt;input type="hidden" name="Content-Type" value="image/jpeg"&gt;
+<pre style="font-size: 12px; font-family: 'Courier New', Courier, mono; background-color: #eff7ff; overflow-x: auto; overflow-y: auto; padding-top: 15px; padding-right: 10px; padding-bottom: 15px; padding-left: 10px; margin: 0px; border: 1px dashed #333333;"><code style="font-family: 'Courier New', Courier, mono; font-size: 12px;">    <form action="https://s3-bucket.s3.amazonaws.com/" method="post" enctype="multipart/form-data">
+      <input type="hidden" name="key" value="uploads/${filename}">
+      <input type="hidden" name="AWSAccessKeyId" value="YOUR_AWS_ACCESS_KEY">
+      <input type="hidden" name="acl" value="private">
+      <input type="hidden" name="success_action_redirect" value="http://localhost/">
+      <input type="hidden" name="policy" value="YOUR_POLICY_DOCUMENT_BASE64_ENCODED">
+      <input type="hidden" name="signature" value="YOUR_CALCULATED_SIGNATURE">
+      <input type="hidden" name="Content-Type" value="image/jpeg">
 
       File to upload to S3:
-      &lt;input name="file" type="file"&gt;
-      &lt;br&gt;
-      &lt;input type="submit" value="Upload File to S3"&gt;
-    &lt;/form&gt; </code></pre>
+      <input name="file" type="file">
+      <br>
+      <input type="submit" value="Upload File to S3">
+    </form> </code></pre>
 上传地址的s3-bucket.s3.amazonaws.com中s3-bucket为使用者所拥有的bucket。上述表单使用了一些常用的字段：
 1. key  上传的文件名；
 2. AWSAccessKeyId   从Amazon获得的access key；
@@ -107,5 +107,5 @@ policy = base64.b64encode(policy_document)
 signature = base64.b64encode(
     hmac.new(aws_secret_key, policy, sha).digest())</code></pre>
 
-本文为翻译缩略版，原文出处：<a href="http://developer.amazonwebservices.com/connect/entry.jspa?externalID=1434&amp;categoryID=55">http://developer.amazonwebservices.com/connect/entry.jspa?externalID=1434&amp;categoryID=55</a>
+本文为翻译缩略版，原文出处：<a href="http://developer.amazonwebservices.com/connect/entry.jspa?externalID=1434&categoryID=55">http://developer.amazonwebservices.com/connect/entry.jspa?externalID=1434&categoryID=55</a>
 更多详细内容，请参考手册：<a href="http://docs.amazonwebservices.com/AmazonS3/2006-03-01/index.html?UsingHTTPPOST.html">http://docs.amazonwebservices.com/AmazonS3/2006-03-01/index.html?UsingHTTPPOST.html</a>

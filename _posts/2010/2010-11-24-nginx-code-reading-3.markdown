@@ -18,10 +18,10 @@ wordpress_url: http://pipa.tk/?p=900
 了解了nginx的模块化结构和进程关系之后，可以知道在worker进程的主循环里面，nginx实际上在循环处理一个个IO事件，那么具体的业务处理模块是怎么挂接进这个框架呢？
 
 以http为例，在模块初始化时，ngx_http_commands中定义了函数ngx_http_block()，该函数负责初始化http模块。
-[c]
+{% highlight c %}
 static ngx_command_t  ngx_http_commands[] = {
 
-    { ngx_string(&quot;http&quot;),
+    { ngx_string("http"),
       NGX_MAIN_CONF|NGX_CONF_BLOCK|NGX_CONF_NOARGS,
       ngx_http_block,
       0,
@@ -30,10 +30,10 @@ static ngx_command_t  ngx_http_commands[] = {
 
       ngx_null_command
 };
-[/c]
+{% endhighlight %}
 
 同时，ngx_http_block将ngx_http_init_connection()函数挂接进 ngx_listening_s 的handler。 这个handler在event模块执行accept之后被调用。
-[c]
+{% highlight c %}
 struct ngx_listening_s {
     ngx_socket_t        fd;
 
@@ -50,7 +50,7 @@ struct ngx_listening_s {
 
     /* handler of accepted connection */
     ngx_connection_handler_pt   handler;  
-[/c]
+{% endhighlight %}
 
 整个流程见下图：
 <a href="/assets/uploads/2010/11/nginx_http_init.jpg"><img src="/assets/uploads/2010/11/nginx_http_init.jpg" alt="nginx_http_init" title="nginx_http_init" width="1021" height="354" class="alignnone size-full wp-image-901" /></a>

@@ -13,13 +13,13 @@ wordpress_url: http://pipa.tk/?p=1010
 mingw可在windows和linux下运行，通过指定target platform，linux下可编译windows平台程序。
 <strong>0.  安装wine</strong>
 wine是linux下执行win程序的软件包，编译windows版本的nginx，需要通过wine配合。Igor Sysoev通过wine来发布官方的windows版nginx，但是没有给出具体的编译步骤。在网上看了无数帖子之后，还是没找到具体的步骤，只好自己摸索。
-[bash]
+{% highlight bash%}
 The Windows version is provided as a binary-only due to the current build process (which currently uses some Wine tools). When the build process has been cleaned up, source will be made available. Igor does not want to support build issues with the current system.
-[/bash]
+{% endhighlight %}
 
 <strong>1.  首先安装mingw</strong>
 从官网下载安装包，解压执行：
-[bash]
+{% highlight bash%}
 sh x86-mingw32-build.sh
 
  Do you wish to select components individually? (Default: NO)? 
@@ -64,49 +64,49 @@ sh x86-mingw32-build.sh
  (Default: YES)? 
 
  Ok to commence building? (Default: YES)? 
-[/bash]
+{% endhighlight %}
 
 <strong>2. 配置mingw开发环境</strong>
-[bash]
+{% highlight bash%}
 mkdir $HOME/bin
-cat &gt;$HOME/bin/mingw &lt;&lt; EOF
+cat >$HOME/bin/mingw << EOF
 #!/bin/sh
 export CC=/home/simon/mingw32/bin/i386-mingw32-gcc
 export RANLIB=/home/simon/mingw32/bin/i386-mingw32-ranlib
-export PATH=&quot;/home/simon/mingw32/bin:\$PATH&quot;
-exec &quot;\$@&quot;
+export PATH="/home/simon/mingw32/bin:\$PATH"
+exec "\$@"
 EOF
 chmod u+x $HOME/bin/mingw
-[/bash]
+{% endhighlight %}
 
 <strong>3. 从svn库获取nginx最新代码</strong>
-[bash]
+{% highlight bash%}
 svn checkout svn://svn.nginx.org/nginx/trunk
-[/bash]
+{% endhighlight %}
 <strong>
 4. 编译nginx</strong>
 由于有些告警无法消除，所以增加了WATCOMC和_NO_OLDNAMES两个定义：
-[bash]
-~/bin/mingw ./configure --without-http_rewrite_module --without-http_gzip_module --prefix=. --sbin-path=nginx --with-cc-opt=&quot;-D FD_SETSIZE=4096 -D __WATCOMC__ -D _NO_OLDNAMES&quot; --with-debug --crossbuild=win32
-[/bash]
+{% highlight bash%}
+~/bin/mingw ./configure --without-http_rewrite_module --without-http_gzip_module --prefix=. --sbin-path=nginx --with-cc-opt="-D FD_SETSIZE=4096 -D __WATCOMC__ -D _NO_OLDNAMES" --with-debug --crossbuild=win32
+{% endhighlight %}
 
 修改objs/Makefile, 将CFLAGS中的-w删除，便于通过编译：
-[bash]
+{% highlight bash%}
 CFLAGS =  -pipe  -O -g -D FD_SETSIZE=4096 -D __WATCOMC__ -D _NO_OLDNAMES
-[/bash]
+{% endhighlight %}
 
 从Windows SDK中拷贝advapi32.lib ws2_32.lib两个文件到trunk目录下。如果没有安装visual studio，可以<a href="http://www.microsoft.com/download/en/details.aspx?displaylang=en&id=3138">从msdn上下载Windows SDK</a>。选择安装里面的include和lib就可以了，大约有200MB。
 
 执行make，nginx会在objs目录下生成，可以看到是Win32程序。
-[bash]
+{% highlight bash%}
 $ file objs/nginx 
 objs/nginx: PE32 executable for MS Windows (console) Intel 80386 32-bit
-[/bash]
+{% endhighlight %}
 
 <strong>5. 运行</strong>
 将nginx和conf目录拷贝到windows机器，执行nginx即可。
 用ab测试，性能看起来还不错。作为一个只有1.9M的绿色版web服务器，运行之后两个进程大约只占5M内存，真是精巧无比。如果去掉-g编译选项，性能还会更好。
-[bash]
+{% highlight bash%}
 Server Software:        nginx/1.0.5
 Server Hostname:        192.168.194.93
 Server Port:            80
@@ -132,17 +132,17 @@ Connect:        0    1   5.7      0      53
 Processing:    33  325  29.2    326     398
 Waiting:       20  291  28.2    293     350
 Total:         83  326  25.0    327     401
-[/bash]
+{% endhighlight %}
 
 <strong>6. 关于pcre库</strong>
 rewrite模块需要<a href="http://sourceforge.net/projects/pcre/files/pcre/8.12/pcre-8.12.tar.gz/download">pcre</a>库，可以通过下列方式编译安装：
-[bash]
+{% highlight bash%}
 ~/bin/mingw ./configure --host=i386-mingw32
 ~/bin/mingw make
 DESTDIR=$HOME/mingw32 make install
-[/bash]
+{% endhighlight %}
 但是通过mingw编译安装之后，无法链接成功，问题待解决:
-[bash]
+{% highlight bash%}
 	objs/src/http/modules/ngx_http_fastcgi_module.o \
 	objs/src/http/modules/ngx_http_uwsgi_module.o \
 	objs/src/http/modules/ngx_http_scgi_module.o \
@@ -175,4 +175,4 @@ collect2: ld returned 1 exit status
 make[1]: *** [objs/nginx] 错误 1
 make[1]:正在离开目录 `/home/simon/work/nginx-svn/trunk'
 make: *** [build] 错误 2
-[/bash]
+{% endhighlight %}

@@ -29,15 +29,15 @@ wordpress_url: http://blog.59trip.com/?p=393
 
 首先使用xul定义右键菜单，其中popup的id必须为contentAreaContextMenu。document.popupNode为鼠标当前获取的区域对象。
 <pre class=xml name=code>
-&lt;popup id="contentAreaContextMenu"&gt;
-&lt;menuitem id="1234" oncommand="kaixin.click(document.popupNode);" label="Login" image="chrome://kaixin/skin/login.png" accesskey="d"/&gt;
-&lt;/popup&gt;
+<popup id="contentAreaContextMenu">
+<menuitem id="1234" oncommand="kaixin.click(document.popupNode);" label="Login" image="chrome://kaixin/skin/login.png" accesskey="d"/>
+</popup>
 </pre>
 
 document.popupNode有可能返回anchor元素里的span等其他文本元素，所以需要判断一下，才能获取到anchor元素的链接地址：
 <pre class=xml name=code> 
 click:function(_node){
-    while(_node&amp;&amp;_node.nodeType==Node.ELEMENT_NODE) {
+    while(_node&&_node.nodeType==Node.ELEMENT_NODE) {
         if(_node.href){
         alert(_node.href);
         break;
@@ -82,15 +82,15 @@ wordpress_url: http://blog.59trip.com/?p=393
 
 首先使用xul定义右键菜单，其中popup的id必须为contentAreaContextMenu。document.popupNode为鼠标当前获取的区域对象。
 <pre class=xml name=code>
-&lt;popup id="contentAreaContextMenu"&gt;
-&lt;menuitem id="1234" oncommand="kaixin.click(document.popupNode);" label="Login" image="chrome://kaixin/skin/login.png" accesskey="d"/&gt;
-&lt;/popup&gt;
+<popup id="contentAreaContextMenu">
+<menuitem id="1234" oncommand="kaixin.click(document.popupNode);" label="Login" image="chrome://kaixin/skin/login.png" accesskey="d"/>
+</popup>
 </pre>
 
 document.popupNode有可能返回anchor元素里的span等其他文本元素，所以需要判断一下，才能获取到anchor元素的链接地址：
 <pre class=xml name=code> 
 click:function(_node){
-    while(_node&amp;&amp;_node.nodeType==Node.ELEMENT_NODE) {
+    while(_node&&_node.nodeType==Node.ELEMENT_NODE) {
         if(_node.href){
         alert(_node.href);
         break;

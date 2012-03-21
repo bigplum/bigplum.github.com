@@ -36,10 +36,10 @@ wordpress_url: http://blog.59trip.com/?p=63
 下载文中所述的<a href="http://redmine.lighttpd.net/attachments/download/697/mod_speed.c">mod_speed.c</a> ，编译、安装，并修改lighttpd.conf，启用mod_speed模块。
 
 就可以在服务器端对每个连接进行单独限速了。
-<pre name="code" class="php"> &lt;?php
+<pre name="code" class="php"> <?php
  header("X-LIGHTTPD-KBytes-per-second: 50");
  header("X-Sendfile: /path/to/file");
- ?&gt;</pre>
+ ?></pre>
 
 3. 限制IP并发数
 启用插件mod_evasive (1.5以后支持)

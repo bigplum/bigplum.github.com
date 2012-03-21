@@ -13,7 +13,7 @@ wordpress_url: http://pipa.tk/?p=986
 
 协议很简单，在上传的header中增加下面几个参数，服务器会根据header指示将分片写入临时文件中；等整个文件上传完成后，服务器将整个文件再传递给后端服务器处理。
 [shell]
-Content-Disposition	#attachment, filename=&quot;name of the file being uploaded&quot;
+Content-Disposition	#attachment, filename="name of the file being uploaded"
 Content-Type	#mime type of a file being uploaded (must not be multipart/form-data);
 X-Content-Range or Content-Range	#byte range of a segment being uploaded;
 X-Session-ID or Session-ID	#identifier of a session of a file being uploaded (see 2.3);
@@ -21,27 +21,27 @@ X-Session-ID or Session-ID	#identifier of a session of a file being uploaded (se
 
 用curl模拟了一次上传过程，结果如下：
 [shell]
-# curl localhost:8081/upload/ -d abc -H &quot;Content-Type: text/xml&quot; -H &quot;Content-Disposition: attachment; filename=big.TXT&quot; -H &quot;X-Content-Range: bytes 100-102/511920&quot; -H &quot;Session-ID: 1111215056&quot; -v
+# curl localhost:8081/upload/ -d abc -H "Content-Type: text/xml" -H "Content-Disposition: attachment; filename=big.TXT" -H "X-Content-Range: bytes 100-102/511920" -H "Session-ID: 1111215056" -v
 
 * About to connect() to localhost port 8081 (#0)
 *   Trying 127.0.0.1... connected
 * Connected to localhost (127.0.0.1) port 8081 (#0)
-&gt; POST /upload/ HTTP/1.1
-&gt; User-Agent: curl/7.21.3 (i686-pc-linux-gnu) libcurl/7.21.3 zlib/1.2.3
-&gt; Host: localhost:8081
-&gt; Accept: */*
-&gt; Content-Type: text/xml
-&gt; Content-Disposition: attachment; filename=big.TXT
-&gt; X-Content-Range: bytes 100-102/511920
-&gt; Session-ID: 1111215056
-&gt; Content-Length: 3
-&gt;
-&lt; HTTP/1.1 201 Created    #表示文件分片创建成功，整个文件上传成功后返回200
-&lt; Server: nginx/0.8.53
-&lt; Date: Fri, 08 Apr 2011 07:38:53 GMT
-&lt; Content-Length: 36
-&lt; Connection: close
-&lt; Range: 0-2/511920,6-8/511920,100-102/511920    #表示服务器已经接收到的分片
-&lt;
+> POST /upload/ HTTP/1.1
+> User-Agent: curl/7.21.3 (i686-pc-linux-gnu) libcurl/7.21.3 zlib/1.2.3
+> Host: localhost:8081
+> Accept: */*
+> Content-Type: text/xml
+> Content-Disposition: attachment; filename=big.TXT
+> X-Content-Range: bytes 100-102/511920
+> Session-ID: 1111215056
+> Content-Length: 3
+>
+< HTTP/1.1 201 Created    #表示文件分片创建成功，整个文件上传成功后返回200
+< Server: nginx/0.8.53
+< Date: Fri, 08 Apr 2011 07:38:53 GMT
+< Content-Length: 36
+< Connection: close
+< Range: 0-2/511920,6-8/511920,100-102/511920    #表示服务器已经接收到的分片
+<
 * Closing connection #0
 [/shell]

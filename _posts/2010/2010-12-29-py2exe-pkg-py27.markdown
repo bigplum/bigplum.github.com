@@ -14,14 +14,14 @@ wordpress_url: http://pipa.tk/?p=944
 最后如果是wxPython程序，报下面错误：
 [python]
 Traceback (most recent call last):
-  File &quot;test_wx.py&quot;, line 1, in &lt;module&gt;
-  File &quot;wxPython\__init__.pyc&quot;, line 15, in &lt;module&gt;
-  File &quot;wxPython\_wx.pyc&quot;, line 3, in &lt;module&gt;
-  File &quot;wxPython\_core.pyc&quot;, line 15, in &lt;module&gt;
-  File &quot;wx\__init__.pyc&quot;, line 45, in &lt;module&gt;
-  File &quot;wx\_core.pyc&quot;, line 4, in &lt;module&gt;
-  File &quot;wx\_core_.pyc&quot;, line 12, in &lt;module&gt;
-  File &quot;wx\_core_.pyc&quot;, line 10, in __load
+  File "test_wx.py", line 1, in <module>
+  File "wxPython\__init__.pyc", line 15, in <module>
+  File "wxPython\_wx.pyc", line 3, in <module>
+  File "wxPython\_core.pyc", line 15, in <module>
+  File "wx\__init__.pyc", line 45, in <module>
+  File "wx\_core.pyc", line 4, in <module>
+  File "wx\_core_.pyc", line 12, in <module>
+  File "wx\_core_.pyc", line 10, in __load
 ImportError: DLL load failed: 找不到指定的模块。
 [/python]
 
@@ -32,16 +32,16 @@ from distutils.core import setup
 import py2exe
 from glob import glob
 
-data_files = [(&quot;Microsoft.VC90.CRT&quot;, glob(r'..\msvcrt\*.*')), \
+data_files = [("Microsoft.VC90.CRT", glob(r'..\msvcrt\*.*')), \
                 ('', glob(r'..\msvcrt\MSVCP90.dll')), \
                 ('', glob(r'load.exe')) ]
 setup(
     #options = {
-    #    &quot;py2exe&quot;: {
-    #        &quot;dll_excludes&quot;: [&quot;MSVCP90.dll&quot;]
+    #    "py2exe": {
+    #        "dll_excludes": ["MSVCP90.dll"]
     #    }
     #},
-    windows=[&quot;ui.py&quot;],
+    windows=["ui.py"],
     data_files=data_files,
 )
 [/python]

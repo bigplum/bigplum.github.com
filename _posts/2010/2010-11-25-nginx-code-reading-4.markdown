@@ -19,19 +19,19 @@ wordpress_url: http://pipa.tk/?p=905
 
 <strong>1. http输入</strong>
 ngx_http_core_run_phases()函数开始执行http各个phase的函数指针，http其他模块的处理函数全都挂到ph数组中，在这里挨个调用之。
-[c]
-    while (ph[r-&gt;phase_handler].checker) {
+{% highlight c %}
+    while (ph[r->phase_handler].checker) {
 
-        rc = ph[r-&gt;phase_handler].checker(r, &amp;ph[r-&gt;phase_handler]);
+        rc = ph[r->phase_handler].checker(r, &ph[r->phase_handler]);
 
         if (rc == NGX_OK) {
             return;
         }
     }
-[/c]
+{% endhighlight %}
 
 nginx把http处理流程分为以下几个阶段，定义了这些宏：
-[c]
+{% highlight c %}
 typedef enum {
     NGX_HTTP_POST_READ_PHASE = 0, 
 
@@ -51,7 +51,7 @@ typedef enum {
 
     NGX_HTTP_LOG_PHASE
 } ngx_http_phases;
-[/c]
+{% endhighlight %}
 
 虽然只有这几个阶段，但如果自己开发模块，能插入的定制点更多。可以参考<a href="http://dl.dbank.com/c0qupaiibo">Emiller的Nginx模块开发心得.pdf</a>
 
@@ -61,35 +61,35 @@ http header输出是由ngx_http_send_header()执行，由各个功能模块调�
 header和body都有一个filter队列需要执行，分别是ngx_http_top_header_filter和ngx_http_top_body_filter，在http的功能模块中把处理函数插入到这两个队列。
 
 实际上除了ngx_http_write_filter之外，其它filter中也只是组装输出缓冲区，并不实际输出。例如：ngx_http_chunked_body_filter()中，在计算好chunk的size之后，申请一个buffer b，将b插入到输出缓冲区的头部out.buf，完成对一个chunk的封装。
-[c]
+{% highlight c %}
     if (size) {
-        b = ngx_calloc_buf(r-&gt;pool);
+        b = ngx_calloc_buf(r->pool);
         if (b == NULL) {
             return NGX_ERROR;
         }
 
-        /* the &quot;0000000000000000&quot; is 64-bit hexadimal string */
+        /* the "0000000000000000" is 64-bit hexadimal string */
 
-        chunk = ngx_palloc(r-&gt;pool, sizeof(&quot;0000000000000000&quot; CRLF) - 1);
+        chunk = ngx_palloc(r->pool, sizeof("0000000000000000" CRLF) - 1);
         if (chunk == NULL) {
             return NGX_ERROR;
         }
 
-        b-&gt;temporary = 1;
-        b-&gt;pos = chunk;
-        b-&gt;last = ngx_sprintf(chunk, &quot;%xO&quot; CRLF, size);
+        b->temporary = 1;
+        b->pos = chunk;
+        b->last = ngx_sprintf(chunk, "%xO" CRLF, size);
 
         out.buf = b;
     }
-[/c]
+{% endhighlight %}
 
 真正的输出动作由ngx_http_write_filter()产生。所以filter队列的顺序很重要，ngx_http_write_filter应该处于队列最后。
-[c]
-    ngx_log_debug1(NGX_LOG_DEBUG_HTTP, c-&gt;log, 0,
-                   &quot;http write filter limit %O&quot;, limit);
+{% highlight c %}
+    ngx_log_debug1(NGX_LOG_DEBUG_HTTP, c->log, 0,
+                   "http write filter limit %O", limit);
 
-    chain = c-&gt;send_chain(c, r-&gt;out, limit);
+    chain = c->send_chain(c, r->out, limit);
 
-    ngx_log_debug1(NGX_LOG_DEBUG_HTTP, c-&gt;log, 0,
-                   &quot;http write filter %p&quot;, chain);
-[/c]
+    ngx_log_debug1(NGX_LOG_DEBUG_HTTP, c->log, 0,
+                   "http write filter %p", chain);
+{% endhighlight %}

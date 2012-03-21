@@ -20,7 +20,7 @@ wordpress_url: http://pipa.tk/?p=1006
 代码地址：<a href="https://github.com/bigplum/nginx-upload-module/tree/2.2">https://github.com/bigplum/nginx-upload-module/tree/2.2</a>
 
 主要增加了一个cleanup函数，判断如果文件的offset不等于content range end，那么就做一次merge range操作。
-[c]
+{% highlight c %}
 static void
 ngx_http_upload_cleanup_part(void *data)
 {
@@ -34,27 +34,27 @@ ngx_http_upload_cleanup_part(void *data)
         return;
     }
     
-    ngx_log_debug1(NGX_LOG_DEBUG_HTTP, r-&gt;connection-&gt;log, 0,
-                   &quot;cleanup http upload request, out offset: %d&quot;, u-&gt;output_file.offset);
+    ngx_log_debug1(NGX_LOG_DEBUG_HTTP, r->connection->log, 0,
+                   "cleanup http upload request, out offset: %d", u->output_file.offset);
     
-    if(!u-&gt;raw_input || !u-&gt;output_file.offset || 
-        u-&gt;output_file.offset == u-&gt;content_range_n.end + 1)
+    if(!u->raw_input || !u->output_file.offset || 
+        u->output_file.offset == u->content_range_n.end + 1)
     {
         return;
     }
 
-    content_range_n.start = u-&gt;content_range_n.start;
-    content_range_n.end = u-&gt;output_file.offset - 1;
-    content_range_n.total = u-&gt;content_range_n.total;
+    content_range_n.start = u->content_range_n.start;
+    content_range_n.end = u->output_file.offset - 1;
+    content_range_n.total = u->content_range_n.total;
 
-    rc = ngx_http_upload_merge_ranges(u, &amp;content_range_n);
+    rc = ngx_http_upload_merge_ranges(u, &content_range_n);
 
     if(rc == NGX_ERROR) {
-        ngx_log_error(NGX_LOG_ERR, r-&gt;connection-&gt;log, 0
-            , &quot;upload cleanup: error merging ranges&quot;
+        ngx_log_error(NGX_LOG_ERR, r->connection->log, 0
+            , "upload cleanup: error merging ranges"
             );
 
         return;
     }
 }
-[/c]
+{% endhighlight %}
