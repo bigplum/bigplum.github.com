@@ -47,6 +47,7 @@ ngx_module_t  ngx_core_module = {
 };
 {% endhighlight %}
 epoll等通讯模块的module_ctx定义了，事件处理函数，其中的ngx_epoll_process_events是worker进程主处理循环的入口。
+{% highlight c %}
 ngx_event_module_t  ngx_epoll_module_ctx = {
     &epoll_name,
     ngx_epoll_create_conf,               /* create configuration */
@@ -66,12 +67,11 @@ ngx_event_module_t  ngx_epoll_module_ctx = {
     }
 };
 
-{% highlight c %}
 
 {% endhighlight %}
 
 核心模块初始化在函数ngx_init_cycle(ngx_cycle_t *old_cycle)中完成，这个函数还做了很多其他初始化工作。
-[c firstline="210" highlight="218"]
+{% highlight c %}
     for (i = 0; ngx_modules[i]; i++) {
         if (ngx_modules[i]->type != NGX_CORE_MODULE) {
             continue;

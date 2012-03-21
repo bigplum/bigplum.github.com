@@ -33,7 +33,7 @@ nginx中进程有这几种类型：
 通过对POSIX信号的处理，nginx很好的支持了动态刷新配置文件和热升级，这个设计极大的提高了软件的可维护性，开发服务器端程序，可以照抄nginx的设计。
 
 信号处理函数为ngx_signal_handler(int signo)，根据不同的进程类型（主要是worker和master），分别给全局变量赋值。在主循环中根据这些全局变量的值，再做不同处理。
-[c highlight="2"]
+{% highlight c %}
         case ngx_signal_value(NGX_RECONFIGURE_SIGNAL):
             ngx_reconfigure = 1;
             action = ", reconfiguring";
