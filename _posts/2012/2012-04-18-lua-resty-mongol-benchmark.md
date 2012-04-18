@@ -1,3 +1,9 @@
+--- 
+layout: post
+title: lua-resty-mongol性能测试
+date: 2012-04-18 15:26:24 +08:00
+---
+
 对lua-resty-mongol(https://github.com/bigplum/lua-resty-mongol)做了一下性能测试，和php driver做简单对比。
 
 __结论__
