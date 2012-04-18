@@ -2,9 +2,14 @@
 layout: post
 title: lua-resty-mongol性能测试
 date: 2012-04-18 15:26:24 +08:00
+category:
+- dev
+tags:
+- mongodb
 ---
 
-对lua-resty-mongol(https://github.com/bigplum/lua-resty-mongol)做了一下性能测试，和php driver做简单对比。
+[lua-resty-mongol](https://github.com/bigplum/lua-resty-mongol)是一个基于ngx_lua cosocket API的mongodb驱动，支持mongodb和gridfs的数据访问。
+对[lua-resty-mongol](https://github.com/bigplum/lua-resty-mongol)做了一下性能测试，和php driver做简单对比。
 
 __结论__
 
@@ -47,7 +52,7 @@ __500并发php-fpm(128进程)__
     Concurrency Level:      500
     Time taken for tests:   17.449 seconds
     Complete requests:      100000
-    __Failed requests:        51013__
+    *Failed requests:        51013*
        (Connect: 0, Receive: 0, Length: 51013, Exceptions: 0)
     Write errors:           0
     Non-2xx responses:      51013
