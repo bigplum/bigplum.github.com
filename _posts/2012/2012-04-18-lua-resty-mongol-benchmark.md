@@ -11,6 +11,53 @@ tags:
 [lua-resty-mongol](https://github.com/bigplum/lua-resty-mongol)是一个基于ngx_lua cosocket API的mongodb驱动，支持mongodb和gridfs的数据访问。
 对[lua-resty-mongol](https://github.com/bigplum/lua-resty-mongol)做了一下性能测试，和php driver做简单对比。
 
+__测试脚本__
+
+PHP:
+    <?php
+    try
+    {
+        $m = new Mongo("mongodb://admin:admin@10.6.2.51:27019/test"); // connect
+        $db = $m->selectDB("test");
+        $col = new MongoCollection($db, "test");
+        $a = array("name"=>"dog");
+        $col->insert($a);
+        echo "ok";
+    }
+    catch ( MongoConnectionException $e )
+    {
+        header("Status: 400");
+        echo '<p>Couldn\'t connect to mongodb, is the "mongo" process running?</p>';
+        exit();
+    }
+
+lua:
+    local mongo = require "resty.mongol"
+    conn = mongo:new()
+    ok, err = conn:connect("10.6.2.51","27019")
+    if not ok then
+        ngx.say("connect failed: "..err)
+    end
+    
+    local db = conn:new_db_handle("test")
+    db:auth("admin","admin")
+    col = db:get_col("test")
+    
+    r, err = col:insert({{name="dog"}}, nil, true)
+    
+    if not r then
+        ngx.status = 400
+        ngx.say("not ok")
+    else
+        ngx.say("ok")
+    end
+    
+    local ok, err = conn:set_keepalive(0,1000)
+    if not ok then
+        ngx.say("failed to set keepalive: ", err)
+        return
+    end
+
 __结论__
 
 mongodb基础数据为2千万。在100并发的情况下，lua-resty-mongol的rqs要少于php；但是200以上并发，php-fpm就出错了，并发越大，请求出错的比例越大，1000并发的时候基本就不可用了。
