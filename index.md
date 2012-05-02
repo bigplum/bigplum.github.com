@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Hello World!
+title: 春晓的晓
 tagline: Cloud
 ---
 {% include JB/setup %}
@@ -12,5 +12,4 @@ tagline: Cloud
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
-
 

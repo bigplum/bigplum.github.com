@@ -12,12 +12,14 @@ pygments: true
 #
 title : 春晓的晓
 tagline: 云打杂
+feedsky : pipa
 author :
   name : Simon Lee
   email : bigplum@gmail.com
   github : bigplum
   twitter : _bigplum
-#  feedburner : feedname
+  feedsky : pipa
+  feedburner : pipa
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
