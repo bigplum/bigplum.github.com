@@ -1,11 +1,9 @@
 --- 
-wordpress_id: 972
 layout: post
 title: !binary |
   YmFzaOi/m+ihjOWkmui/m+eoi+aOp+WItg==
 
 date: 2011-03-09 19:26:21 +08:00
-wordpress_url: http://pipa.tk/?p=972
 ---
 经常用ssh、awk做一些日志收集、分析工具，比较耗时间，于是找了个bash多进程的例子，套用到原来单进程的程序上，还挺好用的。如果再改改脚本，可以做成一个简单的单机map-reduce框架了。
 

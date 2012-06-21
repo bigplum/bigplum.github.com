@@ -1,11 +1,9 @@
 --- 
-wordpress_id: 392
 layout: post
 title: !binary |
   5q+P5pel5Yiw5pyfLmNvbeWfn+WQjeeyvumAiSjmmoLlgZzmm7TmlrApIA==
 
 date: 2010-04-07 07:28:24 +08:00
-wordpress_url: http://blog.59trip.com/archives/392
 ---
 2010-4-19 由于空间搬到国外，所以暂停这个功能。
 

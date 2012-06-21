@@ -1,11 +1,9 @@
 --- 
-wordpress_id: 1040
 layout: post
 title: !binary |
   bmdpbnjnmoRzcmNhY2hl5qih5Z2X
 
 date: 2011-07-29 15:18:43 +08:00
-wordpress_url: http://pipa.tk/?p=1040
 ---
 <https://github.com/agentzh/srcache-nginx-module> -- 这个模块很好用，但是中文资料不多，这里简单介绍一下。
 

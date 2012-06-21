@@ -1,11 +1,9 @@
 --- 
-wordpress_id: 1061
 layout: post
 title: !binary |
   dHJhY+S9v+eUqHN2bnN5bmPml7bnmoTpl67popg=
 
 date: 2011-12-05 22:27:15 +08:00
-wordpress_url: http://pipa.tk/?p=1061
 ---
 配置好svnsyncplugin之后，手工同步svnsync数据库成功，但是在trac里浏览老是报错：
 

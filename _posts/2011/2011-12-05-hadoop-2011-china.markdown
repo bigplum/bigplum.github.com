@@ -1,11 +1,9 @@
 --- 
-wordpress_id: 1064
 layout: post
 title: !binary |
   aGFkb29wIDIwMTHlpKfkvJrnmoTkuIDkupvlhoXlrrk=
 
 date: 2011-12-05 23:22:23 +08:00
-wordpress_url: http://pipa.tk/?p=1064
 ---
 这次大会有1000多号人参加，挺大规模的一次技术会议，可惜会议组织的并不好，基本上每个会场都有人站着听。北京会议中心并不是一个适合开技术会议的场所，更适合官僚们开代表大会。去外面吃饭要走半个多钟头，出门没有公交站，最近的地铁要走40分钟。
 

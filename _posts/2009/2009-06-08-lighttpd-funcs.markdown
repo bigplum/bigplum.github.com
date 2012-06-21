@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 63
 layout: post
 title: !binary |
   bGlnaHR0cGTmlK/mjIHmlq3ngrnnu63kvKDjgIHlpJrnur/nqIvkuIvovb3j
@@ -20,7 +19,6 @@ excerpt: !binary |
   dHRwZDEuNeWPr+S7peW+iOWlveeahOS9v+eUqOivpeWKn+iDveOAgg0K
 
 date: 2009-06-08 17:45:07 +08:00
-wordpress_url: http://blog.59trip.com/?p=63
 ---
 1. 断点续传、多线程下载
 这两个实际上是一个功能，只要服务器端支持range参数，就能支持。但lighttpd1.4如果使用sendfile方式（php的readfile也是不行的）是不支持该参数的，<a href="http://forum.lighttpd.net/topic/154">有人做了一个补丁进行支持</a>，如果不想升级light，可以试试看。

@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 615
 layout: post
 title: !binary |
   5byA5rqQ55qE5pWw5o2u5oGi5aSN6L2v5Lu2VGVzdERpc2s=
@@ -23,7 +22,6 @@ excerpt: !binary |
   Y09T
 
 date: 2009-09-12 16:03:41 +08:00
-wordpress_url: http://blog.59trip.com/?p=615
 ---
 <a href="http://www.cgsecurity.org/wiki/TestDisk">TestDisk</a>，很不错的数据修复软件，TestDisk支持以下功能:
 <em>修复分区表, 恢复已删除分区

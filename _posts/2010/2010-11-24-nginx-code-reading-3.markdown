@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 900
 layout: post
 title: !binary |
   bmdpbnjmupDnoIHop6PmnpAoMykt5LuO5LqL5Lu25aSE55CG5Yiw5Lia5Yqh
@@ -13,7 +12,6 @@ excerpt: !binary |
   5qih5Z2X5piv5oCO5LmI5oyC5o6l6L+b6L+Z5Liq5qGG5p625ZGi77yf
 
 date: 2010-11-24 09:25:45 +08:00
-wordpress_url: http://pipa.tk/?p=900
 ---
 了解了nginx的模块化结构和进程关系之后，可以知道在worker进程的主循环里面，nginx实际上在循环处理一个个IO事件，那么具体的业务处理模块是怎么挂接进这个框架呢？
 

@@ -1,11 +1,9 @@
 --- 
-wordpress_id: 1020
 layout: post
 title: !binary |
   5ZyoV2luZG93c+S4i+e8luivkVdpbmRvd3PniYjmnKznmoROZ2lueA==
 
 date: 2011-07-13 10:28:56 +08:00
-wordpress_url: http://pipa.tk/?p=1020
 ---
 上一篇讲了肿么<a href="http://pipa.tk/archives/1010">在Linux下使用MinGW编译Windows版本的Nginx</a>，这里再补充下肿么直接在Windows下编译Windows版本的Nginx。
 

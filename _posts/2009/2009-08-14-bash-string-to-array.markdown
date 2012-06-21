@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 516
 layout: post
 title: !binary |
   YmFzaOWmguS9leWwhuS4gOS4quWtl+espuS4sui9rOaNouaIkOaVsOe7hA==
@@ -13,7 +12,6 @@ excerpt: !binary |
   Y2hvICR7ZFskcm51bV19DQo8L3ByZT4=
 
 date: 2009-08-14 18:08:49 +08:00
-wordpress_url: http://blog.59trip.com/?p=516
 ---
 直接这样赋值就可以了，很简单：
 <pre>d=( ${list} )

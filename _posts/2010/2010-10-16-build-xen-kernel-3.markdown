@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 868
 layout: post
 title: !binary |
   5aaC5L2V57yW6K+RWEVO6Jma5ouf5py65YaF5qC477yI5LiJ77yJ
@@ -12,7 +11,6 @@ excerpt: "\xE7\xBC\x96\xE8\xAF\x91\xE5\x86\x85\xE6\xA0\xB8\xE7\x9B\xB8\xE5\x85\x
   \r\n\
   dom0\xE5\x86\x85\xE6\xA0\xB8\xE8\xB5\x84\xE6\xBA\x90\xE5\x88\x97\xE8\xA1\xA8\xEF\xBC\x9A<a href=\"http://wiki.xen.org/xenwiki/XenDom0Kernels\">http://wiki.xen.org/xenwiki/XenDom0Kernels</a>\r\n"
 date: 2010-10-16 13:02:49 +08:00
-wordpress_url: http://pipa.tk/?p=868
 ---
 编译内核相关的资源列表：
 

@@ -1,11 +1,9 @@
 --- 
-wordpress_id: 36
 layout: post
 title: !binary |
   5aaC5L2V57yW6K+RWEVO6Jma5ouf5py65YaF5qC477yI5LiA77yJ
 
 date: 2009-06-02 20:06:28 +08:00
-wordpress_url: http://www.xenhome.co.cc/blog/?p=36
 ---
 1. 下载xen源码包 <a href="http://www.xen.org/products/xen_source.html">http://www.xen.org/products/xen_source.html</a>
 

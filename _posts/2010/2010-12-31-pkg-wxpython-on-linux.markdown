@@ -1,11 +1,9 @@
 --- 
-wordpress_id: 952
 layout: post
 title: !binary |
   bGludXjkuIvmiZPljIXlj5HluIN3eHB5dGhvbueoi+W6jw==
 
 date: 2010-12-31 13:51:38 +08:00
-wordpress_url: http://pipa.tk/?p=952
 ---
 windows打包wxpython程序比较简单，用py2exe就能全部搞定了。
 

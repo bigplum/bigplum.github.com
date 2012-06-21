@@ -1,11 +1,9 @@
 --- 
-wordpress_id: 84
 layout: post
 title: !binary |
   dWx0cmFlZGl06K+t5rOV6auY5Lqu5paH5Lu25LiL6L295Zyw5Z2A
 
 date: 2009-06-11 16:24:54 +08:00
-wordpress_url: http://blog.59trip.com/archives/84
 ---
 这里很全，应有尽有:
 <a href="ftp://ftp.ultraedit.com/wf/">ftp://ftp.ultraedit.com/wf/</a>

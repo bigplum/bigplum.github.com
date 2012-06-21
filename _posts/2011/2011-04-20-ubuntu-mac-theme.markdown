@@ -1,11 +1,9 @@
 --- 
-wordpress_id: 999
 layout: post
 title: !binary |
   dWJ1bnR155qEbWFj6Zuq6LG55Li76aKY5ZKM5aOB57q4ICA=
 
 date: 2011-04-20 20:46:06 +08:00
-wordpress_url: http://pipa.tk/?p=999
 ---
 折腾了一下ubuntu的主题，发现这个挺不错的。
 <a href="/assets/uploads/2011/04/Screenshot.png"><img src="/assets/uploads/2011/04/Screenshot-300x187.png" alt="Mac snow" title="Mac snow" width="300" height="187" class="alignnone size-medium wp-image-998" /></a>

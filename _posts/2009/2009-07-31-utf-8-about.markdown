@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 457
 layout: post
 title: !binary |
   5Lik5Liq5LiOVVRGLTjnm7jlhbPnmoTpl67popg=
@@ -10,7 +9,6 @@ excerpt: !binary |
   va7nvJbnoIHmoLzlvI8NCg==
 
 date: 2009-07-31 08:18:05 +08:00
-wordpress_url: http://blog.59trip.com/?p=457
 ---
 1. php json_encode函数只能处理utf8的输入
 json_encode的输入参数数组中，如果含有非utf8的值，则该值的编码结果为null。所以在使用json_encode之前，应该保证它的输入参数是经过编码的。下面的代码可以试试，但如果是嵌套数组就用不了了。

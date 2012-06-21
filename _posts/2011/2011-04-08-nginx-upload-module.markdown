@@ -1,11 +1,9 @@
 --- 
-wordpress_id: 986
 layout: post
 title: !binary |
   bmdpbnjnmoTmlq3ngrnkuIrkvKDmqKHlnZc=
 
 date: 2011-04-08 15:54:58 +08:00
-wordpress_url: http://pipa.tk/?p=986
 ---
 总所周知，http文件上传是不支持断点续传的，为了支持断点续传，需要自定义协议，同时修改HTTP服务器和客户端来支持。通常做法是在浏览器上开发插件支持的。
 

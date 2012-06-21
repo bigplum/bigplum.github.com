@@ -1,11 +1,9 @@
 --- 
-wordpress_id: 944
 layout: post
 title: !binary |
   cHkyZXhl5omT5YyFcHl0aG9uMi436ISa5pys
 
 date: 2010-12-29 15:16:43 +08:00
-wordpress_url: http://pipa.tk/?p=944
 ---
 在一个机器上打包的程序，放到另一个机器上运行就会报错：“由于应用程序配置不正确,程序未能启动.重新安装应用程序可能会纠正这个错误”。
 

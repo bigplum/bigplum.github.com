@@ -1,11 +1,9 @@
 --- 
-wordpress_id: 980
 layout: post
 title: !binary |
   5ZyoSFRD55qEV03miYvmnLrkuIrlronoo4VBbmRyb2lk
 
 date: 2011-03-25 11:29:17 +08:00
-wordpress_url: http://pipa.tk/?p=980
 ---
 =====3.31更新=====
 增加2.2更新：FRX06_Full_Bundle_25.3.2011.zip  （未分区版，可以直接解压拷贝到sd卡根目录使用，不用分区格式化。）

@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 393
 layout: post
 title: !binary |
   5Y2B5YiG6ZKf5byA5Y+R5LiA5LiqZmlyZWZveOaPkuS7tu+8iOS4ie+8iS0g
@@ -21,7 +20,6 @@ excerpt: !binary |
   ZGXkuLrpvKDmoIflvZPliY3ojrflj5bnmoTljLrln5/lr7nosaHjgII=
 
 date: 2009-07-23 19:38:06 +08:00
-wordpress_url: http://blog.59trip.com/?p=393
 ---
 在firefox中很容易就能用xul实现一个类似下载工具右键菜单获取链接地址的功能。例如flashgot插件的“下载此链接”功能：
 <!--more-->
@@ -52,7 +50,6 @@ click:function(_node){
 右键菜单：
 <a href="https://developer.mozilla.org/en/XUL/PopupGuide/Extensions">https://developer.mozilla.org/en/XUL/PopupGuide/Extensions</a>
 --- 
-wordpress_id: 393
 layout: post
 title: !binary |
   5Y2B5YiG6ZKf5byA5Y+R5LiA5LiqZmlyZWZveOaPkuS7tu+8iOS4ie+8iS0g
@@ -74,7 +71,6 @@ excerpt: !binary |
   ZGXkuLrpvKDmoIflvZPliY3ojrflj5bnmoTljLrln5/lr7nosaHjgII=
 
 date: 2009-07-23 19:38:06 +08:00
-wordpress_url: http://blog.59trip.com/?p=393
 ---
 在firefox中很容易就能用xul实现一个类似下载工具右键菜单获取链接地址的功能。例如flashgot插件的“下载此链接”功能：
 <!--more-->

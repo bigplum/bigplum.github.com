@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 602
 layout: post
 title: !binary |
   TW9ub3BvbHkgQ2l0eSBTdHJlZXRzIC0g55SoR29vZ2xlTWFw5YGa55qE5Y+y
@@ -30,7 +29,6 @@ excerpt: !binary |
   cC1pbWFnZS02MDciIC8+PC9hPg0K
 
 date: 2009-09-10 15:47:24 +08:00
-wordpress_url: http://blog.59trip.com/?p=602
 ---
 
 好吧，这个游戏早已下线了。(2012-3-20)

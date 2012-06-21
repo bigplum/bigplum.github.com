@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 107
 layout: post
 title: !binary |
   bmFnaW9z5a6J6KOF5omL6K6w77yI5LiA77yJ
@@ -13,7 +12,6 @@ excerpt: !binary |
   jOi/mOaYr+WGs+WumuWGmeWGmeOAgg0K
 
 date: 2009-06-19 09:43:18 +08:00
-wordpress_url: http://blog.59trip.com/?p=107
 ---
 上文<a href="http://blog.59trip.com/archives/94">《网络管理平台nagios》</a>提到的博客已经是很好的nagios学习材料了，其实没必要再写怎么安装nagios，但鉴于给自己留一些安装记录，还是决定写写。
 

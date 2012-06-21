@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 101
 layout: post
 title: !binary |
   c3VzZSAxMOWmguS9lemAmui/h3NubXDmn6Xor6LnvZHljaHnirbmgIE=
@@ -18,7 +17,6 @@ excerpt: !binary |
   nIvnnItzbm1w44CC
 
 date: 2009-06-19 09:00:11 +08:00
-wordpress_url: http://blog.59trip.com/?p=101
 ---
 在原来部门做产品的时候，在网管上做了大量的工作，但都是基于电信窄带产品的MML命令开发网管接口，效率很低下，实在令我深恶痛绝。于是后来就规划了一个新版本，准备同SNMP网管对接，也定义了mib，试图通过trap发告警，但最终还是没实现。这几天<a href="http://blog.59trip.com/archives/94">在用nagios</a>，发现其中监控网络流量的插件都是通过snmpwalk、snmpget等命令搞定的，就顺带看看snmp。
 <!--more-->

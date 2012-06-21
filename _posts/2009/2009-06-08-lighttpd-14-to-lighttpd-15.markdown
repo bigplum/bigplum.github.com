@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 54
 layout: post
 title: "\xE5\x8D\x87\xE7\xBA\xA7lighttpd 1.4.X\xE5\x88\xB0lighttpd 1.5"
 excerpt: !binary |
@@ -17,7 +16,6 @@ excerpt: !binary |
   LnN2bg==
 
 date: 2009-06-08 16:25:43 +08:00
-wordpress_url: http://blog.59trip.com/?p=54
 ---
 lighttpd 1.5从06年到现在一直都没有放出一个稳定的版本出来，不知道现在的开发者是怎么计划的。1.5比1.4的功能貌似变化不多，最大的变化是改写了proxy模块，原先的fastcgi模块也被proxy所取代，从1.4.X升级的话就需要做一些修改。
 

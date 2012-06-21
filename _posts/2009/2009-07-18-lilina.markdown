@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 326
 layout: post
 title: !binary |
   bGlsaW5h5pyA5paw54mI5pys5a6J6KOF55qE6Zeu6aKY
@@ -24,7 +23,6 @@ excerpt: !binary |
   iqDku4DkuYjkuKrlrZfmr43mlbDlrZflsLHooYzkuobjgII=
 
 date: 2009-07-18 08:03:42 +08:00
-wordpress_url: http://blog.59trip.com/?p=326
 ---
 一个多月前买59trip.com这个域名的时候，没想太多要做个什么样的网站，只是觉得这个域名还值得花10美刀买下来。后来就做了这个博客，天天写一些工作中碰到的技术问题，总结一下学习到的东西，顺便尝试一些新东西。但是<a href="http://www.59trip.com">www.59trip.com</a>这个子域一直空着，毕竟域名和旅游相关，那么还是应该做个旅游相关的网站。没那么多精力，<a href="http://getlilina.org/">lilina</a>是个不错的选择，只需要我去找找好玩的博客，然后聚合到一起。
 

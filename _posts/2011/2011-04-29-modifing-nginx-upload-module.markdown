@@ -1,11 +1,9 @@
 --- 
-wordpress_id: 1006
 layout: post
 title: !binary |
   5a+5bmdpbnjnmoTmlq3ngrnkuIrkvKDmqKHlnZfnmoTkuIDngrnmlLnov5s=
 
 date: 2011-04-29 15:11:10 +08:00
-wordpress_url: http://pipa.tk/?p=1006
 ---
 前一篇文章介绍了一下<a href="http://pipa.tk/archives/986">nginx的断点上传模块</a>。
 

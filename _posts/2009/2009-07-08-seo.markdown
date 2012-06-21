@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 268
 layout: post
 title: !binary |
   c2Vv6L+H5bqm5LyY5YyW55qE5ZCO5p6c
@@ -8,7 +7,6 @@ excerpt: "\r\n\
   \xE2\x80\x9Cphp curl\xE7\x94\xA8\xE6\xB3\x95\xE2\x80\x9D \xE8\xBF\x99\xE4\xB8\xAA\xE5\x85\xB3\xE9\x94\xAE\xE8\xAF\x8D\xE7\x9A\x84\xE6\x8E\x92\xE5\x90\x8D\xE5\x9C\xA86\xE6\x9C\x88\xE4\xBB\xBD\xE6\x98\xAF7\xEF\xBC\x8C\xE8\xBF\x98\xE8\x83\xBD\xE5\x9C\xA8\xE7\xAC\xAC\xE4\xB8\x80\xE9\xA1\xB5\xE6\x98\xBE\xE7\xA4\xBA\xEF\xBC\x9A\r\n\
   [caption id=\"attachment_269\" align=\"alignnone\" width=\"300\" caption=\"php curl\"]<a href=\"http://blog.59trip.com/wp-content/uploads/2009/07/php_curl.jpg\"><img src=\"http://blog.59trip.com/wp-content/uploads/2009/07/php_curl-300x137.jpg\" alt=\"php curl\" title=\"php_curl\" width=\"300\" height=\"137\" class=\"size-medium wp-image-269\" /></a>[/caption]"
 date: 2009-07-08 10:24:22 +08:00
-wordpress_url: http://blog.59trip.com/?p=268
 ---
 最近一直在研究seo（搜索引擎优化），为了提高本站的排名不遗余力。按照俺的理解，搜索引擎的基本原理就是根据网站之间互相引用计数来进行排名的，那么如果外面其他网站引用我的链接越多，那么我的排名就越高了。基于这一假设，俺就到javaeye上面贴了一篇文章《<a href="http://www.javaeye.com/topic/415473">php curl的几种用法</a>》,原文照搬本站的<a href="http://blog.59trip.com/archives/160">这篇文章</a>，并在文章底部加了链接。
 

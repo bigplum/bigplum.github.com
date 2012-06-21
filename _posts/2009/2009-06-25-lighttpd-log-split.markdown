@@ -1,11 +1,9 @@
 --- 
-wordpress_id: 165
 layout: post
 title: !binary |
   bGlnaHR0cGTml6Xlv5fliIblibI=
 
 date: 2009-06-25 08:17:45 +08:00
-wordpress_url: http://blog.59trip.com/?p=165
 ---
 lighttpd本身不支持apache的rotatelogs类似的功能，但可以通过<a href="http://cronolog.org/">cronolog</a>来完成。
 

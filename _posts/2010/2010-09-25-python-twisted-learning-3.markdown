@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 849
 layout: post
 title: !binary |
   cHl0aG9u572R57uc57yW56iL5qGG5p62dHdpc3RlZOWtpuS5oOeslOiusCgz
@@ -21,7 +20,6 @@ excerpt: !binary |
   PC9hPu+8jOacieWkn+eugOa0geeahOOAgg==
 
 date: 2010-09-25 16:25:14 +08:00
-wordpress_url: http://pipa.tk/?p=849
 ---
 twisted提供了生产者与消费者系统（producer and consumer），用于处理大流量网络数据流。当你的程序需要产生大量数据同时通过网络输出，或者做类似proxy的功能是，就八成需要用到这个东东了。twisted提供的api封装了很多细节，用起来挺方便的，但要搞清楚还要费一番周折。producer的说明文档在这里：<a href="http://twistedmatrix.com/documents/current/core/howto/producers.html">http://twistedmatrix.com/documents/current/core/howto/producers.html</a>，有够简洁的。
 

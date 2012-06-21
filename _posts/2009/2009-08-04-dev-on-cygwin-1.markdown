@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 469
 layout: post
 title: !binary |
   5L2/55SoY3lnd2lu5byA5Y+RbGludXggY+eoi+W6j++8iOS4gO+8iS1jeWd3
@@ -27,7 +26,6 @@ excerpt: !binary |
   bmRvd3PlubPlj7DjgII=
 
 date: 2009-08-04 00:22:17 +08:00
-wordpress_url: http://blog.59trip.com/?p=469
 ---
 应ibaby要求，写一些linux下开发的入门教程。
 

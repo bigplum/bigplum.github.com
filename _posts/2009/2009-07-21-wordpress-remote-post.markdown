@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 356
 layout: post
 title: !binary |
   d29yZHByZXNz55qE6L+c56iL5Y+R5biD5Yqf6IO9
@@ -15,7 +14,6 @@ excerpt: !binary |
   o+WwseiDveaPkOS6pOaWh+eroOS6huOAgg==
 
 date: 2009-07-21 20:26:38 +08:00
-wordpress_url: http://blog.59trip.com/?p=356
 ---
 wordpress支持两种远程发布功能，通过邮件发布和通过atom接口发布。通过邮件发布需要单独申请一个邮箱，在后台配置好之后，所有发往这个邮箱的邮件都会被发布到博客上。
 

@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 436
 layout: post
 title: !binary |
   6K6w5b2V5LiA5LiL5a+5d29yZHByZXNz5Li76aKY5YGa55qE5L+u5pS5
@@ -18,7 +17,6 @@ excerpt: !binary |
   ZGUiLHNhbnMtc2VyaWY7DQoNCg==
 
 date: 2009-07-29 08:28:49 +08:00
-wordpress_url: http://blog.59trip.com/?p=436
 ---
 我用的主题是ultimateblogger2，做了一些修改，还算差强人意了。这个主题的颜色比较严肃，不够活泼，看久了就觉得比较单调。
 

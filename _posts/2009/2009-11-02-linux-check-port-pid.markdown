@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 673
 layout: post
 title: !binary |
   5ZyobGludXjkuIvmn6XnnIvnq6/lj6Plr7nlupTnmoTov5vnqIvlj7c=
@@ -22,7 +21,6 @@ excerpt: "\xE5\x9C\xA8windows\xE4\xB8\x8B\xEF\xBC\x8C\xE5\x8F\xAF\xE4\xBB\xA5\xE
   ntpd      2048    ntp   17u  IPv6      5350       UDP *:ntp\r\n\
   ntpd      2048    ntp   18u  IPv6      5352       UDP localhost:ntp"
 date: 2009-11-02 16:54:56 +08:00
-wordpress_url: http://blog.59trip.com/?p=673
 ---
 在windows下，可以使用netstat直接查看端口对应的进程id，加上o参数即可：
 

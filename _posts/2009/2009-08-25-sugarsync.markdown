@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 556
 layout: post
 title: !binary |
   U3VnYXJTeW5j5YWN6LS5572R55uY5L2/55So6K+E5rWL
@@ -28,7 +27,6 @@ excerpt: !binary |
   L2E+
 
 date: 2009-08-25 23:43:34 +08:00
-wordpress_url: http://blog.59trip.com/?p=556
 ---
 <a href="https://www.sugarsync.com/">SugarSync</a>是一款比较优秀的网盘，免费提供2G的存储空间，并且支持PC客户端同步功能；值得一提的是还支持手机客户端同步，iphone、android、Windows Mobile、黑莓等智能手机都支持，应该是所有网盘中功能最强大的一款了。
 

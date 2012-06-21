@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 311
 layout: post
 title: !binary |
   55SoTFZT5a6e546w572R56uZ5Zyo57q/5Y2H57qn
@@ -26,7 +25,6 @@ excerpt: !binary |
   uumbhue+pO+8jOS4jeWGjeaOpeWPl+aWsOeahOivt+axguOAgg==
 
 date: 2009-07-16 08:44:56 +08:00
-wordpress_url: http://blog.59trip.com/?p=311
 ---
 LVS是类似F5的软件负载均衡器，国人主导的一个开源项目，很不错的东西。具体可以参考：<a href="http://www.linuxvirtualserver.org/">http://www.linuxvirtualserver.org/</a>.
 

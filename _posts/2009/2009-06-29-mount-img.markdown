@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 209
 layout: post
 title: !binary |
   5aaC5L2VbW91bnTlj6/lkK/liqjnmoTnoaznm5jmmKDlg4/mlofku7Y=
@@ -16,7 +15,6 @@ excerpt: !binary |
   b3IgIA==
 
 date: 2009-06-29 11:49:17 +08:00
-wordpress_url: http://blog.59trip.com/?p=209
 ---
 xen虚拟机使用硬盘映像文件作启动盘，每次生成一个虚拟机之需要拷贝一份文件。那么如何mount这个映像文件，修改其中的内容呢？
 

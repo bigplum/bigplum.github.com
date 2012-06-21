@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 97
 layout: post
 title: !binary |
   5byA5ZCvc3VzZSAxMOeahG50cOacjeWKoe+8jOS/neaMgeaXtumXtOWQjOat
@@ -15,7 +14,6 @@ excerpt: !binary |
   jG50cGTmnI3liqHjgII=
 
 date: 2009-06-18 18:15:56 +08:00
-wordpress_url: http://blog.59trip.com/?p=97
 ---
 通过ntp(network time protocol)，网络上的服务器可以自动保持时钟同步。
 

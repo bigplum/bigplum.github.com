@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 44
 layout: post
 title: !binary |
   5aaC5L2V57yW6K+RWEVO6Jma5ouf5py65YaF5qC477yI5LqM77yJLeS9v2Rv
@@ -16,7 +15,6 @@ excerpt: !binary |
   IOS9v+WGheaguOaUr+aMgU5GUw==
 
 date: 2009-06-04 19:16:09 +08:00
-wordpress_url: http://www.xenhome.co.cc/blog/?p=44
 ---
 1. 修改内核编译选项，通过make menuconfig修改编译选项，对更新后的内核进行重新编译：
 cd  xen-3.3.1/build-linux-2.6.18-xen_x86_32/

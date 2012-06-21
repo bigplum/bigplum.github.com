@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 528
 layout: post
 title: !binary |
   QW1hem9uIFMz5LqR5a2Y5YKo5pyN5Yqh56CU56m277yI5LiA77yJ
@@ -20,7 +19,6 @@ excerpt: !binary |
   v6Hku7vjgII=
 
 date: 2009-08-18 11:27:59 +08:00
-wordpress_url: http://blog.59trip.com/?p=528
 ---
 Amazon <a href="http://aws.amazon.com/s3/">Simple Storage Service</a> (Amazon S3)是互联网巨头亚马逊06年推出的存储服务，和普通的网盘不同，S3主要面向开发者，是付费的，用多少资源付多少钱。
 

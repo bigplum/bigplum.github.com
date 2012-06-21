@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 917
 layout: post
 title: "XEN\xE7\x9A\x84\xE2\x80\x9Dip_conntrack: table full, dropping packet.\xE2\x80\x9C\xE9\x97\xAE\xE9\xA2\x98"
 excerpt: !binary |
@@ -20,7 +19,6 @@ excerpt: !binary |
   gII=
 
 date: 2010-12-01 20:24:16 +08:00
-wordpress_url: http://pipa.tk/?p=917
 ---
 一开始在网上找了一下，设置了两个内核参数：
 net.ipv4.ip_conntrack_max = 655360

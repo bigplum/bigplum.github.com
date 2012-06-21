@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 511
 layout: post
 title: !binary |
   ZmFzdGNnaSBwaHAtY2dp6Ieq5Yqo6YCA5Ye655qE6Zeu6aKY
@@ -21,7 +20,6 @@ excerpt: !binary |
   ICAgKQ0KICApKQ0KKTwvcHJlPg==
 
 date: 2009-08-13 17:23:24 +08:00
-wordpress_url: http://blog.59trip.com/?p=511
 ---
 如果使用fastcgi的方式启动php，php-cgi进程在运行一段时间之后会自动退出，然后父进程再拉起一个新的php-cgi提供服务。
 

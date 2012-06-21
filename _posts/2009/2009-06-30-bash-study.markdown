@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 212
 layout: post
 title: !binary |
   YmFzaOiEmuacrOeahOWtpuS5oOeslOiusA==
@@ -14,7 +13,6 @@ excerpt: "1. \xE4\xB8\x80\xE8\xA1\x8C\xE5\x88\xA4\xE6\x96\xAD\xE8\xAF\xAD\xE5\x8
   )\r\n\
   echo ${#host[@]}"
 date: 2009-06-30 08:14:14 +08:00
-wordpress_url: http://blog.59trip.com/?p=212
 ---
 1. 一行判断语句
 <pre class=php name=code>[ -z $vmip ] || [ -z $vmname ] 

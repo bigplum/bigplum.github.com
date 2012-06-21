@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 3
 layout: post
 title: !binary |
   WGVu5Y2K6Jma5ouf5YyW5oqA5pyv
@@ -20,7 +19,6 @@ excerpt: !binary |
   bmRvd3M=
 
 date: 2009-06-01 19:36:37 +08:00
-wordpress_url: http://www.xenhome.co.cc/blog/?p=3
 ---
 半虚拟化的性能比全虚拟化高出不少，但是半虚拟化安装比较麻烦，不支持iso安装，目前只摸索出来使用virt-manager安装suse10的半虚拟化系统，安装源需要用物理光驱。而全虚拟化可以利用sxp文件挂载iso文件安装任意的linux发行版本。
 

@@ -1,11 +1,9 @@
 --- 
-wordpress_id: 934
 layout: post
 title: !binary |
   5pCt5bu6566A5piTZ2l05byA5Y+R546v5aKD
 
 date: 2010-12-07 17:01:09 +08:00
-wordpress_url: http://pipa.tk/?p=934
 ---
 准备两个linux机器，其中一个是git服务器，主要用于备份代码；另一个是工作机。这样搞死一个也不会导致代码丢失。
 

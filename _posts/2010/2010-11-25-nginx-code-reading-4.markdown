@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 905
 layout: post
 title: !binary |
   bmdpbnjmupDnoIHop6PmnpAoNCkt5rex5YWlaHR0cOaooeWdlw==
@@ -12,7 +11,6 @@ excerpt: !binary |
   55u05Yiwbmd4X2h0dHBfY29yZV9ydW5fcGhhc2VzKCnjgIIg
 
 date: 2010-11-25 08:46:31 +08:00
-wordpress_url: http://pipa.tk/?p=905
 ---
 从ngx_http_init_request() 入手，可以很容易分析http模块的处理流程。从http请求头开始解析，根据http版本走不同流程，处理请求头各个字段，直到ngx_http_core_run_phases()。 
 <a href="/assets/uploads/2010/11/nginx_http.jpg"><img src="/assets/uploads/2010/11/nginx_http.jpg" alt="nginx_http" title="nginx_http" width="570" height="521" class="alignnone size-full wp-image-907" /></a>

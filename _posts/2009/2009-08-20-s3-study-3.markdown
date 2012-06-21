@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 545
 layout: post
 title: !binary |
   UzPkupHlrZjlgqjnoJTnqbbvvIjkuInvvIktIOmJtOadg+S4juiuv+mXruaO
@@ -21,7 +20,6 @@ excerpt: !binary |
   kozorr/pl67noIHkuKTnp43mlrnlvI/jgII=
 
 date: 2009-08-20 08:31:09 +08:00
-wordpress_url: http://blog.59trip.com/?p=545
 ---
 <strong>1. 鉴权</strong>
 S3为每个用户分配了ID和密钥，用于保证用户的操作是经过授权，合法的。

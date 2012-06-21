@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 440
 layout: post
 title: !binary |
   RlVTRS0t55So5oi356m66Ze055qE5paH5Lu257O757uf
@@ -19,7 +18,6 @@ excerpt: !binary |
   cmUvbWFrZS9tYWtlIGluc3RhbGzljbPlj6/jgII=
 
 date: 2009-07-30 08:07:17 +08:00
-wordpress_url: http://blog.59trip.com/?p=440
 ---
 <em>FUSE makes it possible to implement a filesystem in a userspace program. Features include: simple yet comprehensive API, secure mounting by non-root users, support for 2.4 and 2.6 Linux kernels, multi-threaded operation. etc...</em>
 

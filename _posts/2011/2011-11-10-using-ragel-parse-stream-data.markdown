@@ -1,11 +1,9 @@
 --- 
-wordpress_id: 1046
 layout: post
 title: !binary |
   UmFnZWzop6PmnpDmtYHlvI8oc3RyZWFtKeaVsOaNrg==
 
 date: 2011-11-10 09:48:41 +08:00
-wordpress_url: http://pipa.tk/?p=1046
 ---
 Ragel是一个状态机代码生成器，支持多种语言C, C++, Objective-C, D, Java, Ruby。一般用来写正则表达式解析协议数据，然后编译成相应代码嵌入到其他语言中。
 

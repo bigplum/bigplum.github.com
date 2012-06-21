@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 152
 layout: post
 title: !binary |
   5aaC5p6c5o+Q5L6b6L+Z5qC355qE5LqR5a2Y5YKo5pyN5Yqh77yM5L2g5Lya
@@ -15,7 +14,6 @@ excerpt: !binary |
   5YWl5Yiw572R56uZ5Lit77yM5o+Q5L6b5a2Y5YKo5pyN5Yqh44CC
 
 date: 2009-06-22 11:53:46 +08:00
-wordpress_url: http://blog.59trip.com/?p=152
 ---
 提供上传下载服务，不限流量，不限存储空间，只限制每个文件大小。任何人只需要注册申请后，获得一个appid和appkey，即可使用。
 

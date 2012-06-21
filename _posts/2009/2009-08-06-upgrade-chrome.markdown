@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 492
 layout: post
 title: !binary |
   5Y2H57qnY2hyb21l5pu05o2iY2hyb21l55qE5Li76aKY
@@ -20,7 +19,6 @@ excerpt: !binary |
   iYjnqLPlrprngrnjgII=
 
 date: 2009-08-06 09:55:55 +08:00
-wordpress_url: http://blog.59trip.com/?p=492
 ---
 Google的chrome浏览器比较低调，不像IE和firefox的升级新闻铺天盖地。Chrome在正式版之外还提供了开发版的更新渠道，详细说明在这个页面：<a href="http://dev.chromium.org/getting-involved/dev-channel#TOC-Windows">http://dev.chromium.org/getting-involved/dev-channel#TOC-Windows</a>
 

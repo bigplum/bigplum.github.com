@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 831
 layout: post
 title: !binary |
   5ri45oiP5o6o6I2Q77ya55S15a2Q5YWx5ZKM5Zu9
@@ -31,7 +30,6 @@ excerpt: !binary |
   v+OAgg==
 
 date: 2010-04-29 13:08:45 +08:00
-wordpress_url: http://blog.simonlee.tk/?p=831
 ---
 <a href="http://www.newsmth.net/bbscon.php?bid=402&id=312391">实现成年男人的过家家梦想——简评电子共和国（erepublik） </a>
 

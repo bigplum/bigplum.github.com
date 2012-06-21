@@ -1,12 +1,10 @@
 --- 
-wordpress_id: 1010
 layout: post
 title: !binary |
   5ZyoTGludXjkuIvkvb/nlKhNaW5HV+e8luivkVdpbmRvd3PniYjmnKznmoRO
   Z2lueA==
 
 date: 2011-07-11 17:30:37 +08:00
-wordpress_url: http://pipa.tk/?p=1010
 ---
 简单的说，<a href="http://mingw.org/">MinGW</a>是一个和cygwin类似的东东，可以在windows下面使用gcc等GNU工具开发程序，通常用于移植linux下开发的软件到windows。最大的区别在于mingw使用的是windows native api，因此编译出来的程序不用依赖第三方的dll库，只需要windows自身的dll；而cygwin编译的程序，需要附带cygwin的dll才能运行；并且mingw的性能要好一点。
 

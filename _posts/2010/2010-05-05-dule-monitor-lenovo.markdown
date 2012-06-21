@@ -1,11 +1,9 @@
 --- 
-wordpress_id: 837
 layout: post
 title: !binary |
   6IGU5oOz5ZWG55So5py65Y+M5pi+56S65Zmo5pS755Wl
 
 date: 2010-05-05 20:57:03 +08:00
-wordpress_url: http://blog.simonlee.tk/?p=837
 ---
 话说从前看了google等大公司的工作环境，每次看到人家桌面上摆两个显示器都心里痒痒的，于是每天琢磨着给自己也搞两个显示器。在网上逛啊逛，总结出了几种方案：
 1。 单显卡双输出

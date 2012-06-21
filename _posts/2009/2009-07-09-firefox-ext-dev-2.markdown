@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 272
 layout: post
 title: !binary |
   5Y2B5YiG6ZKf5byA5Y+R5LiA5LiqZmlyZWZveOaPkuS7tu+8iOS6jO+8iS0t
@@ -35,7 +34,6 @@ excerpt: !binary |
   iqDnmoTmj5Lku7bkuoY7
 
 date: 2009-07-09 08:13:42 +08:00
-wordpress_url: http://blog.59trip.com/?p=272
 ---
 <em>（firefox extention 的中文翻译比较混乱，按字面意义应该为扩展，但大家都习惯称为插件；而firefox存在另外一个名为plugin的东西，例如，java plugin、flash plugin；所以叫插件也不妥；但是，为了便于理解，这系列的文章里都把extention称为插件。）
 </em>

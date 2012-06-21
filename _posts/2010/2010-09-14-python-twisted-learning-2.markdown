@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 846
 layout: post
 title: !binary |
   cHl0aG9u572R57uc57yW56iL5qGG5p62dHdpc3RlZOWtpuS5oOeslOiusCgy
@@ -12,7 +11,6 @@ excerpt: !binary |
   lKjkuoZkZWZlcu+8mg==
 
 date: 2010-09-14 10:45:31 +08:00
-wordpress_url: http://pipa.tk/?p=846
 ---
 接上篇，我们来看看怎么分别用defer和reactor来实现同样的http客户端。
 

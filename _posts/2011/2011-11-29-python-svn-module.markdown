@@ -1,11 +1,9 @@
 --- 
-wordpress_id: 1058
 layout: post
 title: !binary |
   cHl0aG9u55qEc3Zu5qih5Z2X
 
 date: 2011-11-29 19:43:31 +08:00
-wordpress_url: http://pipa.tk/?p=1058
 ---
 在suse10下安装svn需要编译，挺麻烦的。安装trac和svn时，发现需要python的svn模块，找了半天找到一个pysvn，装上之后发现不是这个模块。原来应该通过swig编译svn代码。
 

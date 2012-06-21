@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 94
 layout: post
 title: !binary |
   572R57uc566h55CG5bmz5Y+wbmFnaW9z
@@ -18,7 +17,6 @@ excerpt: !binary |
   j6/lsJHnmoTjgII=
 
 date: 2009-06-15 21:30:25 +08:00
-wordpress_url: http://blog.59trip.com/?p=94
 ---
 这两天在研究怎么管理公司的服务器，看了mrtg，cacti等软件，最终还是选了nagios。
 nagios作为开源的企业级网络管理平台，能够满足大部分中小型企业的网络管理需求。mrtg、cacti虽然也有很强大的管理、监控功能，却缺少了很重要的告警机制，而告警却是企业级网管的重要功能；特别在电信系统中，早期的网管功能很薄弱，但是告警是必不可少的。<!--more-->

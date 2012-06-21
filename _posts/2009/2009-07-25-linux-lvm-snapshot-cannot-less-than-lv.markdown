@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 417
 layout: post
 title: !binary |
   bGludXggTFZN55qE5b+r54Wn5LiN6IO95bCP5LqO5rqQ6YC76L6R5Y2355qE
@@ -15,7 +14,6 @@ excerpt: !binary |
   m+eahOS4gOS4quaVmeiureOAgg0K
 
 date: 2009-07-25 14:02:24 +08:00
-wordpress_url: http://blog.59trip.com/?p=417
 ---
 LVM2可以很方便的创建逻辑卷的快照，并且可以指定快照大小，但是必须注意，如果快照空间写满，LVM会自动停止该快照，导致数据丢失，系统吊死。所以创建快照时，要保证快照大小比源逻辑卷大。很惨痛的一个教训。
 <pre>

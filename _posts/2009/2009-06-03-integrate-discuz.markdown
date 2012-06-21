@@ -1,11 +1,9 @@
 --- 
-wordpress_id: 42
 layout: post
 title: !binary |
   5aaC5L2V5pW05ZCIZGlzY3V6IeiuuuWdm+WIsOWFtuS7luezu+e7n+S4rQ==
 
 date: 2009-06-03 13:11:21 +08:00
-wordpress_url: http://www.xenhome.co.cc/blog/?p=42
 ---
 论坛是一个商业网站必不可少的部分，网上有很多开源的论坛系统，discuz!就是一个很成熟的功能强大的系统。因此如何将论坛整合到原有的商业系统中就是一个必要的步骤。
 

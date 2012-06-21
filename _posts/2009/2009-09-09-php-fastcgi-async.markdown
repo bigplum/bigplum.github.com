@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 597
 layout: post
 title: !binary |
   cGhwIGZhc3RjZ2nnmoTlvILmraXosIPnlKjjgIHlpJrnur/nqIvjgIFzZWxl
@@ -23,7 +22,6 @@ excerpt: !binary |
   5LiA55u05oyC5L2P77yM5aSW55WM5peg5rOV5bmy6aKE44CCDQo=
 
 date: 2009-09-09 11:12:16 +08:00
-wordpress_url: http://blog.59trip.com/?p=597
 ---
 系统的php是使用fastcgi提供服务的，启动时预先spawn了n个php-cgi进程，轮流提供服务。由于用php做了一些服务，而这些服务的执行时间比较长，涉及到多个网络节点之间交互，这样就导致php-cgi进程在为一个请求提供服务之后，下个请求就必须排队等待，明显降低了吞吐量。
 

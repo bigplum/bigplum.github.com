@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 387
 layout: post
 title: !binary |
   cGhw5Lit6LCD55So5Zu+5YOP5aSE55CG5Ye95pWw5bqTSW1hZ2VNYWdpY2s=
@@ -22,7 +21,6 @@ excerpt: !binary |
   h+aho+S5n+ayoeS4quivtOaYjuOAgg==
 
 date: 2009-07-22 13:32:27 +08:00
-wordpress_url: http://blog.59trip.com/?p=387
 ---
 <a href="http://www.imagemagick.org">ImageMagick</a>是一个开源的图像处理函数库，支持很多语言；可能人们比较熟悉GD库，ImageMagick的运行速度比GD快，并且支持更多的图像处理功能。在linux上安装使用，请参考：<a href="http://wap.littz.cn/viewnews.php?itemid=336">http://wap.littz.cn/viewnews.php?itemid=336</a>
 

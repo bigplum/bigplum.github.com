@@ -1,11 +1,9 @@
 --- 
-wordpress_id: 967
 layout: post
 title: !binary |
   5LiA5Liq5aWH5oCq55qE572R57uc6Zeu6aKY
 
 date: 2011-02-14 15:20:15 +08:00
-wordpress_url: http://pipa.tk/?p=967
 ---
 这个问题困扰了很久，主要现象就是一个机房的某个服务器访问另一个机房的特定两个ip经常出现连接失败的情况。通过抓包可以发现服务端收到TCP SYN报文，但是没有返回ACK。
 

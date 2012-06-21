@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 233
 layout: post
 title: !binary |
   c2Nw5piv5ZCm5pSv5oyB5pat54K557ut5Lyg77yf
@@ -18,7 +17,6 @@ excerpt: !binary |
   5oiQ56uL77yM5oiR5Lus6L+Y5piv55yLc2Nw55qE5omL5YaM5ZCn44CC
 
 date: 2009-07-05 08:04:42 +08:00
-wordpress_url: http://blog.59trip.com/?p=233
 ---
 在google上搜到这位仁兄说“<a href="http://twitter.com/tualatrix/status/1695003406">scp有断点续传功能哇</a>”，又没说明是怎么支持的，让我无比郁闷，用了这么多年scp，就从来不知道还可以支持断点续传。
 

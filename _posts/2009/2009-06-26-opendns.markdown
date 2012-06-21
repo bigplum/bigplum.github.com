@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 187
 layout: post
 title: !binary |
   55yL55yLb3BlbmRuc+aAjuS5iOWBmuWGheWuuei/h+a7pA==
@@ -25,7 +24,6 @@ excerpt: !binary |
   aGVpZ2h0PSIxNDEiIC8+PC9hPg==
 
 date: 2009-06-26 08:00:10 +08:00
-wordpress_url: http://blog.59trip.com/?p=187
 ---
 <a href="http://www.opendns.com/">opendns</a>是一个免费的dns解析服务器，你可以在任何地方配置电脑的dns为opendns的地址：208.67.222.222、208.67.220.220。
 

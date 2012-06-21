@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 222
 layout: post
 title: "lighttpd\xE7\x9A\x84server.max-write-idle\xE9\x97\xAE\xE9\xA2\x98"
 excerpt: !binary |
@@ -21,7 +20,6 @@ excerpt: !binary |
   gII=
 
 date: 2009-07-01 19:10:32 +08:00
-wordpress_url: http://blog.59trip.com/?p=222
 ---
 自从把lighttpd升级到1.5之后支持断点续传之后，accesslog日志中就多了很多下面的报错：
 2009-07-01 17:38:09 (server.c:744) NOTE: a request for /noshow.php timed out after writing 90024 bytes. We waited 360 seconds. If this a problem increase server.max-write-idle

@@ -1,11 +1,9 @@
 --- 
-wordpress_id: 1096
 layout: post
 title: !binary |
   d2luZG93c+S4i+eUqG1pbmdX57yW6K+Rb3BlbnJlc3R5
 
 date: 2012-03-08 21:12:01 +08:00
-wordpress_url: http://pipablog.tk/?p=1096
 category: 
 - dev
 tags: 

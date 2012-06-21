@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 123
 layout: post
 title: !binary |
   bGlnaHR0cGQxLjXniYjmnKzlj43lkJHku6PnkIbnmoTphY3nva4=
@@ -14,7 +13,6 @@ excerpt: !binary |
   aHR0cGQvd2lraS9Eb2NzOk1vZFByb3h5Q29yZTwvYT4=
 
 date: 2009-06-18 21:40:40 +08:00
-wordpress_url: http://blog.59trip.com/?p=123
 ---
 lighttpd1.5，svn版本中取消了1.4中的mod_proxy，改为mod_proxy_core，相应的反向代理配置也有所不同。可以参考这个文档：<a href="http://redmine.lighttpd.net/projects/lighttpd/wiki/Docs:ModProxyCore">http://redmine.lighttpd.net/projects/lighttpd/wiki/Docs:ModProxyCore</a>
 

@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 174
 layout: post
 title: !binary |
   Z29vZ2xl5Z+f5ZCN6KKr5Yqr5oyBZ29vZ2xl6LSm5oi35peg5rOV55m76ZmG
@@ -17,7 +16,6 @@ excerpt: !binary |
   b2dsZS5jb20gd3d3Lmdvb2dsZS5jb20=
 
 date: 2009-06-25 13:12:08 +08:00
-wordpress_url: http://blog.59trip.com/?p=174
 ---
 昨晚11点多，google就无法访问，当时就想有可能被墙了。今天上午居然还不能访问，只好另外想办法。同事说另一个地方可以访问，ping google.com的ip地址是66.249.89.147，而我这里ping的是4.36.66.178，既然能访问，那么就是dns的问题，有两个解决办法：
 

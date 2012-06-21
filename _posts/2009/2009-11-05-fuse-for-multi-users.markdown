@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 678
 layout: post
 title: !binary |
   ZnVzZeeUn+aIkOeahOaWh+S7tuezu+e7n+WmguS9leaUr+aMgeWkmueUqOaI
@@ -29,7 +28,6 @@ excerpt: !binary |
   gII=
 
 date: 2009-11-05 15:52:28 +08:00
-wordpress_url: http://blog.59trip.com/?p=678
 ---
 这个月用python写了一个fuse的客户端程序，实现了一个虚拟的文件系统，可以支持read, write, close等文件操作，但是今天在用的时候发现，这个文件系统只对执行程序的用户可见，其他用户根本看不到这个fs，df、mount也看不到，ls时提示“permission deny”， 郁闷了。
 

@@ -1,11 +1,9 @@
 --- 
-wordpress_id: 206
 layout: post
 title: !binary |
   5LuO572R5LiK5Yiw572R5LiL
 
 date: 2009-06-28 23:24:45 +08:00
-wordpress_url: http://blog.59trip.com/?p=206
 ---
 在<a href="http://www.iresearch.cn/">艾瑞</a>上看到很有意思的两篇文章：<a href="http://column.iresearch.cn/u/mr6/archives/2009/111015.shtml">Alice.com卖日用品直接送府</a>, <a href="http://column.iresearch.cn/u/mr6/archives/2009/101656.shtml">买菜团团长Ken帮盐湖城家庭省下70%花费</a>。
 

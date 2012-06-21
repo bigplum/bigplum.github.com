@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 236
 layout: post
 title: !binary |
   5Y2B5YiG6ZKf5byA5Y+R5LiA5LiqZmlyZWZveOaPkuS7tu+8iOW6j++8iQ==
@@ -26,7 +25,6 @@ excerpt: !binary |
   44CC
 
 date: 2009-07-05 16:30:14 +08:00
-wordpress_url: http://blog.59trip.com/?p=236
 ---
 去年8、9月份时研究了一阵rich application client，浏览了很多ajax、flash、xul、widget等技术的分析文章，公司内部有份技术选型文档的分析颇为到位，列出了几种技术的侧重点，虽然仅仅是选来做测试自动化，但对互联网的这几种技术却剖析的丝丝入扣。当时还想做一些widget的探索，就搭建了一个firefox开发环境，用xul做了一个小例子。
 

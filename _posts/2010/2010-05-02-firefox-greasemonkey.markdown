@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 833
 layout: post
 title: !binary |
   ZmlyZWZveOeahGdyZWFzZW1vbmtlee+8iOayueeMtO+8ieiEmuacrA==
@@ -24,7 +23,6 @@ excerpt: !binary |
   iLDkuIDkuKrlsI/ml7blsLHog71kaXnkuIDkuKrohJrmnKzkuobjgII=
 
 date: 2010-05-02 18:09:07 +08:00
-wordpress_url: http://blog.simonlee.tk/?p=833
 ---
 Greasemonkey是firefox的一个扩展，通过这个扩展，用户可以很方便的进行二次开发，作出一些有用的脚本，改善浏览体验。对我来说，这个东东最大的应用就是用在webgame上，做一些自动计算的东西。例如，travian和erepublik。<a href="http://userscripts.org">userscripts.org</a>是greasemonkey脚本的集散地，搜索travian有1059个脚本，搜erepublik有313个脚本，开发者的力量真强大，同时也说明了greasemonkey开发的门槛很低。
 

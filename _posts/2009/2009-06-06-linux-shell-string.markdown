@@ -1,12 +1,10 @@
 --- 
-wordpress_id: 52
 layout: post
 title: !binary |
   bGludXggc2hlbGzohJrmnKzlrZfnrKbkuLLmk43kvZznmoTkuIDkupvmgLvn
   u5M=
 
 date: 2009-06-06 23:21:36 +08:00
-wordpress_url: http://blog.59trip.com/?p=52
 ---
 网上收集的资料总结。
 

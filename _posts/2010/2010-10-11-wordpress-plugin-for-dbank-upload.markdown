@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 854
 layout: post
 title: !binary |
   d29yZHByZXNz5pWw5o2u6ZO26KGM5LiK5Lyg5o+S5Lu2
@@ -23,7 +22,6 @@ excerpt: !binary |
   YT4=
 
 date: 2010-10-11 16:28:17 +08:00
-wordpress_url: http://pipa.tk/?p=854
 ---
 dbank是一个网盘，作为一个有理想的网盘，他开放了部分接口，可以供第三方开发应用。dbank有发布文件外链的功能，利用这个功能我们可以把下载流量分流给网盘，节省虚拟主机或VPS的流量。。。可以搞一个下载站了。
 

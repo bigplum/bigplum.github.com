@@ -1,11 +1,9 @@
 --- 
-wordpress_id: 1029
 layout: post
 title: !binary |
   5L2/55SoVkPnvJbor5F3aW5kb3dz54mI5pysbmdpbng=
 
 date: 2011-07-13 16:59:20 +08:00
-wordpress_url: http://pipa.tk/?p=1029
 ---
 <strong>1. 配置环境</strong>
 先参考<a href="http://pipa.tk/archives/1020">《在Windows下编译Windows版本的Nginx》</a>所述，配置mingw的运行环境；然后修改 /usr/local/etc/profile.local

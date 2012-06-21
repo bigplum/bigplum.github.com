@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 308
 layout: post
 title: !binary |
   eGVu6Jma5ouf5py6ZG9tVeWQr+WKqOaXtuWNoeS9j+mXrumimA==
@@ -20,7 +19,6 @@ excerpt: !binary |
   uK3lpJrkvZnnmoTliIbljLrliKDpmaTljbPlj6/jgII=
 
 date: 2009-07-14 11:44:37 +08:00
-wordpress_url: http://blog.59trip.com/?p=308
 ---
 domU启动时卡住有很多种情况导致，其中一种就是img文件中需使用的文件系统找不到，那么系统在启动时就会卡在下面的地方：
 

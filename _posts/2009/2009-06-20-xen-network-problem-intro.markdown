@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 144
 layout: post
 title: !binary |
   eGVu572R57uc6Zeu6aKY55qE5a6a5L2N5oCd6Lev77yI572R5qGl5qih5byP
@@ -13,7 +12,6 @@ excerpt: !binary |
   gg==
 
 date: 2009-06-20 16:40:17 +08:00
-wordpress_url: http://blog.59trip.com/?p=144
 ---
 装好xen虚拟机之后，如果网络不通会很恼火不知如何下手，介绍一下我一般碰到这些问题的定位步骤。以下基于suse 10，xen版本应该是3.1。
 

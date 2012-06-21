@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 246
 layout: post
 title: !binary |
   5Y2B5YiG6ZKf5byA5Y+R5LiA5LiqZmlyZWZveOaPkuS7tu+8iOS4gO+8iQ==
@@ -39,7 +38,6 @@ excerpt: !binary |
   5ZCO5YaN5Y6L57yp44CC
 
 date: 2009-07-06 23:56:38 +08:00
-wordpress_url: http://blog.59trip.com/?p=246
 ---
 首先安装一个扩展开发工具（<a href="http://ted.mielczarek.org/code/mozilla/extensiondev/extensiondev.xpi">先右击另存</a>），如果直接安装会提示“"Extension Developer" 将不会被安装，因为它未提供安全更新”，需要修改一下。
 [caption id="attachment_247" align="alignnone" width="300" caption="extention dev"]<a href="/assets/uploads/2009/07/extdev.PNG"><img src="/assets/uploads/2009/07/extdev-300x97.PNG" alt="extention dev" title="extdev" width="300" height="97" class="size-medium wp-image-247" /></a>[/caption]

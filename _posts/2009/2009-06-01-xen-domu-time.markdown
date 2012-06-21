@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 13
 layout: post
 title: !binary |
   5L+u5pS5eGVuIGRvbVXnmoTns7vnu5/ml7bpl7Q=
@@ -12,7 +11,6 @@ excerpt: !binary |
   bmYNCiNzeXNjdGwgLXANCjwvY29kZT4=
 
 date: 2009-06-01 19:57:34 +08:00
-wordpress_url: http://www.xenhome.co.cc/blog/?p=13
 ---
 xen如果使用半虚拟化建立guest domain就改不了domU的时间。可以通过下面的参数进行修改。
 

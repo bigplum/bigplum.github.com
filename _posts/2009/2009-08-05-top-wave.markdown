@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 488
 layout: post
 title: !binary |
   5o6o6I2Q5LiA5pys5Lmm44CK5rWq5r2u5LmL5beF44CL
@@ -23,7 +22,6 @@ excerpt: !binary |
   6L+Z5LiA5rC45oGS55qE5YmN6L+b5Yqo5Yqb44CC
 
 date: 2009-08-05 23:18:42 +08:00
-wordpress_url: http://blog.59trip.com/?p=488
 ---
 作者是google研究员吴军，现在还在连载，地址在这里：<a href="http://googlechinablog.com/2007/07/at.html">http://googlechinablog.com/2007/07/at.html</a>，相信很多人已经看过，还是想推荐一下。
 

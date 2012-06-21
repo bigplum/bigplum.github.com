@@ -1,11 +1,9 @@
 --- 
-wordpress_id: 1003
 layout: post
 title: !binary |
   Z2l0aHVi5L2/55So56yU6K6w
 
 date: 2011-04-27 20:07:36 +08:00
-wordpress_url: http://pipa.tk/?p=1003
 ---
 1. 在github上建立一个项目，将代码 push 到 github
 {% highlight bash%}

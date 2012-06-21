@@ -1,12 +1,10 @@
 --- 
-wordpress_id: 263
 layout: post
 title: !binary |
   bGludXggc2hlbGzohJrmnKzlrZfnrKbkuLLmk43kvZznmoTkuIDkupvmgLvn
   u5Mo5LqMKQ==
 
 date: 2009-07-07 00:27:05 +08:00
-wordpress_url: http://blog.59trip.com/?p=263
 ---
 接上篇<a href="http://blog.59trip.com/archives/52">《linux shell脚本字符串操作的一些总结》</a>
 4. 截取字符串

@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 520
 layout: post
 title: !binary |
   5rex5Zyz55S15L+h55qE5peg6IC76KGM5Li6LeW8ueWHuuW5v+WRiuWSjOeq
@@ -22,7 +21,6 @@ excerpt: !binary |
   r+S+m+eUteS/oeeahOebuOWFs+mDqOmXqOWPguiAg+OAgg==
 
 date: 2009-09-20 19:53:36 +08:00
-wordpress_url: http://blog.59trip.com/?p=520
 ---
 用深圳电信的ADSL上网经常碰到这种情况，firefox的右侧滚动条莫名其妙的会多出一条，一开始以为是firefox版本的问题，我用的是portable版的firefox，后来发现chrome也有一样的问题，终于有一天忍不住查看了一下页面的源码，发现原来不是我的问题。
 

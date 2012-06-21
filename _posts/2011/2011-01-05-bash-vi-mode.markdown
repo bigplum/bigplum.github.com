@@ -1,11 +1,9 @@
 --- 
-wordpress_id: 962
 layout: post
 title: !binary |
   YmFzaOeahHZp57yW6L6R5qih5byP
 
 date: 2011-01-05 11:48:58 +08:00
-wordpress_url: http://pipa.tk/?p=962
 ---
 以前在unix下用ksh，用的ksh -o vi，后来在linux下用bash，可以用这个命令进入：
 

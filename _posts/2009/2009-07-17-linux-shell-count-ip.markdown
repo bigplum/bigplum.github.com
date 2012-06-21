@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 329
 layout: post
 title: !binary |
   bGludXggc2hlbGznu5/orqHnvZHnq5nml6Xlv5fnmoTni6znq4tpcOaVsA==
@@ -17,7 +16,6 @@ excerpt: !binary |
   LCIgICIgaXBbaV19fSd8d2MgLWw=
 
 date: 2009-07-17 08:26:41 +08:00
-wordpress_url: http://blog.59trip.com/?p=329
 ---
 统计日志中独立ip数，用awk很容易搞定：
 

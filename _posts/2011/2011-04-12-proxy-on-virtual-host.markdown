@@ -1,11 +1,9 @@
 --- 
-wordpress_id: 991
 layout: post
 title: !binary |
   56ef5Liq6Jma5ouf5Li75py65p2l5YGa5Y+N5ZCR5Luj55CG77yf
 
 date: 2011-04-12 12:58:59 +08:00
-wordpress_url: http://pipa.tk/?p=991
 ---
 用过 <a href="http://appengine.google.com/">GAE</a> 都知道google的ghs ip经常被封，yobin在GAE被封之前做了一个挺大规模的人人网应用，备受困扰。上个月终于受不了花20美刀租了个linode的VPS，后来我发现他这个VPS所在的机房跟我这个100块钱的虚拟主机在一个地方，速度差不了多少，但是价钱便宜了十几倍。于是我想为什么不能用虚拟主机来做个反向代理呢？
 

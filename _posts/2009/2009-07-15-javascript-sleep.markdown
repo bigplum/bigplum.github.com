@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 315
 layout: post
 title: !binary |
   SmF2YXNjcmlwdCBzbGVlcOWHveaVsOeahOaooeaLn+WunueOsA==
@@ -19,7 +18,6 @@ excerpt: !binary |
   L3ByZT4=
 
 date: 2009-07-15 08:30:57 +08:00
-wordpress_url: http://blog.59trip.com/?p=315
 ---
 做firefox的开心网插件碰到个问题，想在偷菜时候sleep几秒，模拟人工操作，免得被服务器认为是外挂。但是javascript没有sleep这个函数，需要手工模拟实现。
 

@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 507
 layout: post
 title: !binary |
   cGhw5Lit55qE6ZSZ6K+v5aSE55CG5Ye95pWw
@@ -23,7 +22,6 @@ excerpt: !binary |
   q6/lgZrlh7rnm7jlupTnmoTlk43lupTjgII=
 
 date: 2009-08-12 16:15:48 +08:00
-wordpress_url: http://blog.59trip.com/?p=507
 ---
 php中除了常见的try/catch，error_reporting()之外，还提供了set_error_handler()函数用于自定义错误处理函数。
 

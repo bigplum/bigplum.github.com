@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 112
 layout: post
 title: !binary |
   bmFnaW9z5a6J6KOF5omL6K6w77yI5LqM77yJ
@@ -12,7 +11,6 @@ excerpt: !binary |
   nIvliLDlj6/niLHnmoTmgKfog73lm77lvaLjgII=
 
 date: 2009-06-21 08:12:32 +08:00
-wordpress_url: http://blog.59trip.com/?p=112
 ---
 在<a href="http://blog.59trip.com/archives/107">nagios安装手记（一）</a>中已经安装好了nagios平台，并且配置了基本的服务，现在继续安装pnp插件以看到可爱的性能图形。
 

@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 75
 layout: post
 title: !binary |
   5L2/55SoTkZT5ZCv5YqoeGVu6Jma5ouf5py6
@@ -18,7 +17,6 @@ excerpt: !binary |
   5Lulc3VzZTEwIFNQMuS4uuS+i+OAgg==
 
 date: 2009-06-10 18:10:09 +08:00
-wordpress_url: http://blog.59trip.com/?p=75
 ---
 传统的使用xen虚拟机的方式是在dom0本地生成一个已经安装好系统的lv或者文件，在上面启动domU系统之后，登陆到console界面修改ip地址等配置。整个步骤难以通过脚本自动完成。所以要想实现amazon EC2那样自动生成计算环境的功能，就不能这样来搞了。
 通过NFS boot domU，可以降低生成虚拟机的复杂度，基本实现自动化生成domU的功能。以下过程以suse10 SP2为例。

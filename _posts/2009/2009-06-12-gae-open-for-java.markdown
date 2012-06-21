@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 91
 layout: post
 title: !binary |
   5byA5Y+R5LiA5LiqR0FF57G75Ly855qE5LqR6K6h566X5bmz5Y+w6ZyA6KaB
@@ -13,7 +12,6 @@ excerpt: !binary |
   j6bmloflho3orrLov7DjgII=
 
 date: 2009-06-12 11:51:51 +08:00
-wordpress_url: http://blog.59trip.com/?p=91
 ---
 Research a cloud computing platform like GAE.
 

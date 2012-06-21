@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 115
 layout: post
 title: !binary |
   bmFnaW9z5a6J6KOF5omL6K6w77yI5LiJ77yJ
@@ -18,7 +17,6 @@ excerpt: !binary |
   veW+iOW8uuWkp+OAgg==
 
 date: 2009-06-22 08:46:21 +08:00
-wordpress_url: http://blog.59trip.com/?p=115
 ---
 再来介绍两个有用的插件。俺装nagios首先就是为了监控服务器的网络流量，查了一下，nagios官方有个perl写的插件check_traffic。资料很少，装上之后nagios可以看到网络流量数据，但是pnp无法显示图形，没有继续定位问题。再找了一个<a href="http://www.itnms.net/discuz/viewthread.php?tid=767&extra=pageD1&page=1">国人写的check_traffic.sh脚本</a>，pnp能正常显示，很好很强大。
 <!--more-->

@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 497
 layout: post
 title: !binary |
   5L2/55SoY3lnd2lu5byA5Y+RbGludXggY+eoi+W6j++8iOS6jO+8iS3luLjn
@@ -34,7 +33,6 @@ excerpt: !binary |
   poHorrLorrLlvIDlj5HluLjnlKjnmoTjgII=
 
 date: 2009-08-07 13:43:02 +08:00
-wordpress_url: http://blog.59trip.com/?p=497
 ---
 linux开发基本是基于命令行界面的，特别是做服务器端的程序开发。当然也有一些很优秀的GUI开发工具，但我一般都不用，也很少见别人使用。高手一般用Emacs或者vi直接在telnet客户端上写代码，我还是习惯在windows下用source insight或者ue写好代码，传到linux后编译调试，如果有些小修改才用vi编辑。
 

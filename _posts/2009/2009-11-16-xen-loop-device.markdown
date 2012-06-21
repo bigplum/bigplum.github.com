@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 691
 layout: post
 title: !binary |
   eGVu5ZCv5Yqo5pe2bG9vcCBkZXZpY2XkuI3otrPnmoTpl67popg=
@@ -17,7 +16,6 @@ excerpt: !binary |
   55qE77ya
 
 date: 2009-11-16 17:13:32 +08:00
-wordpress_url: http://blog.59trip.com/?p=691
 ---
 启动xen domU时，如果出现这个错误：
 Error: Device 51712 (vbd) could not be connected. Failed to find an unused loop device

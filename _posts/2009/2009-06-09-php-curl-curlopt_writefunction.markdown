@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 71
 layout: post
 title: !binary |
   cGhwIGN1cmznmoRDVVJMT1BUX1dSSVRFRlVOQ1RJT07lj4LmlbDkvb/nlKg=
@@ -18,7 +17,6 @@ excerpt: !binary |
   uIDmraXlpITnkIY=
 
 date: 2009-06-09 20:22:54 +08:00
-wordpress_url: http://blog.59trip.com/?p=71
 ---
 curl库是一个强大的http协议操作库，可以方便的构造http请求，并获取返回，下载文件等。支持php、c、python、命令行等多种接口。
 

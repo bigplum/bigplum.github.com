@@ -1,11 +1,9 @@
 --- 
-wordpress_id: 921
 layout: post
 title: !binary |
   5L2/55SoemFiYml4566h55CG572R57uc
 
 date: 2010-12-02 16:30:28 +08:00
-wordpress_url: http://pipa.tk/?p=921
 ---
 工作中需要监控很多分布到不同机房的机器，最主要是要监控网络流量，由于机房内部都是内网地址，所以需要一个分布式的监控解决方案。一开始只用nagios+pnp简单采集数据，后来试用了一下cacti，配置上要简单多了，而且图像也好看点，但是不支持分布式监控。于是想到用zabbix，zabbix比nagios简单，比cacti功能强大，配置好zabbix_proxy之后，添加节点就相当简单了，可以在中心监控服务器上进行所有操作。并且zabbix还支持聚合图像，提供了定制页面的功能。
 

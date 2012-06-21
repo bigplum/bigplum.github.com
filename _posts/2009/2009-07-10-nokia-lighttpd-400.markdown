@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 302
 layout: post
 title: !binary |
   5p+Q5Lqb54mI5pys55qEbm9raWHmiYvmnLrorr/pl65saWdodHRwZOi/lOWb
@@ -19,7 +18,6 @@ excerpt: "\xE8\xBF\x99\xE4\xB8\xA4\xE5\xA4\xA9\xE7\xA2\xB0\xE5\x88\xB0\xE4\xB8\x
   X-Forwarded-For: 10.230.30.174, 211.139.151.10\r\n\
   ......"
 date: 2009-07-10 08:01:45 +08:00
-wordpress_url: http://blog.59trip.com/?p=302
 ---
 这两天碰到一个问题，一些手机浏览某些图片无法显示，而pc，其他手机上都能正常显示；lighttpd确实收到了这些手机的下载请求，但是返回了400 Bad request错误，错误日志也没有记录什么异常。
 

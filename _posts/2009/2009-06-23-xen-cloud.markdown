@@ -1,11 +1,9 @@
 --- 
-wordpress_id: 150
 layout: post
 title: !binary |
   WGVu5LqR6K6h566X566h55CG5bmz5Y+w
 
 date: 2009-06-23 08:26:31 +08:00
-wordpress_url: http://blog.59trip.com/?p=150
 ---
 只是想找一个方便管理xen虚拟机的工具，实在没有时间一个一个研究。下面两个看起来功能很强大其中openqrm还集成了nagios。如果把这一套虚拟机平台用到企业内部IT管理，应该可以给老板省很多钱，申请个总裁奖什么的。。。
 

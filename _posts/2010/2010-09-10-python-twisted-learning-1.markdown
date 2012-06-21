@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 839
 layout: post
 title: !binary |
   cHl0aG9u572R57uc57yW56iL5qGG5p62dHdpc3RlZOWtpuS5oOeslOiusCgx
@@ -36,7 +35,6 @@ excerpt: !binary |
   huOAgg==
 
 date: 2010-09-10 22:31:38 +08:00
-wordpress_url: http://simonlee.tk/?p=839
 ---
 研究了一周的twisted，终于基本搞懂了怎么用twisted写代码完成想做的功能。写正文之前，先抱怨一下python的文档比php差多了，也难怪python一直被人认为是小众语言，php的api说明页面有很多人贡献的例程，看这些例程能够很容易学会php的一些技巧，而docs.python除了函数说明，就没什么例子，实在让人诟病。twisted的文档尤甚，例子不是没有，就是太简单，学习曲线怎么能不陡呢。
 

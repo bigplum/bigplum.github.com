@@ -1,11 +1,9 @@
 --- 
-wordpress_id: 873
 layout: post
 title: !binary |
   bmdpbnjmupDnoIHop6PmnpAoMSkt5qih5Z2X5YyW6K6+6K6h
 
 date: 2010-11-16 17:06:27 +08:00
-wordpress_url: http://pipa.tk/?p=873
 ---
 nginx所有功能都已经模块化，模块的加载、卸载通过configure自动进行，用户扩展的模块放到addon目录下会被自动搜索、配置。
 

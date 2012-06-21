@@ -1,11 +1,9 @@
 --- 
-wordpress_id: 1069
 layout: post
 title: !binary |
   cmVkaXMgYW9m5oyB5LmF5YyW55qE5LiA5Lqb5rWL6K+V
 
 date: 2012-02-29 14:26:24 +08:00
-wordpress_url: http://pipablog.tk/?p=1069
 ---
 AOF是否开启rewrite对数据插入基本没有影响，1M记录花了97s。
 当内存达到100M时，自动触发rewrite:

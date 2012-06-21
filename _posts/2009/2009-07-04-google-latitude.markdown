@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 227
 layout: post
 title: !binary |
   5Zyo5omL5py65LiK5L2/55SoR29vZ2xlIExhdGl0dWRl5Zyw5Zu+5pyN5Yqh
@@ -21,7 +20,6 @@ excerpt: !binary |
   5aSq5Y6J5a6z77yM5bm25LiU5LiN6IO95Zyo5a6k5YaF5L2/55So44CCDQo=
 
 date: 2009-07-04 11:01:31 +08:00
-wordpress_url: http://blog.59trip.com/?p=227
 ---
 google今年2月份的时候推出了latitude服务，通过在手机上安装v3版本的google maps，就可以使用一项名为“纵横”的服务。我们可以直接输入google的账号登陆，导入入gmail上的联系人，并将自己的位置共享给好友。试想一下，周末逛街时正愁一个人没地方吃饭的时候，刚好发现地图上***就在附近，说不定就可以蹭一顿饭了。。。
 

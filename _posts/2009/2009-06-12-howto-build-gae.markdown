@@ -1,11 +1,9 @@
 --- 
-wordpress_id: 86
 layout: post
 title: !binary |
   R0FF5byA5pS+amF2YeW6lOeUqOazqOWGjOeUs+ivtw==
 
 date: 2009-06-12 10:37:13 +08:00
-wordpress_url: http://blog.59trip.com/?p=86
 ---
 <h3 class="post-title entry-title"><a href="http://googleappengine.blogspot.com/2009/06/app-engine-google-io-goodness-for-all.html">App Engine @ Google I/O goodness for all to enjoy</a></h3>
 <div class="post-body entry-content">

@@ -1,5 +1,4 @@
 --- 
-wordpress_id: 28
 layout: post
 title: !binary |
   5L2/55Soc3No5LuO5LiA5Liq5YaF572R5ZCR5Y+m5aSW5LiA5Liq5YaF572R
@@ -19,7 +18,6 @@ excerpt: !binary |
   cuS4uuebrueahOS4u+acuueahOeUqOaIt+WQjeOAgg==
 
 date: 2009-06-02 09:41:55 +08:00
-wordpress_url: http://www.xenhome.co.cc/blog/?p=28
 ---
 工作需要，经常需要ssh到另外一个网络的登陆入口，再从入口跳转到其内部的一台主机，需要登陆两次。执行命令也就罢了，只要操作一次就可以一直使用 ssh会话，但如果scp拷贝文件就麻烦了，需要先scp到入口主机，再从入口主机拷贝。于是就想到用ssh隧道来搞定，参考下面步骤建立ssh隧道之后，执行<code>scp -P 9000 user@localhost:/filename ./</code>
 其中user为目的主机的用户名。
