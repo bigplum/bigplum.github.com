@@ -67,7 +67,7 @@ tags:
     cr = lua_newthread(L); //这时栈顶为cr，registry table变为-2
 
     if (cr) {
-        /*  {{{ inherit coroutine's globals to main thread's globals table
+        /*  { { { inherit coroutine's globals to main thread's globals table
          *  for print() function will try to find tostring() in current
          *  globals table.
          */
@@ -80,7 +80,7 @@ tags:
         lua_setmetatable(cr, -2);
 
         lua_replace(cr, LUA_GLOBALSINDEX);
-        /*  }}} */
+        /*  } } } */
 
         *ref = luaL_ref(L, -2); //将cr放入-2位置的registry table并返回引用
 
