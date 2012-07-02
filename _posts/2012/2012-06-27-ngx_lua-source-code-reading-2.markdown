@@ -96,5 +96,5 @@ tags:
 
 接下来`ngx_http_lua_run_thread()`执行协程代码，即执行`ngx.say("hello world")`。对于lua来讲，ngx.say是一个全局表中注册的c API，所以又会调用之前在加载代码阶段注册的函数`ngx_http_lua_ngx_say()`。最后调用的是`ngx_http_lua_ngx_echo()`，主要工作就是从`LUA_GLOBALSINDEX`中获取nginx request变量，然后将需要输出的内容写入`ctx->out`，然后发送响应头和body。
 
-`ngx.say`发送完数据之后请求就结束，所以过程很简单；更复杂一点就是类似访问数据库这样的处理，发送完数据之后需要等待返回，这时候就需要从协程之中yield，将控制权交回给nginx主循环，nginx主循环处理IO事件和其他请求，直到这个数据库的响应返回之后才又再次进入这个请求的lua代码。这个也就是proactor模式，下一篇我们来看`ngx_lua`的`cosocket`是如何工作的。
+发送完数据之后ngx.say就执行完毕，后续没有lua语句所以请求结束。更复杂一点就是类似访问数据库这样的处理，发送完数据之后需要等待返回，这时候就需要从协程之中yield，将控制权交回给nginx主循环，nginx主循环处理IO事件和其他请求，直到这个数据库的响应返回之后才又再次进入这个请求的lua代码。这个也就是proactor模式，下一篇我们来看`ngx_lua`的`cosocket`是如何工作的。
 
