@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: nginx-lua模块代码阅读笔记(2)
+title: ngx-lua源码阅读笔记(2)
 date: 2012-06-27 15:26:24 +08:00
 category:
 - dev
