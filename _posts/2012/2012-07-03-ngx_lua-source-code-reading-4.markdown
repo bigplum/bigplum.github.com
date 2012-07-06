@@ -56,8 +56,7 @@ tags:
 
     /* init or reinit the ngx_output_chain() and ngx_chain_writer() contexts */
     //设置ngx_chain_writer_ctx_t，这个writer用于tcp_send时设置filter_ctx
-    //后续调用ngx_output_chain，以及output_filter时，能正确的输出内容，
-    //而不会走入http filter流程。
+    //后续调用ngx_output_chain，以及output_filter时，能正确的输出内容给connection对象，而不会走入发送给客户端。
     u->writer.out = NULL;
     u->writer.last = &u->writer.out;
     u->writer.connection = c;
@@ -80,3 +79,82 @@ tags:
 
         return rc;
     }
+
+连接建立之后`socket:send()`就简单了，从lua userdata中取出upstream对象：
+
+    lua_rawgeti(L, 1, SOCKET_CTX_INDEX);
+    u = lua_touserdata(L, -1);
+    lua_pop(L, 1);
+
+将要发送的数据组装到cl：
+
+    cl = ngx_http_lua_chains_get_free_buf(r->connection->log, r->pool,
+                                          &ctx->free_bufs, len,
+                                          (ngx_buf_tag_t)
+                                          &ngx_http_lua_module);
+
+    if (cl == NULL) {
+        return luaL_error(L, "out of memory");
+    }
+
+    b = cl->buf;
+
+    switch (type) {
+        case LUA_TNUMBER:
+        case LUA_TSTRING:
+            p = (u_char *) lua_tolstring(L, -1, &len);
+            b->last = ngx_copy(b->last, (u_char *) p, len);
+            break;
+
+        case LUA_TTABLE:
+            b->last = ngx_http_lua_copy_str_in_table(L, b->last);
+            break;
+
+        default:
+            return luaL_error(L, "impossible to reach here");
+    }
+
+调用发送：
+
+    rc = ngx_http_lua_socket_send(r, u);
+
+`ngx_http_lua_socket_send()`调用`ngx_output_chain()`完成实际发送动作，这个函数最后会调用到`output_filter`函数链，而这时实际调用的是`ngx_chain_writer()`。这是下面的代码在调用`ngx_http_lua_socket_send()`之前设置的。
+
+    if (u->output.pool == NULL) {
+        clcf = ngx_http_get_module_loc_conf(r, ngx_http_core_module);
+
+        u->output.alignment = clcf->directio_alignment;
+        u->output.pool = r->pool;
+        u->output.bufs.num = 1;
+        u->output.bufs.size = clcf->client_body_buffer_size;
+        u->output.output_filter = ngx_chain_writer;
+        u->output.filter_ctx = &u->writer;
+        u->output.tag = (ngx_buf_tag_t) &ngx_http_lua_module;
+
+        u->writer.pool = r->pool;
+    }
+
+如果发送成功，则直接返回
+
+    if (rc == NGX_OK) {
+        lua_pushinteger(L, len);
+        return 1;
+    }
+
+否则需要yield，直到send事件处理完成。
+
+cosocket的处理流程基本看完，再来看[连接池](http://wiki.nginx.org/HttpLuaModule#tcpsock:setkeepalive)特性。通过setkeepalive可以将后端连接设为可复用，这样不用每次都重新连接后端服务器，可节省连接时间。
+
+连接池由下面这个结构维护，其中cache为当前正在使用的连接队列，free为空闲的连接队列。
+
+    typedef struct {
+        ngx_http_lua_main_conf_t          *conf;
+        ngx_uint_t                         active_connections;
+
+        /* queues of ngx_http_lua_socket_pool_item_t: */
+        ngx_queue_t                        cache;
+        ngx_queue_t                        free;
+
+        u_char                             key[1];
+
+    } ngx_http_lua_socket_pool_t;
