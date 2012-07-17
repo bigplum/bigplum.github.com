@@ -145,7 +145,7 @@ tags:
 
 cosocket的处理流程基本看完，再来看[连接池](http://wiki.nginx.org/HttpLuaModule#tcpsock:setkeepalive)特性。通过setkeepalive可以将后端连接设为可复用，这样不用每次都重新连接后端服务器，可节省连接时间。
 
-连接池由下面这个结构维护，其中cache为当前正在使用的连接队列，free为空闲的连接队列。
+连接池由下面这个结构维护，其中cache为当前可用的连接对象队列，free为未使用的连接对象队列。通过这两个队列完成对连接池的管理，如果连接空闲可用则放入cache对象，如果连接被使用或关闭，则这个对象应放入free队列。如果对象都被使用，即cache队列为空，则新建一个连接。这个结构保存在lua的registry table，key为`ngx_http_lua_socket_pool_key`。
 
     typedef struct {
         ngx_http_lua_main_conf_t          *conf;
@@ -158,3 +158,8 @@ cosocket的处理流程基本看完，再来看[连接池](http://wiki.nginx.org
         u_char                             key[1];
 
     } ngx_http_lua_socket_pool_t;
+
+当新建一个连接时，调用`ngx_http_lua_get_keepalive_peer()`获取可用的连接对象。这是如果cache队列非空，则取第一个对象的连接来用，并将这个对象放入free队列。如果cache队列为空，则新建一个连接。待这个连接处理完毕，调用setkeepalive时，则从free队列获取一个对象，将这个连接赋值给这个对象，以保持连接复用。
+
+所以每次cosocket使用完毕之后，都需要调用`setkeepalive()`将连接置为可复用的。`ngx_http_lua_socket_tcp_setkeepalive()`完成这个工作。
+
