@@ -24,11 +24,65 @@ tags:
 
 再来看`ngx_http_lua_socket_resolve_retval_handler()`
 
+    ur = u->resolved;
+
+    if (ur->sockaddr) {
+        pc->sockaddr = ur->sockaddr;
+        pc->socklen = ur->socklen;
+        pc->name = &ur->host;
+
+    } else {
+        lua_pushnil(L);
+        lua_pushliteral(L, "resolver not working");
+        return 2;
+    }
+
+    pc->get = ngx_http_lua_socket_tcp_get_peer;
+
     rc = ngx_event_connect_peer(pc); //这个函数进行connect
 
-后面会判断rc是否`NGX_OK`, 如果没连接成功，会注册`ngx_http_lua_socket_connected_handler()`，如果连接成功，则注册`ngx_http_lua_socket_dummy_handler()`，这是一个空函数。
+    if (u->cleanup == NULL) {
+        cln = ngx_http_cleanup_add(r, 0);
+        if (cln == NULL) {
+            u->ft_type |= NGX_HTTP_LUA_SOCKET_FT_ERROR;
+            lua_pushnil(L);
+            lua_pushliteral(L, "out of memory");
+            return 2;
+        }
+
+        cln->handler = ngx_http_lua_socket_cleanup;
+        cln->data = u;
+        u->cleanup = &cln->handler;
+    }
+
+    ngx_log_debug1(NGX_LOG_DEBUG_HTTP, r->connection->log, 0,
+                   "lua tcp socket connect: %i", rc);
+
+    if (rc == NGX_ERROR) {
+        u->ft_type |= NGX_HTTP_LUA_SOCKET_FT_ERROR;
+        lua_pushnil(L);
+        lua_pushliteral(L, "connect peer error");
+        return 2;
+    }
+
+    if (rc == NGX_BUSY) {
+        u->ft_type |= NGX_HTTP_LUA_SOCKET_FT_ERROR;
+        lua_pushnil(L);
+        lua_pushliteral(L, "no live connection");
+        return 2;
+    }
+
+    if (rc == NGX_DECLINED) {
+        dd("socket errno: %d", (int) ngx_socket_errno);
+        u->ft_type |= NGX_HTTP_LUA_SOCKET_FT_ERROR;
+        u->socket_errno = ngx_socket_errno;
+        return ngx_http_lua_socket_error_retval_handler(r, u, L);
+    }
 
     /* rc == NGX_OK || rc == NGX_AGAIN */
+    //NGX_OK表示连接成功，NGX_AGAIN标示未连接成功，需要等待；
+    //如果没连接成功，会注册`ngx_http_lua_socket_connected_handler()`，
+    //如果连接成功，则注册`ngx_http_lua_socket_dummy_handler()`，这是一个空函数。
 
     c = pc->connection; //connection对象，事件循环的主要处理对象
 
