@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: 在Windows下编译Windows版本的Nginx
-date: 2011-07-12 10:28:56 +08:00
+date: 2011-07-12 22:28:56 +08:00
 ---
 上一篇讲了肿么[在Linux下使用MinGW编译Windows版本的Nginx](http://pipablog.tk/2011/07/11/compiling-windows-nginx-on-linux-by-mingw/)，这里再补充下肿么直接在Windows下编译Windows版本的Nginx。
 
