@@ -1,34 +1,66 @@
 --- 
 layout: post
-title: !binary |
-  5ZyoV2luZG93c+S4i+e8luivkVdpbmRvd3PniYjmnKznmoROZ2lueA==
-
-date: 2011-07-13 10:28:56 +08:00
+title: 使用VC编译windows版本nginx
+date: 2011-07-13 16:59:20 +08:00
 ---
-上一篇讲了肿么<a href="http://pipa.tk/archives/1010">在Linux下使用MinGW编译Windows版本的Nginx</a>，这里再补充下肿么直接在Windows下编译Windows版本的Nginx。
-
-Windows下使用mingw比较简单，下载安装之后，<a href="http://ingar.satgnu.net/devenv/mingw32/base.html">参考这篇文章安装rxvt，配置开发环境</a>。
-
-1. 拷贝windows lib库文件到trunk目录: advapi32.lib ws2_32.lib
-
-2. 编译
-启动rxvt终端，进入trunk目录，执行：
+<strong>1. 配置环境</strong>
+先参考[《在Windows下编译Windows版本的Nginx》](http://pipablog.tk/2011/07/12/compiling-nginx-on-windows/)所述，配置mingw的运行环境；然后修改 /usr/local/etc/profile.local
+假设Windows SDK安装在 D:\Program Files\Microsoft SDKs， VC2010安装在E:\Program Files\Microsoft Visual Studio 10.0，配置如下变量：
 {% highlight bash%}
-./configure --prefix=. --sbin-path=nginx --with-cc-opt="-D FD_SETSIZE=4096 -D __NO_MINGW_LFS -D __WATCOMC__" --without-http_rewrite_module --without-http_gzip_module
-vi objs/Makefile   #删除 -Werror
-make
+vi /usr/local/etc/profile.local
+PATH="${PATH}:/opt/bin:/e/Program Files/Microsoft Visual Studio 10.0/VC/lib:/e/Program Files/Microsoft Visual Studio 10.0/VC/include:/e/Program Files/Microsoft Visual Studio 10.0/VC/bin:/e/Program Files/Microsoft Visual Studio 10.0/Common7/IDE:/d/Program Files/Microsoft SDKs/Windows/v7.0A/bin:"
+LIB="E:\Program Files\Microsoft Visual Studio 10.0\VC\LIB;E:\Program Files\Microsoft Visual Studio 10.0\VC\ATLMFC\LIB;D:\Program Files\Microsoft SDKs\Windows\v7.0A\lib;"
+LIBPATH="D:\WINDOWS\Microsoft.NET\Framework\v4.0.30319;D:\WINDOWS\Microsoft.NET\Framework\v3.5;E:\Program Files\Microsoft Visual Studio 10.0\VC\LIB;E:\Program Files\Microsoft Visual Studio 10.0\VC\ATLMFC\LIB;"
+export LIB LIBPATH
+{% endhighlight %}
+使变量生效：
+{% highlight bash%}
+source /usr/local/etc/profile.local
 {% endhighlight %}
 
-3. 备注
-__NO_MINGW_LFS选项用于规避下列错误：
+<strong>2. 执行脚本</strong>
 {% highlight bash%}
-In file included from src/core/ngx_config.h:37:0,
-                 from src/core/nginx.c:7:
-src/os/win32/ngx_win32_config.h:129:29: error: conflicting types for 'ssize_t'
-c:\mingw\bin\../lib/gcc/mingw32/4.5.2/../../../../include/sys/types.h:118:18: note: previous declaration of 'ssize_t' was here
-src/os/win32/ngx_win32_config.h:130:29: error: conflicting types for 'off_t'
-c:\mingw\bin\../lib/gcc/mingw32/4.5.2/../../../../include/sys/types.h:55:16: note: previous declaration of 'off_t' was here
-make[1]: *** [objs/src/core/nginx.o] Error 1
-make[1]: Leaving directory `/e/src/c/nginx-svn/nginx/trunk'
-make: *** [build] Error 2
+./configure --prefix=. --sbin-path=nginx --with-cc-opt="-D FD_SETSIZE=4096 -I \"d:\Program Files\Microsoft SDKs\Windows\v7.0A\include\" -I \"e:\Program Files\Microsoft Visual Studio 10.0\VC\include\"" --without-http_rewrite_module --without-http_gzip_module --with-cc=cl
 {% endhighlight %}
+
+修改Makefile，删除告警选项-W4 -WX
+{% highlight bash%}
+vi objs/Makefile
+CFLAGS =  -O2  <strong>-W4 -WX</strong> -nologo -MT -Zi -D FD_SETSIZE=4096 -I "d:\Program Files\Micr.....................
+{% endhighlight %}
+
+修改nginx.c, 删除255行；
+{% highlight c %}
+        if (ngx_show_configure) {
+#ifdef NGX_COMPILER
+            ngx_log_stderr(0, "built by " NGX_COMPILER);
+#endif
+#if (NGX_SSL)
+#ifdef SSL_CTRL_SET_TLSEXT_HOSTNAME
+            ngx_log_stderr(0, "TLS SNI support enabled");
+#else
+            ngx_log_stderr(0, "TLS SNI support disabled");
+#endif
+#endif
+            /*
+            ngx_log_stderr(0, "configure arguments:" NGX_CONFIGURE);
+            */
+        }
+{% endhighlight %}
+
+<strong>3. 编译</strong>
+{% highlight bash%}
+nmake
+.............
+l objs/nginx.exe
+-rwxr-xr-x 1 l37366 Administrators 610304 Jul 13 10:19 objs/nginx.exe
+{% endhighlight %}
+
+<strong>4. 运行</strong>
+报错了，堆访问异常。修改下代码，ngx_shmem.c:22
+{% highlight c %}
+- (void) ngx_sprintf(name, "%V_%s%Z", &shm->name, ngx_unique);
++ (void) ngx_snprintf(name, shm->name.len + 2 + sizeof(NGX_INT32_LEN),
++ "%V_%s%Z", &shm->name, ngx_unique);
+{% endhighlight %}
+重新编译，可以运行了。
