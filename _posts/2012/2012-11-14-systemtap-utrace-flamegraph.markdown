@@ -28,8 +28,8 @@ utrace未被合入内核主干，所以需要另外编译内核。有两种方�
 1. 获取utrace的补丁，合入到ubuntu当前版本的内核代码，然后编译内核
 2. 获取支持utrace的内核代码，然后编译内核，注意要选上鼠标和网卡的驱动。
 
-方式1可以参考：(http://chaoslawful.iteye.com/blog/1463564)，如果2.6的内核，可以从这里下载补丁 (http://web.elastic.org/~fche/frob-utrace/)
-方式2可以参考：(http://hi.baidu.com/actionplay/item/5bce1bd861834e10d80e4472)
+方式1可以参考：[这里](http://chaoslawful.iteye.com/blog/1463564)，如果2.6的内核，可以从[这里下载补丁](http://web.elastic.org/~fche/frob-utrace/)
+方式2可以参考：[这里]((http://hi.baidu.com/actionplay/item/5bce1bd861834e10d80e4472)
 
 由于编译内核耗时很久，上述步骤需要编译两次内核，所以比较合理的方式是：先获取utrace补丁，合入到ubuntu的内核代码，然后编译内核和dbgsym。
 

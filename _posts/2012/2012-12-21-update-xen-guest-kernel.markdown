@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: 升级xen guest内核到3.5
+title: 升级xen guest内核版本到3.5
 date: 2012-12-21 18:26:24 +08:00
 category:
 - dev
@@ -8,7 +8,9 @@ tags:
 - xen 
 ---
 
-升级步骤可以参考: [http://wiki.xen.org/wiki/Mainline_Linux_Kernel_Configs]
+一直用suse10作为线上系统运行，内核版本是2.6.16，很多新特性不具备。xen进入内核之后，现在终于可以将guest OS升级到新版本内核，体验众多新特性。
+
+升级步骤可以参考: [http://wiki.xen.org/wiki/Mainline_Linux_Kernel_Configs](http://wiki.xen.org/wiki/Mainline_Linux_Kernel_Configs)
 
 需要注意的是xen版本必须为4.0以上，所以suse 10是不支持的，必须将物理机升级到suse11。
 
@@ -46,5 +48,5 @@ make install之后，修改启动内核新版本：
 
 参考资料：
 
-[http://www.xen.org/files/xensummit_4/xensummit_linux_console_slides.pdf]
+[http://www.xen.org/files/xensummit_4/xensummit_linux_console_slides.pdf] (http://www.xen.org/files/xensummit_4/xensummit_linux_console_slides.pdf) 
 
