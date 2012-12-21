@@ -46,7 +46,5 @@ make install之后，修改启动内核新版本：
     #vi /etc/securetty
     hvc0
 
-参考资料：
-
-[http://www.xen.org/files/xensummit_4/xensummit_linux_console_slides.pdf] (http://www.xen.org/files/xensummit_4/xensummit_linux_console_slides.pdf) 
+参考资料：[http://www.xen.org/files/xensummit_4/xensummit_linux_console_slides.pdf](http://www.xen.org/files/xensummit_4/xensummit_linux_console_slides.pdf) 
 
