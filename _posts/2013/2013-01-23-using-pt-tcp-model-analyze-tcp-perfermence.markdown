@@ -54,7 +54,7 @@ tags:
 
 resp.plot:
 
-    set title "TCP Port 80 packets/sec"
+    set title "TCP Port 80 SYN time"
     set xlabel "SYN Resp Time(us)"
     set ylabel "req number"
     set xrange [0:100]
@@ -74,4 +74,9 @@ run gunplot:
     gnuplot resp.plot
 
 ![resptime.png](/assets/uploads/2013/01/resptime.png)
+
+PS，用这种方法对XEN和LXC的虚拟机syn响应时间做了简单分析，在物理机上抓包，XEN虚拟机的响应时间为200多us，而LXC只有40多us。
+
+参考资料：
+[Analyzing HTTP traffic with tcpdump and Percona’s pt-tcp-model](http://blog.9minutesnooze.com/analyzing-http-traffic-tcpdump-perconas-pttcpmodel/)
 
