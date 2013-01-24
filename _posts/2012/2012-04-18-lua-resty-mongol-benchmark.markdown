@@ -2,8 +2,6 @@
 layout: post
 title: lua-resty-mongol性能测试
 date: 2012-04-18 15:26:24 +08:00
-category:
-- dev
 tags:
 - mongodb
 ---

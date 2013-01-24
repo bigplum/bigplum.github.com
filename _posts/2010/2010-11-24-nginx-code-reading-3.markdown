@@ -1,8 +1,6 @@
 --- 
 layout: post
 title: nginx源码解析(3)-从事件处理到业务处理
-category:
-- dev
 tags:
 - nginx
 date: 2010-11-24 09:25:45 +08:00

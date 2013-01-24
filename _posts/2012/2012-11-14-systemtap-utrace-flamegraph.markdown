@@ -2,8 +2,6 @@
 layout: post
 title: 使用systemtap和utrace做代码性能分析
 date: 2012-11-14 18:26:24 +08:00
-category:
-- dev
 tags:
 - nginx
 ---

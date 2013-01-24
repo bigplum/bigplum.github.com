@@ -2,8 +2,6 @@
 layout: post
 title: nginx源码解析(5)-配置文件设计
 date: 2012-07-28 18:26:24 +08:00
-category:
-- dev
 tags:
 - nginx
 ---

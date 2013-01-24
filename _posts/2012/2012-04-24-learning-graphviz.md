@@ -2,8 +2,6 @@
 layout: post
 title: graphviz使用笔记
 date: 2012-04-24 15:26:24 +08:00
-category:
-- dev
 tags:
 - graphviz
 ---

@@ -1,8 +1,6 @@
 --- 
 layout: post
 title: nginx源码解析(1)-模块化设计
-category:
-- dev
 tags:
 - nginx
 date: 2010-11-16 17:06:27 +08:00

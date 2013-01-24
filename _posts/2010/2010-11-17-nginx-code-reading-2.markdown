@@ -2,8 +2,6 @@
 layout: post
 title: !binary |
   bmdpbnjmupDnoIHop6PmnpAoMikt6L+b56iL566h55CG
-category:
-- dev
 tags:
 - nginx
 date: 2010-11-17 10:32:01 +08:00

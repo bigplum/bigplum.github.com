@@ -2,8 +2,6 @@
 layout: post
 title: 升级xen guest内核版本到3.5
 date: 2012-12-21 18:26:24 +08:00
-category:
-- dev
 tags:
 - xen 
 ---

@@ -1,8 +1,6 @@
 --- 
 layout: post
 title: nginx源码解析(4)-深入http模块
-category:
-- dev
 tags:
 - nginx
 date: 2010-11-25 08:46:31 +08:00

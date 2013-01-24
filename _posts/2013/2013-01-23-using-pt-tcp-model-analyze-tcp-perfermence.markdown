@@ -2,8 +2,6 @@
 layout: post
 title: 使用pt-tcp-model分析tcp性能
 date: 2013-01-23 18:26:24 +08:00
-category:
-- dev
 tags:
 - tcp
 ---
