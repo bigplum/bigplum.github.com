@@ -6,7 +6,7 @@ tags:
 - tcp
 ---
 
-[http://www.percona.com/doc/percona-toolkit/2.1/pt-tcp-model.html](pt-tcp-model)可以对tcpdump抓包结果进行进一步分析，例如：识别一个TCP会话的请求和响应包，从中提取会话处理时间。还可以根据多种条件进行数据提取，具体可以参见man page。
+[pt-tcp-model](http://www.percona.com/doc/percona-toolkit/2.1/pt-tcp-model.html)可以对tcpdump抓包结果进行进一步分析，例如：识别一个TCP会话的请求和响应包，从中提取会话处理时间。还可以根据多种条件进行数据提取，具体可以参见man page。
 
 下面说明一下如何用pt-tcp-model统计syn响应时间。
 
