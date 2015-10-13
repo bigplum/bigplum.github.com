@@ -1,5 +1,8 @@
 ---
 layout: default
 ---
-{% include JB/setup %}
-{% include themes/mark-reid/post.html %}
+{% include post.html %}
+
+{% if site.disqus and page.comments %}
+    {% include disqus.html %}
+{% endif %}
